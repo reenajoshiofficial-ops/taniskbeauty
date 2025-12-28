@@ -1,221 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tanisk Beauty Studio | Cyber Glam</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-:root { --p: #ff00ff; --g: #ffd700; --b: #00f5ff; --gr: #39ff14; }
-body.dark { --bg: radial-gradient(circle, #1a0033 0%, #000 100%); --txt: #fff; --card: rgba(255,255,255,0.05); }
-body.light { --bg: #f0f0f0; --txt: #222; --card: #fff; }
-* { margin:0; padding:0; box-sizing:border-box; transition: 0.3s; }
-body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--txt); overflow-x: hidden; }
-header { padding: 60px 20px; text-align: center; border-bottom: 3px solid var(--p); background: rgba(0,0,0,0.4); }
-header h1 { font-family: 'Dancing Script', cursive; font-size: 4em; color: var(--p); text-shadow: 0 0 20px var(--p); }
-.controls { position: fixed; top: 10px; right: 10px; z-index: 1000; background: rgba(0,0,0,0.85); padding: 12px; border-radius: 15px; border: 1px solid var(--p); }
-.counter { color: var(--gr); font-weight: 800; font-size: 13px; text-align: center; margin-bottom: 8px; animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
-.btn-ui { background: var(--p); color: #fff; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; font-size: 11px; font-weight: 600; width: 100%; }
-section { padding: 50px 20px; max-width: 1400px; margin: auto; }
-h2 { font-family: 'Playfair Display', serif; font-size: 2.2em; text-align: center; margin-bottom: 40px; color: var(--b); text-transform: uppercase; letter-spacing: 2px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; }
-.card { background: var(--card); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,0,255,0.15); display: flex; justify-content: space-between; align-items: center; }
-.card:hover { transform: scale(1.05); border-color: var(--p); box-shadow: 0 0 20px rgba(255,0,255,0.3); }
-.price { color: var(--g); font-weight: 800; font-size: 1.2em; text-shadow: 0 0 5px var(--g); }
-.booking { max-width: 600px; margin: 60px auto; padding: 40px; background: var(--card); border-radius: 30px; border: 2px solid var(--p); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
-.booking input, .booking select { width: 100%; padding: 15px; margin: 10px 0; border-radius: 10px; border: 1px solid var(--b); background: rgba(255,255,255,0.1); color: inherit; font-size: 16px; }
-.book-btn { width: 100%; padding: 20px; background: linear-gradient(45deg, var(--p), var(--b)); color: #fff; border: none; border-radius: 15px; font-size: 18px; font-weight: 800; cursor: pointer; text-transform: uppercase; }
-footer { padding: 50px; text-align: center; background: #000; color: var(--b); border-top: 3px solid var(--p); }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanisk Beauty Zone | Complete Beauty Salon Dehradun | 9627189407</title>
+    <meta name="description" content="Tanisk Beauty Zone Dehradun - Bridal makeup, waxing, facial, hair spa, manicure, pedicure, bleach, threading. Home service everywhere. Book 9627189407">
+    <meta name="keywords" content="Tanisk Beauty Zone, makeup Dehradun, bridal makeup, home salon Dehradun, waxing Dehradun, facial Dehradun, hair spa">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        .header { background: linear-gradient(135deg, #ff6b9d, #c44569); color: white; text-align: center; padding: 2rem 1rem; }
+        .header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .header p { font-size: 1.2rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .service-card { background: #f8f9fa; border-radius: 15px; padding: 1.5rem; text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card h3 { color: #c44569; font-size: 1.3rem; margin-bottom: 0.8rem; }
+        .price { font-size: 1.6rem; font-weight: bold; color: #ff6b9d; margin: 0.5rem 0; }
+        .book-btn { background: #ff6b9d; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 25px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 0.5rem; }
+        .book-btn:hover { background: #c44569; }
+        .contact { background: #f8f9fa; padding: 3rem; border-radius: 15px; text-align: center; margin: 3rem 0; }
+        .phone { font-size: 2rem; color: #ff6b9d; text-decoration: none; }
+        .whatsapp { background: #25D366; color: white; padding: 1rem 2rem; border-radius: 50px; font-size: 1.2rem; text-decoration: none; }
+        .category { background: linear-gradient(135deg, #c44569, #ff6b9d); color: white; padding: 1rem; border-radius: 10px; margin: 2rem 0 1rem 0; font-size: 1.2rem; font-weight: bold; }
+        @media (max-width: 768px) { .header h1 { font-size: 2rem; } .services { grid-template-columns: 1fr; } }
+    </style>
 </head>
-<body class="dark">
+<body>
+    <header class="header">
+        <h1>🌟 Tanisk Beauty Zone Dehradun</h1>
+        <p>COMPLETE Home Beauty Salon | Dehradun Wide Service | 9627189407</p>
+    </header>
 
-<div class="controls">
-    <div class="counter"><i class="fas fa-bolt"></i> BOOKINGS: <span id="count">0</span></div>
-    <button class="btn-ui" onclick="document.body.classList.toggle('light'); document.body.classList.toggle('dark');">🌓 THEME</button>
-</div>
+    <div class="container">
+        <div class="category">👰 BRIDAL & PARTY MAKEUP</div>
+        <section class="services">
+            <div class="service-card">
+                <h3>👰 Bridal Makeup</h3>
+                <div class="price">₹15,100</div>
+                <p>Airbrush HD + Saree Draping + 12hr Stay</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>💍 Engagement Makeup</h3>
+                <div class="price">₹6,100</div>
+                <p>Glowing Party Look + Hair Styling</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>🎉 Party Makeup</h3>
+                <div class="price">₹3,100/person</div>
+                <p>Family & Friends - Wedding Perfect</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+        </section>
 
-<header>
-    <h1>Tanisk Beauty Studio</h1>
-    <p>Premium Home Service Beauty & Makeup</p>
-    <p><i class="fas fa-phone"></i> 9627189407 | ✉️ reenajoshiofficial@gmail.com</p>
-</header>
+        <div class="category">💆 FACIAL & SKIN CARE</div>
+        <section class="services">
+            <div class="service-card">
+                <h3>✨ VLCC Fruit Facial</h3>
+                <div class="price">₹701</div>
+                <p>Instaglow + Skin Brightening</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>🌟 VLCC Anti-Tan</h3>
+                <div class="price">₹701</div>
+                <p>Remove Sun Tan + Even Tone</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>💎 Lotus Pearl Facial</h3>
+                <div class="price">₹1,101</div>
+                <p>Premium Glow + Radiance</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>🧼 Clean Up</h3>
+                <div class="price">₹401</div>
+                <p>Deep Cleansing + Blackheads</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+        </section>
 
-<!-- 1. CLEAN UP -->
-<section><h2>✨ CLEAN UP</h2><div class="grid">
-<div class="card">VLCC Fruit Cleanup <span class="price">₹599</span></div>
-<div class="card">VLCC Insta Glow <span class="price">₹499</span></div>
-<div class="card">Lotus Cleanup <span class="price">₹499</span></div>
-<div class="card">SARA Green Apple (O3+) <span class="price">₹849</span></div>
-</div></section>
+        <div class="category">🕯️ WAXING & THREADING</div>
+        <section class="services">
+            <div class="service-card">
+                <h3>🕯️ Full Body Wax</h3>
+                <div class="price">₹1,401</div>
+                <p>Honey Wax + Free Threading</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>👙 Bikini Wax</h3>
+                <div class="price">₹601</div>
+                <p>Chocolate Wax - Painless</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>✨ Full Face Threading</h3>
+                <div class="price">₹151</div>
+                <p>Eyebrows + Upper Lips + Chin</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>🦵 Full Legs Wax</h3>
+                <div class="price">₹451</div>
+                <p>Smooth + Long Lasting</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+        </section>
 
-<!-- 2. DE-TAN -->
-<section><h2>🌞 DE-TAN</h2><div class="grid">
-<div class="card">Face & Neck <span class="price">₹399</span></div>
-<div class="card">Full Hand <span class="price">₹499</span></div>
-<div class="card">Underarms <span class="price">₹199</span></div>
-<div class="card">Full Legs <span class="price">₹449</span></div>
-<div class="card">Full Front <span class="price">₹499</span></div>
-<div class="card">Half Back <span class="price">₹329</span></div>
-<div class="card">Full Back <span class="price">₹499</span></div>
-<div class="card">Full Body (No Face) <span class="price">₹1199</span></div>
-<div class="card">Full Body (With Face) <span class="price">₹1299</span></div>
-</div></section>
+        <div class="category">💅 NAILS & HAIR</div>
+        <section class="services">
+            <div class="service-card">
+                <h3>💅 VLCC Mani Pedi</h3>
+                <div class="price">₹501</div>
+                <p>Professional + Nail Art</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>💆‍♀️ Hair Spa</h3>
+                <div class="price">₹1,101</div>
+                <p>VLCC Treatment + Shine</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>🌿 Hair Oil Massage</h3>
+                <div class="price">₹251</div>
+                <p>Hot Oil + Scalp Treatment</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+        </section>
 
-<!-- 3. MANI-PEDI COMBO -->
-<section><h2>💅 MANI–PEDI COMBO</h2><div class="grid">
-<div class="card">Classic Mani-Pedi <span class="price">₹599</span></div>
-<div class="card">Aroma Magic <span class="price">₹799</span></div>
-<div class="card">O3+ Bubblegum <span class="price">₹1199</span></div>
-<div class="card">Sara De-Tan / Rose <span class="price">₹999</span></div>
-</div></section>
+        <div class="category">☀️ BLEACH & MORE</div>
+        <section class="services">
+            <div class="service-card">
+                <h3>☀️ VLCC Face Bleach</h3>
+                <div class="price">₹416</div>
+                <p>Oxy Life + Instant Glow</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>🌈 Full Body Bleach</h3>
+                <div class="price">₹1,501</div>
+                <p>Complete Skin Brightening</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>🏠 Home Service</h3>
+                <div class="price">FREE</div>
+                <p>Dehradun + 20km | Same Day</p>
+                <a href="tel:9627189407" class="book-btn">Book Now</a>
+            </div>
+        </section>
 
-<!-- 4. PEDICURE -->
-<section><h2>🦶 PEDICURE</h2><div class="grid">
-<div class="card">Classic Pedicure <span class="price">₹399</span></div>
-<div class="card">Aroma Magic <span class="price">₹499</span></div>
-<div class="card">O3+ Bubblegum <span class="price">₹799</span></div>
-<div class="card">Sara De-Tan / Rose <span class="price">₹599</span></div>
-</div></section>
-
-<!-- 5. MANICURE -->
-<section><h2>✋ MANICURE</h2><div class="grid">
-<div class="card">Classic Manicure <span class="price">₹349</span></div>
-<div class="card">Aroma Magic <span class="price">₹399</span></div>
-<div class="card">O3+ Bubblegum <span class="price">₹699</span></div>
-<div class="card">Sara De-Tan / Rose <span class="price">₹499</span></div>
-<div class="card">File Cut Polish <span class="price">₹149</span></div>
-</div></section>
-
-<!-- 6. HAIR CUT -->
-<section><h2>✂️ HAIR CUT</h2><div class="grid">
-<div class="card">Feather Cut <span class="price">₹549</span></div>
-<div class="card">Steps Cut <span class="price">₹549</span></div>
-<div class="card">U-Shape Cut <span class="price">₹349</span></div>
-<div class="card">V-Shape Cut <span class="price">₹549</span></div>
-<div class="card">One Length Cut <span class="price">₹549</span></div>
-<div class="card">Front Layer Cut <span class="price">₹399</span></div>
-<div class="card">Split Ends Cut <span class="price">₹349</span></div>
-<div class="card">Bob Cut <span class="price">₹559</span></div>
-<div class="card">Cara Bob Cut <span class="price">₹599</span></div>
-<div class="card">Multi-Layer Graduation <span class="price">₹549</span></div>
-</div></section>
-
-<!-- 7. HAIR SPA -->
-<section><h2>💆‍♀️ HAIR SPA</h2><div class="grid">
-<div class="card">L’Oréal Spa (Small) <span class="price">₹649</span></div>
-<div class="card">L’Oréal Spa (Medium) <span class="price">₹849</span></div>
-<div class="card">L’Oréal Spa (Large) <span class="price">₹1199</span></div>
-<div class="card">Scalp Ampoule <span class="price">₹120</span></div>
-<div class="card">Anti-Dandruff Ampoule <span class="price">₹120</span></div>
-</div></section>
-
-<!-- 8. HAIR COLOUR -->
-<section><h2>🎨 HAIR COLOUR</h2><div class="grid">
-<div class="card">INOA Root Touch-Up <span class="price">₹850</span></div>
-<div class="card">Majirel Root Touch-Up <span class="price">₹699</span></div>
-<div class="card">INOA Global (S) <span class="price">₹1349</span></div>
-<div class="card">Majirel Global (S) <span class="price">₹1200</span></div>
-<div class="card">INOA Global (M) <span class="price">₹2100</span></div>
-<div class="card">Majirel Global (M) <span class="price">₹1900</span></div>
-<div class="card">Majirel Global (L) <span class="price">₹2400</span></div>
-<div class="card">Henna Application <span class="price">₹350</span></div>
-</div></section>
-
-<!-- 9. BODY MASSAGE -->
-<section><h2>💆 BODY MASSAGE</h2><div class="grid">
-<div class="card">Full Body Massage <span class="price">₹899</span></div>
-<div class="card">Rejuvenating Massage <span class="price">₹1299</span></div>
-<div class="card">Healthy Head Massage <span class="price">₹299</span></div>
-<div class="card">Shoulder & Back <span class="price">₹349</span></div>
-<div class="card">Foot Massage <span class="price">₹349</span></div>
-<div class="card">Arms Massage <span class="price">₹349</span></div>
-</div></section>
-
-<!-- 10. PRE BRIDAL -->
-<section><h2>👰 PRE-BRIDAL</h2><div class="grid">
-<div class="card">Classic Pre-Bridal <span class="price">₹5249</span></div>
-<div class="card">Luxury Pre-Bridal <span class="price">₹6999</span></div>
-<div class="card">Magnificence Package <span class="price">₹7699</span></div>
-</div></section>
-
-<!-- 11. BODY POLISHING -->
-<section><h2>✨ BODY POLISHING</h2><div class="grid">
-<div class="card">4 Steps Polishing <span class="price">₹1099</span></div>
-<div class="card">Lotus SPA Crystal <span class="price">₹1799</span></div>
-</div></section>
-
-<!-- 12. SKIN PACKAGES -->
-<section><h2>🌸 SKIN PACKAGES</h2><div class="grid">
-<div class="card">VLCC Facial Pkg <span class="price">₹899</span></div>
-<div class="card">VLCC Skin Pkg <span class="price">₹1299</span></div>
-<div class="card">Homely Groom <span class="price">₹1699</span></div>
-<div class="card">Blogger Beauty <span class="price">₹1899</span></div>
-<div class="card">Glam Up Package <span class="price">₹2149</span></div>
-<div class="card">Home Salon Gift <span class="price">₹1899</span></div>
-</div></section>
-
-<!-- 13. PRIME PACKAGES -->
-<section><h2>💎 PRIME PACKAGES</h2><div class="grid">
-<div class="card">O3+ Whitening Pkg <span class="price">₹2489</span></div>
-<div class="card">Essentials Package <span class="price">₹2799</span></div>
-<div class="card">Makeover Package <span class="price">₹2749</span></div>
-<div class="card">Just Chill Package <span class="price">₹2299</span></div>
-<div class="card">Corporate Girl <span class="price">₹2799</span></div>
-<div class="card">Tip To Toe Pkg <span class="price">₹2799</span></div>
-<div class="card">Charming Beauty <span class="price">₹3299</span></div>
-</div></section>
-
-<!-- 14. WAX -->
-<section><h2>🪒 WAX PACKAGES</h2><div class="grid">
-<div class="card">Honey Wax Pkg <span class="price">₹529</span></div>
-<div class="card">Honey Bikini Wax <span class="price">₹1119</span></div>
-<div class="card">RICA Wax Package <span class="price">₹849</span></div>
-<div class="card">RICA Bikini Wax <span class="price">₹1799</span></div>
-<div class="card">Honey Wax + ManiPedi <span class="price">₹2120</span></div>
-</div></section>
-
-<!-- 15. HAIR PACKAGES -->
-<section><h2>💇 HAIR PACKAGES</h2><div class="grid">
-<div class="card">Root Touch + Wax <span class="price">₹1499</span></div>
-<div class="card">Keratin Hair Spa <span class="price">₹1349</span></div>
-<div class="card">Global Package <span class="price">₹3149</span></div>
-</div></section>
-
-<section class="booking">
-    <h2>📅 BOOK SERVICE</h2>
-    <form id="bookForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="tel" id="phone" placeholder="Phone Number" required>
-        <input type="text" id="addr" placeholder="Full Address for Home Service" required>
-        <select id="serv">
-            <option>Select Category</option>
-            <option>Makeup</option><option>Facial</option><option>Hair</option><option>Waxing</option><option>Bridal</option>
-        </select>
-        <button type="submit" class="book-btn">🚀 BOOK VIA WHATSAPP</button>
-    </form>
-</section>
-
-<footer>
-    <p>📞 9627189407 | ✉️ reenajoshiofficial@gmail.com</p>
-    <p><a href="https://www.instagram.com/reenajoshiibimakeover" target="_blank" style="color:var(--p)">Follow us on Instagram</a></p>
-</footer>
-
-<script>
-let bCount = 0;
-setInterval(() => { bCount += Math.floor(Math.random()*2); document.getElementById('count').innerText = bCount; }, 10000);
-
-document.getElementById('bookForm').onsubmit = (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const addr = document.getElementById('addr').value;
-    const serv = document.getElementById('serv').value;
-    const msg = encodeURIComponent(`New Booking!\nName: ${name}\nAddress: ${addr}\nService: ${serv}`);
-    bCount++; document.getElementById('count').innerText = bCount;
-    window.open(`https://wa.me/919627189407?text=${msg}`, '_blank');
-};
-</script>
+        <section class="contact">
+            <h2>📞 Book Tanisk Beauty Zone Instantly!</h2>
+            <p><strong>Call/WhatsApp:</strong> <a href="tel:9627189407" class="phone">9627189407</a></p>
+            <p><strong>Service Areas:</strong> Dehradun City + 20km Radius</p>
+            <br>
+            <a href="https://wa.me/919627189407" class="whatsapp" target="_blank">💬 WhatsApp - Book Now</a>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
+                ⭐ Tanisk Beauty Zone | Dehradun's #1 Home Salon | Licensed & Verified
+            </p>
+        </section>
+    </div>
 </body>
 </html>
