@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanisk Beauty Studio | Cyber Glam</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root { --p: #ff00ff; --g: #ffd700; --b: #00f5ff; --gr: #39ff14; }
+body.dark { --bg: radial-gradient(circle, #1a0033 0%, #000 100%); --txt: #fff; --card: rgba(255,255,255,0.05); }
+body.light { --bg: #f0f0f0; --txt: #222; --card: #fff; }
+* { margin:0; padding:0; box-sizing:border-box; transition: 0.3s; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--txt); overflow-x: hidden; }
+header { padding: 60px 20px; text-align: center; border-bottom: 3px solid var(--p); background: rgba(0,0,0,0.4); }
+header h1 { font-family: 'Dancing Script', cursive; font-size: 4em; color: var(--p); text-shadow: 0 0 20px var(--p); }
+.controls { position: fixed; top: 10px; right: 10px; z-index: 1000; background: rgba(0,0,0,0.85); padding: 12px; border-radius: 15px; border: 1px solid var(--p); }
+.counter { color: var(--gr); font-weight: 800; font-size: 13px; text-align: center; margin-bottom: 8px; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
+.btn-ui { background: var(--p); color: #fff; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; font-size: 11px; font-weight: 600; width: 100%; }
+section { padding: 50px 20px; max-width: 1400px; margin: auto; }
+h2 { font-family: 'Playfair Display', serif; font-size: 2.2em; text-align: center; margin-bottom: 40px; color: var(--b); text-transform: uppercase; letter-spacing: 2px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; }
+.card { background: var(--card); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,0,255,0.15); display: flex; justify-content: space-between; align-items: center; }
+.card:hover { transform: scale(1.05); border-color: var(--p); box-shadow: 0 0 20px rgba(255,0,255,0.3); }
+.price { color: var(--g); font-weight: 800; font-size: 1.2em; text-shadow: 0 0 5px var(--g); }
+.booking { max-width: 600px; margin: 60px auto; padding: 40px; background: var(--card); border-radius: 30px; border: 2px solid var(--p); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.booking input, .booking select { width: 100%; padding: 15px; margin: 10px 0; border-radius: 10px; border: 1px solid var(--b); background: rgba(255,255,255,0.1); color: inherit; font-size: 16px; }
+.book-btn { width: 100%; padding: 20px; background: linear-gradient(45deg, var(--p), var(--b)); color: #fff; border: none; border-radius: 15px; font-size: 18px; font-weight: 800; cursor: pointer; text-transform: uppercase; }
+footer { padding: 50px; text-align: center; background: #000; color: var(--b); border-top: 3px solid var(--p); }
+</style>
+</head>
+<body class="dark">
+
+<div class="controls">
+    <div class="counter"><i class="fas fa-bolt"></i> BOOKINGS: <span id="count">0</span></div>
+    <button class="btn-ui" onclick="document.body.classList.toggle('light'); document.body.classList.toggle('dark');">🌓 THEME</button>
+</div>
+
+<header>
+    <h1>Tanisk Beauty Studio</h1>
+    <p>Premium Home Service Beauty & Makeup</p>
+    <p><i class="fas fa-phone"></i> 9627189407 | ✉️ reenajoshiofficial@gmail.com</p>
+</header>
+
+<!-- 1. CLEAN UP -->
+<section><h2>✨ CLEAN UP</h2><div class="grid">
+<div class="card">VLCC Fruit Cleanup <span class="price">₹599</span></div>
+<div class="card">VLCC Insta Glow <span class="price">₹499</span></div>
+<div class="card">Lotus Cleanup <span class="price">₹499</span></div>
+<div class="card">SARA Green Apple (O3+) <span class="price">₹849</span></div>
+</div></section>
+
+<!-- 2. DE-TAN -->
+<section><h2>🌞 DE-TAN</h2><div class="grid">
+<div class="card">Face & Neck <span class="price">₹399</span></div>
+<div class="card">Full Hand <span class="price">₹499</span></div>
+<div class="card">Underarms <span class="price">₹199</span></div>
+<div class="card">Full Legs <span class="price">₹449</span></div>
+<div class="card">Full Front <span class="price">₹499</span></div>
+<div class="card">Half Back <span class="price">₹329</span></div>
+<div class="card">Full Back <span class="price">₹499</span></div>
+<div class="card">Full Body (No Face) <span class="price">₹1199</span></div>
+<div class="card">Full Body (With Face) <span class="price">₹1299</span></div>
+</div></section>
+
+<!-- 3. MANI-PEDI COMBO -->
+<section><h2>💅 MANI–PEDI COMBO</h2><div class="grid">
+<div class="card">Classic Mani-Pedi <span class="price">₹599</span></div>
+<div class="card">Aroma Magic <span class="price">₹799</span></div>
+<div class="card">O3+ Bubblegum <span class="price">₹1199</span></div>
+<div class="card">Sara De-Tan / Rose <span class="price">₹999</span></div>
+</div></section>
+
+<!-- 4. PEDICURE -->
+<section><h2>🦶 PEDICURE</h2><div class="grid">
+<div class="card">Classic Pedicure <span class="price">₹399</span></div>
+<div class="card">Aroma Magic <span class="price">₹499</span></div>
+<div class="card">O3+ Bubblegum <span class="price">₹799</span></div>
+<div class="card">Sara De-Tan / Rose <span class="price">₹599</span></div>
+</div></section>
+
+<!-- 5. MANICURE -->
+<section><h2>✋ MANICURE</h2><div class="grid">
+<div class="card">Classic Manicure <span class="price">₹349</span></div>
+<div class="card">Aroma Magic <span class="price">₹399</span></div>
+<div class="card">O3+ Bubblegum <span class="price">₹699</span></div>
+<div class="card">Sara De-Tan / Rose <span class="price">₹499</span></div>
+<div class="card">File Cut Polish <span class="price">₹149</span></div>
+</div></section>
+
+<!-- 6. HAIR CUT -->
+<section><h2>✂️ HAIR CUT</h2><div class="grid">
+<div class="card">Feather Cut <span class="price">₹549</span></div>
+<div class="card">Steps Cut <span class="price">₹549</span></div>
+<div class="card">U-Shape Cut <span class="price">₹349</span></div>
+<div class="card">V-Shape Cut <span class="price">₹549</span></div>
+<div class="card">One Length Cut <span class="price">₹549</span></div>
+<div class="card">Front Layer Cut <span class="price">₹399</span></div>
+<div class="card">Split Ends Cut <span class="price">₹349</span></div>
+<div class="card">Bob Cut <span class="price">₹559</span></div>
+<div class="card">Cara Bob Cut <span class="price">₹599</span></div>
+<div class="card">Multi-Layer Graduation <span class="price">₹549</span></div>
+</div></section>
+
+<!-- 7. HAIR SPA -->
+<section><h2>💆‍♀️ HAIR SPA</h2><div class="grid">
+<div class="card">L’Oréal Spa (Small) <span class="price">₹649</span></div>
+<div class="card">L’Oréal Spa (Medium) <span class="price">₹849</span></div>
+<div class="card">L’Oréal Spa (Large) <span class="price">₹1199</span></div>
+<div class="card">Scalp Ampoule <span class="price">₹120</span></div>
+<div class="card">Anti-Dandruff Ampoule <span class="price">₹120</span></div>
+</div></section>
+
+<!-- 8. HAIR COLOUR -->
+<section><h2>🎨 HAIR COLOUR</h2><div class="grid">
+<div class="card">INOA Root Touch-Up <span class="price">₹850</span></div>
+<div class="card">Majirel Root Touch-Up <span class="price">₹699</span></div>
+<div class="card">INOA Global (S) <span class="price">₹1349</span></div>
+<div class="card">Majirel Global (S) <span class="price">₹1200</span></div>
+<div class="card">INOA Global (M) <span class="price">₹2100</span></div>
+<div class="card">Majirel Global (M) <span class="price">₹1900</span></div>
+<div class="card">Majirel Global (L) <span class="price">₹2400</span></div>
+<div class="card">Henna Application <span class="price">₹350</span></div>
+</div></section>
+
+<!-- 9. BODY MASSAGE -->
+<section><h2>💆 BODY MASSAGE</h2><div class="grid">
+<div class="card">Full Body Massage <span class="price">₹899</span></div>
+<div class="card">Rejuvenating Massage <span class="price">₹1299</span></div>
+<div class="card">Healthy Head Massage <span class="price">₹299</span></div>
+<div class="card">Shoulder & Back <span class="price">₹349</span></div>
+<div class="card">Foot Massage <span class="price">₹349</span></div>
+<div class="card">Arms Massage <span class="price">₹349</span></div>
+</div></section>
+
+<!-- 10. PRE BRIDAL -->
+<section><h2>👰 PRE-BRIDAL</h2><div class="grid">
+<div class="card">Classic Pre-Bridal <span class="price">₹5249</span></div>
+<div class="card">Luxury Pre-Bridal <span class="price">₹6999</span></div>
+<div class="card">Magnificence Package <span class="price">₹7699</span></div>
+</div></section>
+
+<!-- 11. BODY POLISHING -->
+<section><h2>✨ BODY POLISHING</h2><div class="grid">
+<div class="card">4 Steps Polishing <span class="price">₹1099</span></div>
+<div class="card">Lotus SPA Crystal <span class="price">₹1799</span></div>
+</div></section>
+
+<!-- 12. SKIN PACKAGES -->
+<section><h2>🌸 SKIN PACKAGES</h2><div class="grid">
+<div class="card">VLCC Facial Pkg <span class="price">₹899</span></div>
+<div class="card">VLCC Skin Pkg <span class="price">₹1299</span></div>
+<div class="card">Homely Groom <span class="price">₹1699</span></div>
+<div class="card">Blogger Beauty <span class="price">₹1899</span></div>
+<div class="card">Glam Up Package <span class="price">₹2149</span></div>
+<div class="card">Home Salon Gift <span class="price">₹1899</span></div>
+</div></section>
+
+<!-- 13. PRIME PACKAGES -->
+<section><h2>💎 PRIME PACKAGES</h2><div class="grid">
+<div class="card">O3+ Whitening Pkg <span class="price">₹2489</span></div>
+<div class="card">Essentials Package <span class="price">₹2799</span></div>
+<div class="card">Makeover Package <span class="price">₹2749</span></div>
+<div class="card">Just Chill Package <span class="price">₹2299</span></div>
+<div class="card">Corporate Girl <span class="price">₹2799</span></div>
+<div class="card">Tip To Toe Pkg <span class="price">₹2799</span></div>
+<div class="card">Charming Beauty <span class="price">₹3299</span></div>
+</div></section>
+
+<!-- 14. WAX -->
+<section><h2>🪒 WAX PACKAGES</h2><div class="grid">
+<div class="card">Honey Wax Pkg <span class="price">₹529</span></div>
+<div class="card">Honey Bikini Wax <span class="price">₹1119</span></div>
+<div class="card">RICA Wax Package <span class="price">₹849</span></div>
+<div class="card">RICA Bikini Wax <span class="price">₹1799</span></div>
+<div class="card">Honey Wax + ManiPedi <span class="price">₹2120</span></div>
+</div></section>
+
+<!-- 15. HAIR PACKAGES -->
+<section><h2>💇 HAIR PACKAGES</h2><div class="grid">
+<div class="card">Root Touch + Wax <span class="price">₹1499</span></div>
+<div class="card">Keratin Hair Spa <span class="price">₹1349</span></div>
+<div class="card">Global Package <span class="price">₹3149</span></div>
+</div></section>
+
+<section class="booking">
+    <h2>📅 BOOK SERVICE</h2>
+    <form id="bookForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="addr" placeholder="Full Address for Home Service" required>
+        <select id="serv">
+            <option>Select Category</option>
+            <option>Makeup</option><option>Facial</option><option>Hair</option><option>Waxing</option><option>Bridal</option>
+        </select>
+        <button type="submit" class="book-btn">🚀 BOOK VIA WHATSAPP</button>
+    </form>
+</section>
+
+<footer>
+    <p>📞 9627189407 | ✉️ reenajoshiofficial@gmail.com</p>
+    <p><a href="https://www.instagram.com/reenajoshiibimakeover" target="_blank" style="color:var(--p)">Follow us on Instagram</a></p>
+</footer>
+
+<script>
+let bCount = 0;
+setInterval(() => { bCount += Math.floor(Math.random()*2); document.getElementById('count').innerText = bCount; }, 10000);
+
+document.getElementById('bookForm').onsubmit = (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const addr = document.getElementById('addr').value;
+    const serv = document.getElementById('serv').value;
+    const msg = encodeURIComponent(`New Booking!\nName: ${name}\nAddress: ${addr}\nService: ${serv}`);
+    bCount++; document.getElementById('count').innerText = bCount;
+    window.open(`https://wa.me/919627189407?text=${msg}`, '_blank');
+};
+</script>
+</body>
+</html>
