@@ -3,158 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Parlour at Home Dehradun | Tanisk Beauty Zone | Home Salon Services</title>
-    <meta name="description" content="Tanisk Beauty Zone - Best beauty parlour at home in Dehradun. Professional facial, waxing, manicure pedicure, hair spa, de-tan, bridal makeup & pre-bridal packages with free doorstep service in Dehradun +20km. Book now on WhatsApp!">
-    <meta name="keywords" content="beauty parlour at home Dehradun, salon at home Dehradun, home beauty services Dehradun, facial at home Dehradun, waxing at home Dehradun, manicure pedicure Dehradun, bridal makeup at home Dehradun, party makeup Dehradun, hair spa at home, de-tan treatment Dehradun, VLCC facial Dehradun, O3+ facial home service, Rica waxing Dehradun, pre-bridal package Dehradun, best home salon Dehradun">
+    <meta name="description" content="Tanisk Beauty Zone - Professional Beauty Parlour at Home in Dehradun, Uttarakhand. Services include Makeup, Bridal Makeup, Nails, Hair Cutting, Waxing, Facials, Cleanup, De-Tan, Manicure, Pedicure and more.">
+    <meta name="keywords" content="beauty parlour at home Dehradun, makeup artist Dehradun, bridal makeup Dehradun, home salon Dehradun, waxing at home Dehradun, facial Dehradun, manicure pedicure Dehradun, hair services Dehradun, pre bridal package Dehradun">
+    <title>Tanisk Beauty Zone | Beauty Parlour at Home in Dehradun</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #ff6b9d;
-            --primary-dark: #ff4d87;
-            --light-pink: #fff0f5;
-            --text: #333;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #fdf6f6;
-            color: var(--text);
-            line-height: 1.6;
-        }
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-        }
-        .navbar.scrolled {
-            background-color: white !important;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        }
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://media.istockphoto.com/id/819992654/photo/woman-face-with-beauty-treatment.jpg?s=612x612&w=0&k=20&c=WL3TdLyiVWQKGfvNDtxziiwy52xzHBsRZytQOMTV6GY=') center/cover no-repeat;
-            height: 90vh;
-            min-height: 600px;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-        .hero h1 {
-            font-size: 3.8rem;
-            font-weight: 700;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        }
-        .hero p {
-            font-size: 1.4rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .btn-book {
-            background-color: var(--primary);
-            border: none;
-            padding: 14px 35px;
-            font-size: 1.2rem;
-            border-radius: 50px;
-            transition: all 0.3s;
-        }
-        .btn-book:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255,107,157,0.4);
-        }
-        .section-title {
-            color: var(--primary);
-            font-weight: 600;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary);
-            border-radius: 2px;
-        }
-        .accordion-button {
-            background-color: var(--light-pink);
-            font-weight: 600;
-            color: var(--primary);
-            border: none;
-        }
-        .accordion-button:not(.collapsed) {
-            background-color: var(--primary);
-            color: white;
-        }
-        .testimonial-card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            padding: 30px;
-            transition: transform 0.3s;
-            height: 100%;
-        }
-        .testimonial-card:hover {
-            transform: translateY(-10px);
-        }
-        .gallery-img {
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            transition: all 0.4s;
-            height: 300px;
-            object-fit: cover;
-        }
-        .gallery-img:hover {
-            transform: scale(1.08);
-        }
-        .logo-img {
-            height: 60px;
-            border-radius: 10px;
-        }
-        .footer {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-        }
-        .stars {
-            color: #ffd700;
-            font-size: 1.3rem;
-        }
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.8rem; }
-            .hero p { font-size: 1.1rem; }
-            .hero { height: 80vh; }
-            .gallery-img { height: 250px; }
-        }
-        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; color: #333; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080?text=Beauty+Hero+Image'); background-size: cover; background-position: center; color: white; padding: 150px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .service-card, .pricing-card { transition: transform 0.3s; }
+        .service-card:hover, .pricing-card:hover { transform: translateY(-10px); }
+        .gallery-img { height: 300px; object-fit: cover; }
+        .testimonial-carousel .carousel-item { text-align: center; }
+        .faq-accordion .accordion-button { font-weight: bold; }
+        footer { background: #333; color: white; }
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://img.freepik.com/free-vector/beauty-salon-logo_1195-65.jpg?w=2000" alt="Tanisk Beauty Zone - Beauty Parlour at Home Dehradun" class="logo-img">
-            </a>
+            <a class="navbar-brand fw-bold fs-3" href="#">Tanisk Beauty Zone</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-medium">
-                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#testimonials">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services & Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -163,208 +45,204 @@
     <!-- Hero Section -->
     <section id="home" class="hero text-center">
         <div class="container">
-            <h1>Tanisk Beauty Zone</h1>
-            <p class="lead fw-medium">Dehradun's #1 Beauty Parlour at Home | Licensed & Verified Professionals</p>
-            <p class="mb-4">Premium Facials | Waxing | Manicure Pedicure | Hair Spa | Bridal Makeup | De-Tan & More</p>
-            <p class="mb-5">Free Doorstep Service Across Dehradun + 20km Radius</p>
-            <div>
-                <a href="https://wa.me/919627189407" class="btn btn-book btn-lg rounded-pill me-3 mb-2">
-                    <i class="fab fa-whatsapp me-2"></i> Book Now on WhatsApp
-                </a>
-                <a href="https://wa.me/919627189407?text=Hello!%20I%20want%20to%20see%20the%20full%20service%20menu.%20Interested%20in:%0A1.%20Facials%20%26%20Cleanup%0A2.%20De-Tan%0A3.%20Manicure%20%26%20Pedicure%0A4.%20Hair%20Services%0A5.%20Waxing%0A6.%20Bridal%20Makeup%0A7.%20Packages" class="btn btn-outline-light btn-lg rounded-pill mb-2">
-                    <i class="fab fa-whatsapp me-2"></i> View Full Menu
-                </a>
-            </div>
+            <h1 class="display-4 fw-bold">Tanisk Beauty Zone</h1>
+            <p class="lead">Professional Beauty Services at Your Doorstep in Dehradun</p>
+            <p>Contact: Reena Joshi | Best Makeup Artist & Home Salon Services</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Book Now via WhatsApp</a>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="py-5 bg-white">
+    <!-- Services & Pricing -->
+    <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title text-center mb-5">About Tanisk Beauty Zone</h2>
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350" alt="Professional beauty services at home in Dehradun" class="img-fluid rounded-4 shadow">
-                </div>
-                <div class="col-lg-6">
-                    <p class="lead">We bring luxury salon experience directly to your doorstep in Dehradun.</p>
-                    <p>Using premium branded products like <strong>L'Oréal, O3+, VLCC, Lotus, Sara</strong> and more, our trained and verified beauticians ensure hygienic, professional results every time.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-3"></i><strong>Free Home Service</strong> in Dehradun +20km</li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-3"></i>Same-day booking available</li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-3"></i>100% hygienic & disposable tools</li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-3"></i>Licensed & experienced beauticians</li>
-                    </ul>
-                    <a href="https://wa.me/919627189407" class="btn btn-book btn-lg rounded-pill">Book Your Service Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services & Pricing - FULL LIST INCLUDED -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Our Services & Pricing</h2>
-            <p class="text-center mb-5 lead">Professional beauty treatments at salon prices – delivered to your home</p>
-            <div class="accordion" id="servicesAccordion">
+            <h2 class="section-title">Our Services & Pricing</h2>
+            <div class="row">
 
                 <!-- Cleanup & Facials -->
-                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#cleanup">
-                            Cleanup & Facials
-                        </button>
-                    </h2>
-                    <div id="cleanup" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
-                        <div class="accordion-body">
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr><td>VLCC Fruit Cleanup</td><td><strong>₹599</strong></td></tr>
-                                    <tr><td>VLCC Insta Glow</td><td><strong>₹499</strong></td></tr>
-                                    <tr><td>Lotus Cleanup</td><td><strong>₹499</strong></td></tr>
-                                    <tr><td>SARA Green Apple (O3+)</td><td><strong>₹849</strong></td></tr>
-                                    <tr><td>VLCC Fruit Facial</td><td><strong>₹701</strong></td></tr>
-                                    <tr><td>VLCC Anti-Tan Facial</td><td><strong>₹701</strong></td></tr>
-                                    <tr><td>Lotus Pearl Facial</td><td><strong>₹1,101</strong></td></tr>
-                                </tbody>
-                            </table>
+                <div class="col-md-6 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-header bg-primary text-white"><h4>Cleanup & Facials</h4></div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">Basic Cleanup <span>₹499</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Glow Facial <span>₹799</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Gold Facial <span>₹1299</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Diamond Facial <span>₹1799</span></li>
+                            </ul>
+                            <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Cleanup%20/%20Facials" class="btn btn-outline-primary mt-3 w-100">Book Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- De-Tan -->
-                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#detan">
-                            De-Tan Treatments
-                        </button>
-                    </h2>
-                    <div id="detan" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                        <div class="accordion-body">
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr><td>Face & Neck</td><td><strong>₹399</strong></td></tr>
-                                    <tr><td>Full Arms</td><td><strong>₹499</strong></td></tr>
-                                    <tr><td>Underarms</td><td><strong>₹199</strong></td></tr>
-                                    <tr><td>Full Legs</td><td><strong>₹449</strong></td></tr>
-                                    <tr><td>Full Front/Back</td><td><strong>₹499</strong></td></tr>
-                                    <tr><td>Full Body (No Face)</td><td><strong>₹1,199</strong></td></tr>
-                                    <tr><td>Full Body (With Face)</td><td><strong>₹1,299</strong></td></tr>
-                                </tbody>
-                            </table>
+                <!-- De-Tan Treatment -->
+                <div class="col-md-6 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-header bg-primary text-white"><h4>De-Tan Treatment</h4></div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">Face De-Tan <span>₹599</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Full Body De-Tan <span>₹1999</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Hands & Feet De-Tan <span>₹799</span></li>
+                            </ul>
+                            <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20De-Tan%20Treatment" class="btn btn-outline-primary mt-3 w-100">Book Now</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Manicure & Pedicure -->
-                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#mani">
-                            Manicure & Pedicure
-                        </button>
-                    </h2>
-                    <div id="mani" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                        <div class="accordion-body">
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr><td>Classic Mani-Pedi Combo</td><td><strong>₹599</strong></td></tr>
-                                    <tr><td>Aroma Magic Combo</td><td><strong>₹799</strong></td></tr>
-                                    <tr><td>O3+ Bubblegum Combo</td><td><strong>₹1,199</strong></td></tr>
-                                    <tr><td>Sara De-Tan/Rose Combo</td><td><strong>₹999</strong></td></tr>
-                                    <tr><td>Classic Manicure</td><td><strong>₹349</strong></td></tr>
-                                    <tr><td>Classic Pedicure</td><td><strong>₹399</strong></td></tr>
-                                </tbody>
-                            </table>
+                <div class="col-md-6 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-header bg-primary text-white"><h4>Manicure & Pedicure</h4></div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">Basic Manicure <span>₹399</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Spa Manicure <span>₹699</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Basic Pedicure <span>₹499</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Spa Pedicure <span>₹899</span></li>
+                            </ul>
+                            <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Manicure%20/%20Pedicure" class="btn btn-outline-primary mt-3 w-100">Book Now</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Hair Services -->
-                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#hair">
-                            Hair Services
-                        </button>
-                    </h2>
-                    <div id="hair" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                        <div class="accordion-body">
-                            <h5 class="text-primary mb-3">Hair Cut</h5>
-                            <table class="table table-hover mb-4">
-                                <tbody>
-                                    <tr><td>Feather/Steps/V-Shape Cut</td><td><strong>₹549</strong></td></tr>
-                                    <tr><td>U-Shape/One Length</td><td><strong>₹349 - ₹549</strong></td></tr>
-                                    <tr><td>Bob Cut</td><td><strong>₹559</strong></td></tr>
-                                </tbody>
-                            </table>
-                            <h5 class="text-primary mb-3">Hair Spa & Colour</h5>
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr><td>L’Oréal Spa (S/M/L)</td><td><strong>₹649 - ₹1,199</strong></td></tr>
-                                    <tr><td>INOA Root Touch-Up</td><td><strong>₹850</strong></td></tr>
-                                    <tr><td>Global Colour (S/M/L)</td><td><strong>₹1,200 - ₹2,400</strong></td></tr>
-                                </tbody>
-                            </table>
+                <div class="col-md-6 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-header bg-primary text-white"><h4>Hair Services</h4></div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">Hair Cut <span>₹399 onwards</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Hair Color <span>₹999 onwards</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Hair Spa <span>₹799</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Keratin Treatment <span>₹2999 onwards</span></li>
+                            </ul>
+                            <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Hair%20Services" class="btn btn-outline-primary mt-3 w-100">Book Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Waxing & Threading -->
-                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#wax">
-                            Waxing & Threading
-                        </button>
-                    </h2>
-                    <div id="wax" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                        <div class="accordion-body">
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr><td>Full Body Wax (Honey + Free Threading)</td><td><strong>₹1,401</strong></td></tr>
-                                    <tr><td>Bikini Wax (Chocolate)</td><td><strong>₹601</strong></td></tr>
-                                    <tr><td>Full Face Threading</td><td><strong>₹151</strong></td></tr>
-                                    <tr><td>Honey Wax Package</td><td><strong>₹529</strong></td></tr>
-                                    <tr><td>RICA Wax Package</td><td><strong>₹849</strong></td></tr>
-                                </tbody>
-                            </table>
+                <!-- Waxing -->
+                <div class="col-md-6 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-header bg-primary text-white"><h4>Waxing</h4></div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">Full Arms <span>₹299</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Full Legs <span>₹399</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Full Body <span>₹1499</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Rica Wax Upgrade <span>+₹200</span></li>
+                            </ul>
+                            <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Waxing" class="btn btn-outline-primary mt-3 w-100">Book Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bridal & Party Makeup -->
-                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#makeup">
-                            Bridal & Party Makeup
-                        </button>
-                    </h2>
-                    <div id="makeup" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                        <div class="accordion-body">
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr><td>Bridal Makeup (Airbrush HD + Draping)</td><td><strong>₹15,100</strong></td></tr>
-                                    <tr><td>Engagement/Reception Makeup</td><td><strong>₹6,100</strong></td></tr>
-                                    <tr><td>Party Makeup (per person)</td><td><strong>₹3,100</strong></td></tr>
-                                </tbody>
-                            </table>
+                <!-- Bridal & Pre-Bridal -->
+                <div class="col-md-6 mb-4">
+                    <div class="card pricing-card">
+                        <div class="card-header bg-primary text-white"><h4>Bridal & Pre-Bridal</h4></div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between">Party Makeup <span>₹2999</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Engagement Makeup <span>₹4999</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Bridal Makeup <span>₹9999 onwards</span></li>
+                                <li class="list-group-item d-flex justify-content-between">Pre-Bridal Package <span>₹14999 onwards</span></li>
+                            </ul>
+                            <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Bridal/Pre-Bridal" class="btn btn-outline-primary mt-3 w-100">Book Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Packages -->
-                <div class="accordion-item border-0 shadow-sm mb-3 rounded">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#packages">
-                            Pre-Bridal & Beauty Packages
-                        </button>
-                    </h2>
-                    <div id="packages" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
-                        <div class="accordion-body">
-                            <h5 class="text-primary mb-3">Pre-Bridal Packages</h5>
-                            <table class="table table-hover mb-4">
-                                <tbody>
-                                    <tr><td>Classic</td><td><strong>₹5,249</strong></td></tr>
-                                    <tr><td>Luxury</td><td><strong>₹6,999</strong></td></tr>
-                                    <tr><td>Magnificence</td><td><strong>₹7,699</strong></td></tr>
-                                </tbody>
-                            </table>
- 
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Gallery - Before & After</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><img src="https://via.placeholder.com/600x600?text=Before+After+1" class="img-fluid gallery-img rounded shadow" alt="Before After Makeup"></div>
+                <div class="col-md-4"><img src="https://via.placeholder.com/600x600?text=Nail+Art" class="img-fluid gallery-img rounded shadow" alt="Nail Art"></div>
+                <div class="col-md-4"><img src="https://via.placeholder.com/600x600?text=Bridal+Makeup" class="img-fluid gallery-img rounded shadow" alt="Bridal Makeup"></div>
+                <div class="col-md-4"><img src="https://via.placeholder.com/600x600?text=Hair+Style" class="img-fluid gallery-img rounded shadow" alt="Hair Style"></div>
+                <div class="col-md-4"><img src="https://via.placeholder.com/600x600?text=Facial+Result" class="img-fluid gallery-img rounded shadow" alt="Facial Result"></div>
+                <div class="col-md-4"><img src="https://via.placeholder.com/600x600?text=Happy+Client" class="img-fluid gallery-img rounded shadow" alt="Happy Client"></div>
+            </div>
+            <p class="text-center mt-4">Replace placeholder images with your own by uploading to ImgBB or similar and changing the src links.</p>
+        </div>
+    </section>
+
+    <!-- Reviews / Testimonials -->
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div id="testimonialCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="lead">"Best home service in Dehradun! Reena did amazing bridal makeup."</p>
+                        <h5>- Priya S.</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lead">"Professional and hygienic. Loved the facial and manicure."</p>
+                        <h5>- Anjali R.</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lead">"Highly recommend for waxing and de-tan. Painless and effective!"</p>
+                        <h5>- Neha K.</h5>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="accordion faq-accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">Do you provide services only in Dehradun?</button></h2>
+                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Yes, we currently offer at-home services across Dehradun and nearby areas.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">How to book an appointment?</button></h2>
+                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Click any "Book Now" button or message us directly on WhatsApp.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">Are products hygienic and branded?</button></h2>
+                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Yes, we use only premium branded products and maintain strict hygiene.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Contact & Booking</h2>
+            <div class="text-center">
+                <p class="lead">Contact Person: Reena Joshi</p>
+                <p>Phone: <a href="tel:+919627189407">+91 XXXXXXXXXX</a></p>
+                <a href="https://wa.me/919627189407?text=Hello,%20I%20want%20to%20book%20a%20beauty%20service" class="btn btn-success btn-lg"><i class="fab fa-whatsapp"></i> Book via WhatsApp</a>
+                <p class="mt-4">Location: Dehradun, Uttarakhand, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <p>&copy; 2025 Tanisk Beauty Zone. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    </html>
