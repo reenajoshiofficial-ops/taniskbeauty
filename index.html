@@ -4,62 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Tanisk Beauty Zone | Beauty Parlour at Home Dehradun | 9627189407</title>
-  <meta name="description" content="Tanisk Beauty Zone - Beauty parlour at home in Dehradun. Bridal makeup, party makeup, facial, waxing, hair spa, manicure pedicure. Home service Dehradun wide. Call/WhatsApp 9627189407">
+  <meta name="description" content="Tanisk Beauty Zone - Beauty parlour at home in Dehradun. Bridal makeup, party makeup, facial, waxing, hair spa, manicure pedicure, bleach, threading. Home service Dehradun wide. Call/WhatsApp 9627189407">
   <meta name="keywords" content="beauty parlour at home Dehradun, bridal makeup Dehradun, salon at home Dehradun near me, facial waxing Dehradun, makeup artist Dehradun">
 
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Do you do bridal makeup at home in Dehradun?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Yes! Complete bridal HD/airbrush makeup at your home anywhere in Dehradun + 20km."}
-    },{
-      "@type": "Question", 
-      "name": "What areas do you cover for home salon service?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Dehradun city wide + Rajpur Road, Dharampur, Raipur, Clement Town, Premnagar & nearby areas."}
-    }]
-  }
-  </script>
-
-  <!-- Google Analytics - Replace G-XXXXXXX -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
-
-  .accordion{
-    border:1px solid #ddd;
-    border-radius:10px;
-    margin-bottom:12px;
-    overflow:hidden;
-}
-
-.accordion-header{
-    background:#f5f5f5;
-    padding:15px;
-    font-weight:bold;
-    cursor:pointer;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.accordion-header:hover{
-    background:#eee;
-}
-
-.accordion-content{
-    display:none;
-    padding:15px;
-    background:#ffffff;
-    line-height:1.8;
-}
-
-.accordion-header span{
-    font-size:18px;
-}
-
+  <style>
+    :root{--primary:#c2185b;--secondary:#ff80ab;--bg:#fff7fb;--card:#fff;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:#333;line-height:1.6;}
+    .container{max-width:1200px;margin:0 auto;padding:1rem;}
     
     /* Header */
     header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(194,24,91,.3);}
@@ -80,15 +32,21 @@
     /* Sections */
     section{margin:2rem 0;padding:0 1rem;}
     h2{font-size:1.6rem;color:var(--primary);margin-bottom:1rem;text-align:center;}
-    h3{font-size:1.3rem;color:var(--primary);margin:1.5rem 0 .8rem 0;}
     
-    /* Services - BUTTON STYLE */
-    .service-buttons{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;}
-    .service-btn{background:var(--card);border-radius:15px;padding:1.5rem;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.1);transition:all .3s;cursor:pointer;border:3px solid transparent;}
-    .service-btn:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,0,0,.15);border-color:var(--secondary);}
-    .service-icon{font-size:2.5rem;margin-bottom:.5rem;display:block;}
+    /* CLICKABLE SERVICE CATEGORIES */
+    .category-tabs{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:2rem;}
+    .category-tab{background:var(--card);border-radius:25px;padding:1rem 1.5rem;font-weight:bold;cursor:pointer;transition:all .3s;border:3px solid transparent;font-size:.95rem;}
+    .category-tab.active,.category-tab:hover{background:var(--secondary);color:#fff;transform:translateY(-2px);border-color:var(--primary);}
+    
+    /* SERVICE LISTS */
+    .service-category{display:none;}
+    .service-category.active{display:block;}
+    .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;}
+    .service-card{background:var(--card);border-radius:15px;padding:1.5rem;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.1);transition:all .3s;}
+    .service-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,0,0,.15);}
+    .service-icon{font-size:3rem;margin-bottom:.5rem;display:block;}
     .service-name{font-size:1.3rem;font-weight:bold;color:var(--primary);margin-bottom:.3rem;}
-    .service-price{font-size:1.8rem;font-weight:bold;color:var(--secondary);margin-bottom:.5rem;}
+    .service-price{font-size:2rem;font-weight:bold;color:var(--secondary);margin-bottom:.5rem;}
     .service-desc{font-size:.9rem;color:#666;}
     
     /* Gallery */
@@ -96,30 +54,17 @@
     .gallery-item{background:#f0f0f0;border-radius:12px;aspect-ratio:1;padding:1rem;text-align:center;font-size:.8rem;color:#999;border:3px dashed #ccc;transition:all .3s;}
     .gallery-item:hover{background:#e8e8e8;}
     
-    /* Reviews */
-    .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;}
-    .review-card{background:var(--card);border-radius:15px;padding:1.5rem;box-shadow:0 8px 25px rgba(0,0,0,.1);}
-    .stars{color:#ffc107;font-size:1.2rem;}
-    
-    /* Contact */
-    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
-    .contact-card{background:var(--card);border-radius:15px;padding:1.5rem;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.1);}
-    
-    /* Admin Panel */
+    /* Admin */
     .admin-panel{background:#f8f8f8;border-radius:15px;padding:1.5rem;margin:2rem 0;border-left:5px solid var(--primary);}
-    .admin-title{color:var(--primary);margin-bottom:1rem;}
-    .admin-note{font-size:.85rem;color:#666;line-height:1.5;}
     
-    /* Responsive */
     @media(max-width:768px){
       .hero h1{font-size:1.7rem;}
       .cta-buttons{flex-direction:column;align-items:center;}
-      .service-buttons{grid-template-columns:1fr;}
+      .category-tabs{flex-direction:column;align-items:center;}
     }
   </style>
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <div class="container">
       <div class="header-content">
@@ -142,10 +87,9 @@
     <!-- HERO -->
     <section class="hero">
       <h1>🌟 Tanisk Beauty Zone</h1>
-      <p class="hero-tagline">Professional Beauty Parlour at Home in Dehradun</p>
-      <p style="font-size:1.1rem;margin-bottom:1.5rem;">Bridal • Party • Facial • Waxing • Hair • Nails</p>
+      <p class="hero-tagline">COMPLETE Beauty Parlour at Home in Dehradun</p>
       <div class="cta-buttons">
-        <a href="https://wa.me/919627189407?text=Hi%2C%20I%20want%20to%20book%20beauty%20service%20in%20Dehradun" class="btn-whatsapp" target="_blank">
+        <a href="https://wa.me/919627189407?text=Hi%2C%20I%20want%20to%20book%20service%20in%20Dehradun" class="btn-whatsapp" target="_blank">
           💬 WhatsApp Now
         </a>
         <a href="tel:+919627189407" class="btn-call">📞 Call 96271 89407</a>
@@ -154,76 +98,215 @@
 
     <!-- ABOUT -->
     <section>
-      <h2>✨ About Tanisk Beauty Zone</h2>
-      <p style="text-align:center;max-width:800px;margin:0 auto;font-size:1.1rem;">
-        Dehradun's trusted home beauty service bringing professional salon experience to your doorstep. 
-        Trained artists using VLCC & premium products for bridal, party & regular beauty needs.
+      <h2>✨ About Us</h2>
+      <p style="text-align:center;max-width:800px;margin:0 auto 2rem;font-size:1.1rem;">
+        Dehradun's #1 home beauty service with 25+ professional treatments. Trained artists, VLCC products, home service everywhere in Dehradun + 20km.
       </p>
     </section>
 
-    <!-- SERVICES - BUTTON STYLE -->
+    <!-- ALL SERVICES - CLICKABLE TABS -->
     <section>
-      <h2>💎 Our Services & Pricing</h2>
-      <div class="service-buttons">
-        <div class="service-btn">
-          <div class="service-icon">👰</div>
-          <div class="service-name">Bridal Makeup</div>
-          <div class="service-price">₹15,100</div>
-          <div class="service-desc">HD Airbrush + Hair + Draping</div>
+      <h2>💎 Complete Services & Pricing</h2>
+      <p style="text-align:center;color:#666;margin-bottom:2rem;">Click any category to see full pricing →</p>
+      
+      <div class="category-tabs">
+        <div class="category-tab active" onclick="showServices('bridal')">👰 Bridal & Party (3)</div>
+        <div class="category-tab" onclick="showServices('facial')">✨ Facials (6)</div>
+        <div class="category-tab" onclick="showServices('waxing')">🕯️ Waxing (8)</div>
+        <div class="category-tab" onclick="showServices('hair')">💆‍♀️ Hair (4)</div>
+        <div class="category-tab" onclick="showServices('nails')">💅 Nails (3)</div>
+        <div class="category-tab" onclick="showServices('bleach')">☀️ Bleach (2)</div>
+      </div>
+
+      <!-- BRIDAL SERVICES -->
+      <div id="bridal" class="service-category active">
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">👰</div>
+            <div class="service-name">Bridal Makeup</div>
+            <div class="service-price">₹15,100</div>
+            <div class="service-desc">HD Airbrush + Saree Draping + 12hr Stay</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💍</div>
+            <div class="service-name">Engagement Makeup</div>
+            <div class="service-price">₹6,100</div>
+            <div class="service-desc">Party Glow + Hairstyle</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🎉</div>
+            <div class="service-name">Party Makeup</div>
+            <div class="service-price">₹3,100/person</div>
+            <div class="service-desc">Family & Friends - Wedding Perfect</div>
+          </div>
         </div>
-        <div class="service-btn">
-          <div class="service-icon">💍</div>
-          <div class="service-name">Engagement Makeup</div>
-          <div class="service-price">₹6,100</div>
-          <div class="service-desc">Party Glow + Hairstyle</div>
+      </div>
+
+      <!-- FACIAL SERVICES -->
+      <div id="facial" class="service-category">
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">✨</div>
+            <div class="service-name">VLCC Fruit Facial</div>
+            <div class="service-price">₹701</div>
+            <div class="service-desc">Instaglow + Skin Brightening</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌟</div>
+            <div class="service-name">VLCC Anti-Tan</div>
+            <div class="service-price">₹701</div>
+            <div class="service-desc">Remove Sun Tan + Even Tone</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💎</div>
+            <div class="service-name">Lotus Pearl Facial</div>
+            <div class="service-price">₹1,101</div>
+            <div class="service-desc">Premium Glow + Radiance</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🧼</div>
+            <div class="service-name">Clean Up</div>
+            <div class="service-price">₹401</div>
+            <div class="service-desc">Deep Cleansing + Blackheads</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌸</div>
+            <div class="service-name">Gold Facial</div>
+            <div class="service-price">₹1,301</div>
+            <div class="service-desc">Luxury Skin Rejuvenation</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔥</div>
+            <div class="service-name">Skin Tightening</div>
+            <div class="service-price">₹901</div>
+            <div class="service-desc">Anti-Aging Treatment</div>
+          </div>
         </div>
-        <div class="service-btn">
-          <div class="service-icon">🎉</div>
-          <div class="service-name">Party Makeup</div>
-          <div class="service-price">₹3,100/person</div>
-          <div class="service-desc">Family & Friends</div>
+      </div>
+
+      <!-- WAXING SERVICES -->
+      <div id="waxing" class="service-category">
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">🕯️</div>
+            <div class="service-name">Full Body Wax</div>
+            <div class="service-price">₹1,401</div>
+            <div class="service-desc">Honey Wax + Free Threading</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">👙</div>
+            <div class="service-name">Bikini Wax</div>
+            <div class="service-price">₹601</div>
+            <div class="service-desc">Chocolate Wax - Painless</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">✨</div>
+            <div class="service-name">Full Face Threading</div>
+            <div class="service-price">₹151</div>
+            <div class="service-desc">Eyebrows + Upper Lips + Chin</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🦵</div>
+            <div class="service-name">Full Legs Wax</div>
+            <div class="service-price">₹451</div>
+            <div class="service-desc">Smooth + Long Lasting</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🤰</div>
+            <div class="service-name">Under Arms</div>
+            <div class="service-price">₹151</div>
+            <div class="service-desc">Quick & Clean</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💃</div>
+            <div class="service-name">Half Body Wax</div>
+            <div class="service-price">₹901</div>
+            <div class="service-desc">Arms + Legs + Stomach</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">👄</div>
+            <div class="service-name">Upper Lips</div>
+            <div class="service-price">₹51</div>
+            <div class="service-desc">Quick Threading</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">👁️</div>
+            <div class="service-name">Eyebrows</div>
+            <div class="service-price">₹101</div>
+            <div class="service-desc">Perfect Shape</div>
+          </div>
         </div>
-        <div class="service-btn">
-          <div class="service-icon">✨</div>
-          <div class="service-name">Fruit Facial</div>
-          <div class="service-price">₹701</div>
-          <div class="service-desc">VLCC Instaglow</div>
+      </div>
+
+      <!-- HAIR SERVICES -->
+      <div id="hair" class="service-category">
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">💆‍♀️</div>
+            <div class="service-name">Hair Spa</div>
+            <div class="service-price">₹1,101</div>
+            <div class="service-desc">VLCC Treatment + Shine</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌿</div>
+            <div class="service-name">Hair Oil Massage</div>
+            <div class="service-price">₹251</div>
+            <div class="service-desc">Hot Oil + Scalp Treatment</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🧴</div>
+            <div class="service-name">Smoothening</div>
+            <div class="service-price">₹3,101</div>
+            <div class="service-desc">Silky Straight Hair</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔗</div>
+            <div class="service-name">Hair Treatment</div>
+            <div class="service-price">₹701</div>
+            <div class="service-desc">Repair Damage</div>
+          </div>
         </div>
-        <div class="service-btn">
-          <div class="service-icon">🌟</div>
-          <div class="service-name">Anti-Tan Facial</div>
-          <div class="service-price">₹701</div>
-          <div class="service-desc">Brightening</div>
+      </div>
+
+      <!-- NAILS SERVICES -->
+      <div id="nails" class="service-category">
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">💅</div>
+            <div class="service-name">Mani Pedi</div>
+            <div class="service-price">₹501</div>
+            <div class="service-desc">VLCC Professional + Nail Art</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">✋</div>
+            <div class="service-name">Manicure Only</div>
+            <div class="service-price">₹301</div>
+            <div class="service-desc">Hands + Polish</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🦶</div>
+            <div class="service-name">Pedicure Only</div>
+            <div class="service-price">₹301</div>
+            <div class="service-desc">Feet + Polish</div>
+          </div>
         </div>
-        <div class="service-btn">
-          <div class="service-icon">💎</div>
-          <div class="service-name">Pearl Facial</div>
-          <div class="service-price">₹1,101</div>
-          <div class="service-desc">Premium Glow</div>
-        </div>
-        <div class="service-btn">
-          <div class="service-icon">🕯️</div>
-          <div class="service-name">Full Body Wax</div>
-          <div class="service-price">₹1,401</div>
-          <div class="service-desc">Honey Wax + Threading</div>
-        </div>
-        <div class="service-btn">
-          <div class="service-icon">💅</div>
-          <div class="service-name">Mani Pedi</div>
-          <div class="service-price">₹501</div>
-          <div class="service-desc">VLCC Professional</div>
-        </div>
-        <div class="service-btn">
-          <div class="service-icon">💆‍♀️</div>
-          <div class="service-name">Hair Spa</div>
-          <div class="service-price">₹1,101</div>
-          <div class="service-desc">Deep Conditioning</div>
-        </div>
-        <div class="service-btn">
-          <div class="service-icon">☀️</div>
-          <div class="service-name">Face Bleach</div>
-          <div class="service-price">₹416</div>
-          <div class="service-desc">Oxy Life Glow</div>
+      </div>
+
+      <!-- BLEACH SERVICES -->
+      <div id="bleach" class="service-category">
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">☀️</div>
+            <div class="service-name">Face Bleach</div>
+            <div class="service-price">₹416</div>
+            <div class="service-desc">Oxy Life + Instant Glow</div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌈</div>
+            <div class="service-name">Full Body Bleach</div>
+            <div class="service-price">₹1,501</div>
+            <div class="service-desc">Complete Skin Brightening</div>
+          </div>
         </div>
       </div>
     </section>
@@ -231,73 +314,44 @@
     <!-- GALLERY -->
     <section>
       <h2>📸 Our Work Gallery</h2>
-      <p style="text-align:center;color:#666;margin-bottom:1.5rem;">Upload your work photos here (replace these boxes)</p>
       <div class="gallery-grid">
-        <div class="gallery-item">📁 Upload<br>Bridal 1</div>
-        <div class="gallery-item">📁 Upload<br>Bridal 2</div>
-        <div class="gallery-item">📁 Upload<br>Party Look</div>
+        <div class="gallery-item">📁 Upload<br>Bridal Photo 1</div>
+        <div class="gallery-item">📁 Upload<br>Bridal Photo 2</div>
+        <div class="gallery-item">📁 Upload<br>Party Makeup</div>
+        <div class="gallery-item">📁 Upload<br>Facial Result</div>
         <div class="gallery-item">📁 Upload<br>Hair Style</div>
-        <div class="gallery-item">📁 Upload<br>Facial Glow</div>
-        <div class="gallery-item">📁 Upload<br>Waxing</div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section>
-      <h2>⭐ Customer Reviews</h2>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>"Perfect bridal makeup! Stayed 12+ hours. Highly recommend!"</p>
-          <div style="font-size:.8rem;color:#666;">Priya S. - Rajpur Road</div>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>"Home service was excellent. Facial gave amazing glow!"</p>
-          <div style="font-size:.8rem;color:#666;">Neha R. - Clement Town</div>
-        </div>
+        <div class="gallery-item">📁 Upload<br>Mani Pedi</div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section>
-      <h2>📞 Contact & Book Now</h2>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <div style="font-size:2rem;margin-bottom:.5rem;">📱</div>
-          <strong>+91 96271 89407</strong><br>
-          Call / WhatsApp
-        </div>
-        <div class="contact-card">
-          <div style="font-size:2rem;margin-bottom:.5rem;">✉️</div>
-          <strong>reenajoshiofficial@gmail.com</strong>
-        </div>
-        <div class="contact-card">
-          <div style="font-size:2rem;margin-bottom:.5rem;">📍</div>
-          <strong>Dehradun Wide</strong><br>
-          Home Service Everywhere
-        </div>
+      <h2>📞 Book Now - 96271 89407</h2>
+      <div style="text-align:center;margin:2rem 0;">
+        <a href="https://wa.me/919627189407?text=Hi%2C%20I%20saw%20your%20services%20on%20website" class="btn-whatsapp" style="display:inline-block;font-size:1.3rem;padding:1.2rem 2.5rem;">
+          💬 WhatsApp Instant Booking
+        </a>
       </div>
-      <div style="text-align:center;margin-top:2rem;">
-        <a href="https://wa.me/919627189407?text=Hi%2C%20book%20me%20for%20Dehradun" class="btn-whatsapp" style="display:inline-block;">💬 WhatsApp - Instant Booking</a>
-      </div>
-    </section>
-
-    <!-- ADMIN PANEL -->
-    <section class="admin-panel">
-      <h3 class="admin-title">🔧 Admin Panel (Easy Updates)</h3>
-      <div class="admin-note">
-        <strong>How to edit:</strong> GitHub → index.html → ✏️ Pencil → Change text/prices → "Commit changes"<br>
-        <strong>Upload photos:</strong> Drag photos to repo → Replace gallery boxes with &lt;img src="photo.jpg"&gt;<br>
-        <strong>Changes live:</strong> 1-2 minutes automatically!
-      </div>
+      <p style="text-align:center;font-size:1.1rem;">
+        📧 reenajoshiofficial@gmail.com | 🗺️ Dehradun Wide Home Service
+      </p>
     </section>
   </div>
 
-  <footer style="background:#333;color:#ccc;padding:1rem;text-align:center;font-size:.85rem;margin-top:2rem;">
-    © 2025 Tanisk Beauty Zone | Dehradun's #1 Home Beauty Service | Optimized for "beauty parlour near me"
+  <script>
+    function showServices(category) {
+      // Hide all categories
+      document.querySelectorAll('.service-category').forEach(cat => cat.classList.remove('active'));
+      document.querySelectorAll('.category-tab').forEach(tab => tab.classList.remove('active'));
+      
+      // Show selected
+      document.getElementById(category).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+  <footer style="background:#333;color:#ccc;padding:1.5rem;text-align:center;font-size:.9rem;margin-top:3rem;">
+    © 2025 Tanisk Beauty Zone | Dehradun's Complete Home Beauty Salon | 25+ Services
   </footer>
 </body>
 </html>
-
-
