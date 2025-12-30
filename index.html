@@ -256,3 +256,43 @@ function submitReview() {
 
 </body>
 </html>
+
+<!-- Hero Section with Slider -->
+<header>
+  <div class="slider">
+    <div class="slide active" style="background-image: url('images/slider1.jpg');"></div>
+    <div class="slide" style="background-image: url('images/slider2.jpg');"></div>
+    <div class="slide" style="background-image: url('images/slider3.jpg');"></div>
+  </div>
+  <div class="header-content">
+    <div class="logo">Tanisk Beauty Zone</div>
+    <p>Beauty Parlour at Home in Dehradun</p>
+    <p>Bridal • Party • Facial • Waxing • Hair • Nails</p>
+    <a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Book on WhatsApp</a>
+  </div>
+</header>
+
+<style>
+/* Slider */
+header { position: relative; height: 100vh; color: #fff; overflow: hidden; }
+.slider { position: absolute; top:0; left:0; width:100%; height:100%; z-index:0; }
+.slide { position:absolute; top:0; left:0; width:100%; height:100%; background-size:cover; background-position:center; opacity:0; transition: opacity 1s ease-in-out; }
+.slide.active { opacity:1; }
+.header-content { position: relative; z-index:2; text-align:center; top:50%; transform:translateY(-50%); padding: 0 20px; }
+</style>
+
+<script>
+// Background slider
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(index){
+  slides.forEach((slide,i)=> slide.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+
+setInterval(()=>{
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+},4000);
+</script>
