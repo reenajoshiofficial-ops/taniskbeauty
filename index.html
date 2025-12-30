@@ -28,11 +28,38 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
 
-  <style>
-    :root{--primary:#c2185b;--secondary:#ff80ab;--bg:#fff7fb;--card:#fff;}
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:#333;line-height:1.6;}
-    .container{max-width:1200px;margin:0 auto;padding:1rem;}
+  .accordion{
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-bottom:12px;
+    overflow:hidden;
+}
+
+.accordion-header{
+    background:#f5f5f5;
+    padding:15px;
+    font-weight:bold;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.accordion-header:hover{
+    background:#eee;
+}
+
+.accordion-content{
+    display:none;
+    padding:15px;
+    background:#ffffff;
+    line-height:1.8;
+}
+
+.accordion-header span{
+    font-size:18px;
+}
+
     
     /* Header */
     header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(194,24,91,.3);}
@@ -272,4 +299,5 @@
   </footer>
 </body>
 </html>
+
 
