@@ -1,205 +1,94 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tanisk Beauty Zone | Beauty Parlour at Home in Dehradun</title>
+<title>Tanisk Beauty Zone | Bridal Makeup & Beauty Parlour at Home in Dehradun</title>
 
-<meta name="description" content="Tanisk Beauty Zone offers professional beauty parlour at home in Dehradun. Bridal makeup, party makeup, facial, waxing, hair, manicure & pedicure services.">
+<meta name="description" content="Luxury beauty parlour at home in Dehradun. Bridal makeup, party makeup, facial, waxing, hair & nail services by Tanisk Beauty Zone.">
 
-<meta name="keywords" content="Beauty Parlour at Home Dehradun, Bridal Makeup Dehradun, Party Makeup, Facial, Waxing, Hair Services">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Prata&display=swap" rel="stylesheet">
 
 <style>
+:root{
+  --primary:#6b2d5c;
+  --secondary:#f7eef3;
+  --gold:#c9a24d;
+  --dark:#1f1f1f;
+}
+
+*{box-sizing:border-box}
+
 body{
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    color:#2b2b2b;
-    background:#ffffff;
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  color:var(--dark);
+  background:#fff;
+  line-height:1.6;
 }
-header{
-    background:linear-gradient(135deg,#7B3F61,#C9A24D);
-    color:#fff;
-    padding:60px 20px;
-    text-align:center;
+
+/* HERO */
+.hero{
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero.jpg") center/cover no-repeat;
+  color:#fff;
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  padding:40px 20px;
 }
-header h1{
-    font-family:'Playfair Display',serif;
-    font-size:40px;
-    margin-bottom:10px;
+
+.hero-content{
+  max-width:700px;
 }
-header p{
-    font-size:18px;
+
+.hero h1{
+  font-family:'Prata',serif;
+  font-size:42px;
+  margin-bottom:10px;
 }
-.btn{
-    background:#ffffff;
-    color:#7B3F61;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:500;
-    display:inline-block;
-    margin-top:20px;
+
+.hero p{
+  font-size:18px;
 }
+
+.hero .btn{
+  margin-top:25px;
+  display:inline-block;
+  background:var(--gold);
+  color:#000;
+  padding:14px 34px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
 section{
-    padding:50px 20px;
-    max-width:1200px;
-    margin:auto;
+  padding:70px 20px;
 }
-h2{
-    font-family:'Playfair Display',serif;
-    text-align:center;
-    margin-bottom:30px;
+
+.container{
+  max-width:1200px;
+  margin:auto;
 }
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
 }
-.card{
-    background:#F6E8ED;
-    padding:20px;
-    border-radius:12px;
+
+.section-title h2{
+  font-family:'Prata',serif;
+  font-size:34px;
+  margin-bottom:10px;
 }
-.card h3{
-    margin-top:0;
+
+.section-title span{
+  color:var(--primary);
+  font-weight:500;
 }
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:15px;
-}
-.gallery img{
-    width:100%;
-    border-radius:10px;
-}
-.contact{
-    background:#7B3F61;
-    color:#fff;
-    text-align:center;
-    padding:40px 20px;
-}
-footer{
-    background:#2b2b2b;
-    color:#fff;
-    text-align:center;
-    padding:15px;
-    font-size:14px;
-}
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:#fff;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:500;
-}
-</style>
-</head>
 
-<body>
-
-<header>
-    <h1>Tanisk Beauty Zone</h1>
-    <p>Beauty Parlour at Home in Dehradun</p>
-    <p>Bridal • Party • Facial • Waxing • Hair • Nails</p>
-    <a href="https://wa.me/919627189407" class="btn">Book on WhatsApp</a>
-</header>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Tanisk Beauty Zone is a professional beauty parlour at home in Dehradun, offering personalized beauty services at your doorstep. 
-        From bridal makeup to daily self-care, we use premium products, maintain strict hygiene, and ensure you look and feel your best.
-    </p>
-</section>
-
-<section id="services">
-<h2>Our Services & Pricing</h2>
-<div class="services">
-
-<div class="card">
-<h3>Clean Up & Facial</h3>
-<p>Basic Clean Up – ₹499<br>
-Glow Facial – ₹799<br>
-Gold Facial – ₹1299<br>
-Diamond Facial – ₹1799</p>
-</div>
-
-<div class="card">
-<h3>De-Tan Treatment</h3>
-<p>Face – ₹599<br>
-Hands & Feet – ₹799<br>
-Full Body – ₹1999</p>
-</div>
-
-<div class="card">
-<h3>Manicure & Pedicure</h3>
-<p>Basic Manicure – ₹399<br>
-Spa Manicure – ₹699<br>
-Basic Pedicure – ₹499<br>
-Spa Pedicure – ₹899</p>
-</div>
-
-<div class="card">
-<h3>Hair Services</h3>
-<p>Hair Cut – ₹399 onwards<br>
-Hair Color – ₹999 onwards<br>
-Hair Spa – ₹799<br>
-Keratin – ₹2999 onwards</p>
-</div>
-
-<div class="card">
-<h3>Waxing</h3>
-<p>Full Arms – ₹299<br>
-Full Legs – ₹399<br>
-Full Body – ₹1499<br>
-Rica Upgrade – ₹200</p>
-</div>
-
-<div class="card">
-<h3>Bridal & Pre-Bridal</h3>
-<p>Party Makeup – ₹2999<br>
-Engagement – ₹4999<br>
-Bridal – ₹9999 onwards<br>
-Pre-Bridal – ₹14999 onwards</p>
-</div>
-
-</div>
-</section>
-
-<section id="gallery">
-<h2>Our Work</h2>
-<div class="gallery">
-<img src="images/work1.jpg" alt="Bridal Makeup Dehradun">
-<img src="images/work2.jpg" alt="Party Makeup at Home">
-<img src="images/work3.jpg" alt="Facial Services">
-</div>
-</section>
-
-<section>
-<h2>Customer Reviews</h2>
-<iframe src="https://www.google.com/maps?q=Tanisk%20Beauty%20Zone&output=embed" width="100%" height="350" style="border:0;" loading="lazy"></iframe>
-</section>
-
-<div class="contact" id="contact">
-<h2>Contact Us</h2>
-<p>📞 +91 96271 89407</p>
-<p>✉️ reenajoshiofficial@gmail.com</p>
-<p>📍 Dehradun, Uttarakhand</p>
-</div>
-
-<footer>
-© 2025 Tanisk Beauty Zone | Beauty Parlour at Home in Dehradun
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919627189407" target="_blank">WhatsApp</a>
-
-</body>
-</html>
+/* ABOUT*
