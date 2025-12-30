@@ -1,298 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tanisk Beauty Zone - Professional Beauty Parlour at Home in Dehradun. Bridal, Party, Facial, Hair, Waxing, Nails.">
-<title>Tanisk Beauty Zone | Beauty Parlour at Home in Dehradun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanisk Beauty Zone 🌹 | Luxury Beauty Parlour Dehradun | 9627189407</title>
+    
+    <!-- SEO PERFECTION -->
+    <meta name="description" content="🌹 Tanisk Beauty Zone - Dehradun's most elegant home salon. Bridal makeup ₹15,100, VLCC facials ₹701. Add your review! Book 9627189407.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --rose-gold: #E8B4B8; --deep-rose: #D4A5A9;
+            --cream: #FDF6F0; --dark-cream: #F5EDE4;
+            --charcoal: #2D1B1C; --soft-charcoal: #4A3A3B;
+            --accent-gold: #D4A059; --glass-cream: rgba(253, 246, 240, 0.1);
+        }
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; background: var(--cream); color: var(--charcoal); 
+            scroll-behavior: smooth; overflow-x: hidden;
+        }
 
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif; }
-  body { line-height: 1.6; color: #333; background-color: #fffafc; }
-  a { text-decoration:none; color: inherit; }
-  img { max-width:100%; display:block; border-radius:10px; }
+        /* ELEGANT HEADER */
+        header {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            backdrop-filter: blur(20px); background: rgba(253, 246, 240, 0.95);
+            border-bottom: 1px solid var(--deep-rose); padding: 1rem 0;
+        }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { 
+            font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; 
+            background: linear-gradient(135deg, var(--rose-gold), var(--accent-gold)); 
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .logo-icon { 
+            width: 45px; height: 45px; background: var(--rose-gold); border-radius: 50%; 
+            display: inline-flex; align-items: center; justify-content: center; margin-right: 0.5rem;
+            box-shadow: 0 5px 20px rgba(232, 180, 184, 0.4);
+        }
 
-  /* Header */
-  header { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); color: #fff; padding:60px 20px; text-align:center; position: relative; }
-  .logo { font-family:'Playfair Display', serif; font-size:2.2rem; font-weight:bold; margin-bottom:10px; display:inline-block; color:#fff; }
-  header p { font-size:1.2rem; margin-bottom:20px; }
-  .btn-whatsapp { background-color:#25D366; color:white; padding:12px 25px; border-radius:50px; font-weight:bold; font-size:1rem; transition:0.3s; }
-  .btn-whatsapp:hover { background-color:#1ebe5d; }
+        /* HERO - ROSE GOLD ELEGANCE */
+        .hero {
+            height: 100vh; background: linear-gradient(rgba(46, 27, 28, 0.7), rgba(46, 27, 28, 0.3)), 
+            url('https://images.unsplash.com/photo-1558618047-3c8c76fdddb8?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: #fff;
+        }
+        .hero-content { animation: fadeInUp 1.2s ease-out; max-width: 700px; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        .hero h1 { 
+            font-family: 'Playfair Display', serif; font-size: 4.5rem; line-height: 1; margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff, var(--rose-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle { font-size: 1.3rem; margin-bottom: 3rem; opacity: 0.95; letter-spacing: 1px; }
 
-  /* Navigation */
-  nav { position: sticky; top:0; background:white; box-shadow:0 2px 10px rgba(0,0,0,0.1); z-index:1000; }
-  nav ul { display:flex; justify-content:center; list-style:none; padding:10px 0; margin:0; flex-wrap:wrap; }
-  nav ul li { margin:0 20px; }
-  nav ul li a { color:#333; font-weight:600; padding:5px 0; transition:0.3s; }
-  nav ul li a:hover { color:#d63384; }
+        /* GOLDEN BUTTONS */
+        .btn { 
+            padding: 1.2rem 3rem; border-radius: 50px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 1px; cursor: pointer; text-decoration: none; display: inline-block;
+            transition: all 0.4s; border: none; font-size: 1rem;
+        }
+        .btn-primary { 
+            background: linear-gradient(135deg, var(--rose-gold), var(--accent-gold)); 
+            color: var(--charcoal); box-shadow: 0 10px 30px rgba(232, 180, 184, 0.4);
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(232, 180, 184, 0.6); }
 
-  section { padding:60px 20px; max-width:1200px; margin:auto; }
-  .section-title { text-align:center; margin-bottom:50px; }
-  .section-title h2 { font-family:'Playfair Display', serif; font-size:2.5rem; color:#d63384; }
+        /* SECTIONS */
+        .section { padding: 8rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section-title { 
+            font-family: 'Playfair Display', serif; font-size: 3.5rem; text-align: center; margin-bottom: 4rem;
+            background: linear-gradient(135deg, var(--charcoal), var(--soft-charcoal)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .section-subtitle { text-align: center; font-size: 1.2rem; color: var(--soft-charcoal); max-width: 600px; margin: 0 auto 4rem; }
 
-  /* About */
-  #about p { max-width:800px; margin:auto; font-size:1.1rem; color:#555; }
+        /* SERVICE FILTERS */
+        .filters { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 4rem; flex-wrap: wrap; }
+        .filter-btn { 
+            padding: 1rem 2rem; background: var(--dark-cream); border: 2px solid var(--deep-rose); 
+            border-radius: 50px; cursor: pointer; transition: 0.3s; font-weight: 500; color: var(--charcoal);
+        }
+        .filter-btn.active { background: var(--rose-gold); border-color: var(--accent-gold); }
 
-  /* Tabs / Accordion */
-  .tabs { display:flex; justify-content:center; flex-wrap:wrap; margin-bottom:40px; }
-  .tab-button { padding:12px 25px; margin:5px; background:#fbc2eb; color:#fff; border:none; border-radius:50px; cursor:pointer; font-weight:600; transition:0.3s; }
-  .tab-button.active { background:#d63384; }
-  .tab-content { display:none; background:#fff0f6; padding:20px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.1); }
-  .tab-content.active { display:block; }
-  .tab-content ul { list-style:none; margin-top:10px; }
-  .tab-content li { padding:5px 0; font-weight:500; color:#555; }
+        /* SERVICES GRID */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+        .service-card {
+            background: var(--dark-cream); border-radius: 25px; padding: 3rem 2.5rem; text-align: center;
+            border: 1px solid var(--deep-rose); transition: all 0.4s; cursor: pointer; position: relative;
+            display: none;
+        }
+        .service-card.active { display: block; animation: slideUp 0.6s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .service-card:hover { 
+            transform: translateY(-8px); box-shadow: 0 25px 50px rgba(212, 160, 89, 0.15);
+            border-color: var(--accent-gold);
+        }
+        .service-icon { font-size: 4rem; margin-bottom: 1.5rem; display: block; }
+        .service-price { font-size: 2.8rem; font-weight: 700; color: var(--accent-gold); margin: 1rem 0 1.5rem; font-family: 'Playfair Display', serif; }
 
-  /* Gallery */
-  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+        /* REVIEWS SECTION + ADDER */
+        .reviews-section { background: linear-gradient(135deg, var(--dark-cream), var(--cream)); }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+        .review-card {
+            background: #fff; padding: 2.5rem; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--rose-gold);
+        }
+        .stars { color: var(--accent-gold); font-size: 1.4rem; margin-bottom: 1rem; }
+        .review-text { font-style: italic; line-height: 1.7; margin-bottom: 1.5rem; color: var(--soft-charcoal); }
+        .review-author { font-weight: 600; color: var(--charcoal); }
 
-  /* Reviews */
-  .reviews-container { max-width:800px; margin:auto; text-align:center; }
-  .review-form { background:#fff0f6; padding:20px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.1); margin-bottom:40px; }
-  .review-form input, .review-form textarea { width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
-  .review-form button { padding:12px 25px; background:#d63384; color:white; border:none; border-radius:50px; cursor:pointer; font-weight:bold; transition:0.3s; }
-  .review-form button:hover { background:#b52c70; }
-  .reviews-list { text-align:left; margin-top:20px; }
-  .review-item { background:#fffafc; padding:15px; margin-bottom:15px; border-radius:10px; border-left:5px solid #d63384; }
-  .review-item .stars { color:#f7c948; font-weight:bold; }
+        /* REVIEW ADDER FORM */
+        .add-review { 
+            background: #fff; padding: 3rem; border-radius: 25px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            max-width: 600px; margin: 0 auto;
+        }
+        .form-group { margin-bottom: 2rem; }
+        .form-group label { display: block; margin-bottom: 0.8rem; font-weight: 500; color: var(--charcoal); }
+        .form-group input, .form-group textarea, .form-group select { 
+            width: 100%; padding: 1.2rem; border: 2px solid var(--deep-rose); border-radius: 15px;
+            font-size: 1rem; transition: 0.3s; background: var(--dark-cream);
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { 
+            outline: none; border-color: var(--rose-gold); box-shadow: 0 0 0 4px rgba(232, 180, 184, 0.1);
+        }
+        .stars-input { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+        .star { font-size: 2rem; cursor: pointer; color: #ddd; transition: 0.3s; }
+        .star.selected { color: var(--accent-gold); }
 
-  /* Contact */
-  #contact p { text-align:center; margin-bottom:15px; font-size:1.1rem; }
-  #contact a { color:#d63384; font-weight:600; }
+        /* WHATSAPP FLOAT */
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px; background: linear-gradient(135deg, var(--rose-gold), var(--accent-gold));
+            width: 70px; height: 70px; border-radius: 50%; z-index: 1000;
+            display: flex; align-items: center; justify-content: center; font-size: 1.8rem;
+            box-shadow: 0 15px 35px rgba(232, 180, 184, 0.4); transition: 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
 
-  /* Footer */
-  footer { background:#f8f0f8; text-align:center; padding:30px 20px; color:#555; font-size:0.9rem; }
-
-  /* Responsive */
-  @media(max-width:768px){
-    header h1 { font-size:2.2rem; }
-    .section-title h2 { font-size:2rem; }
-    .tab-button { flex:1 1 100%; text-align:center; }
-  }
-</style>
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .section-title { font-size: 2.5rem; }
+            .filters { flex-direction: column; align-items: center; }
+        }
+    </style>
 </head>
 <body>
 
-<!-- Header -->
-<header>
-  <div class="logo">Tanisk Beauty Zone</div>
-  <p>Beauty Parlour at Home in Dehradun</p>
-  <p>Bridal • Party • Facial • Waxing • Hair • Nails</p>
-  <a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Book on WhatsApp</a>
-</header>
+    <!-- ELEGANT NAV -->
+    <header>
+        <nav class="nav">
+            <a href="#" class="logo">
+                <div class="logo-icon">🌹</div>
+                Tanisk Beauty Zone
+            </a>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#services" style="color: var(--charcoal); text-decoration: none; font-weight: 500;">Services</a>
+                <a href="#reviews" style="color: var(--charcoal); text-decoration: none; font-weight: 500;">Reviews</a>
+            </div>
+        </nav>
+    </header>
 
-<!-- Navigation -->
-<nav>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <!-- ROSE GOLD HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tanisk <span style="color: var(--rose-gold);">Beauty</span><br>Zone</h1>
+            <p>Dehradun's Most Elegant Home Salon Experience</p>
+            <a href="https://wa.me/919627189407?text=Hi 🌹 I found your beautiful website! Want to book service" class="btn btn-primary">Book Now</a>
+        </div>
+    </section>
 
-<!-- About Us -->
-<section id="about">
-  <div class="section-title">
-    <h2>About Us</h2>
-  </div>
-  <p>Tanisk Beauty Zone is a professional beauty parlour at home in Dehradun, offering premium salon services at your doorstep. We specialize in bridal makeup, party makeup, facials, hair treatments, waxing, manicure, and pedicure using high-quality products with complete hygiene.</p>
-</section>
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <div class="section-subtitle">25+ Premium Services</div>
+        <h2 class="section-title">Service Collection</h2>
+        
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterServices('all')">All Services</button>
+            <button class="filter-btn" onclick="filterServices('bridal')">Bridal</button>
+            <button class="filter-btn" onclick="filterServices('facial')">Facials</button>
+            <button class="filter-btn" onclick="filterServices('waxing')">Waxing</button>
+            <button class="filter-btn" onclick="filterServices('hair')">Hair & Nails</button>
+        </div>
 
-<!-- Services & Pricing Tabs -->
-<section id="services">
-  <div class="section-title">
-    <h2>Our Services & Pricing</h2>
-  </div>
+        <div class="services-grid">
+            <div class="service-card active all bridal">
+                <span class="service-icon">👰</span>
+                <h3>Bridal Masterpiece</h3>
+                <div class="service-price">₹15,100</div>
+                <p>HD Airbrush + Saree Draping + 18hr Stay</p>
+            </div>
+            <div class="service-card active all bridal">
+                <span class="service-icon">💍</span>
+                <h3>Engagement Glow</h3>
+                <div class="service-price">₹6,100</div>
+                <p>Party Radiance + Hairstyle</p>
+            </div>
+            <div class="service-card active all facial">
+                <span class="service-icon">✨</span>
+                <h3>VLCC Diamond Facial</h3>
+                <div class="service-price">₹1,301</div>
+                <p>Luxury Skin Glow Treatment</p>
+            </div>
+            <div class="service-card active all waxing">
+                <span class="service-icon">🕯️</span>
+                <h3>Velvet Full Body Wax</h3>
+                <div class="service-price">₹1,401</div>
+                <p>Honey Wax + Free Threading</p>
+            </div>
+            <div class="service-card active all hair">
+                <span class="service-icon">💆‍♀️</span>
+                <h3>Hair Spa Treatment</h3>
+                <div class="service-price">₹1,101</div>
+                <p>Deep Conditioning + Shine</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="tabs">
-    <button class="tab-button active" onclick="openTab(event,'facial')">Facial & Cleanup</button>
-    <button class="tab-button" onclick="openTab(event,'detan')">De-Tan</button>
-    <button class="tab-button" onclick="openTab(event,'nails')">Manicure & Pedicure</button>
-    <button class="tab-button" onclick="openTab(event,'hair')">Hair Services</button>
-    <button class="tab-button" onclick="openTab(event,'waxing')">Waxing</button>
-    <button class="tab-button" onclick="openTab(event,'bridal')">Bridal & Pre-Bridal</button>
-  </div>
+    <!-- REVIEWS + ADDER -->
+    <section id="reviews" class="section reviews-section">
+        <div class="section-subtitle">Real Customer Love</div>
+        <h2 class="section-title">Customer Reviews</h2>
+        
+        <div class="reviews-grid" id="reviewsGrid">
+            <!-- Reviews will load here -->
+        </div>
 
-  <div id="facial" class="tab-content active">
-    <ul>
-      <li>Basic Cleanup – ₹499</li>
-      <li>Glow Facial – ₹799</li>
-      <li>Gold Facial – ₹1299</li>
-      <li>Diamond Facial – ₹1799</li>
-    </ul>
-  </div>
+        <!-- ADD REVIEW FORM -->
+        <div class="add-review">
+            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--charcoal);">Share Your Experience 🌹</h3>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="reviewName" required>
+                </div>
+                <div class="form-group">
+                    <label>Rate Us</label>
+                    <div class="stars-input" id="ratingStars">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <input type="hidden" id="ratingValue" value="0">
+                </div>
+                <div class="form-group">
+                    <label>Your Review</label>
+                    <textarea rows="4" id="reviewText" placeholder="Tell us about your experience..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Add Review</button>
+            </form>
+        </div>
+    </section>
 
-  <div id="detan" class="tab-content">
-    <ul>
-      <li>Face De-Tan – ₹599</li>
-      <li>Hands & Feet De-Tan – ₹799</li>
-      <li>Full Body De-Tan – ₹1999</li>
-    </ul>
-  </div>
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/919627189407" class="whatsapp-float" target="_blank">💬</a>
 
-  <div id="nails" class="tab-content">
-    <ul>
-      <li>Basic Manicure – ₹399</li>
-      <li>Spa Manicure – ₹699</li>
-      <li>Basic Pedicure – ₹499</li>
-      <li>Spa Pedicure – ₹899</li>
-    </ul>
-  </div>
+    <script>
+        let currentRating = 0;
+        let reviews = JSON.parse(localStorage.getItem('taniskReviews')) || [];
 
-  <div id="hair" class="tab-content">
-    <ul>
-      <li>Hair Cut – ₹399 onwards</li>
-      <li>Hair Color – ₹999 onwards</li>
-      <li>Hair Spa – ₹799</li>
-      <li>Keratin Treatment – ₹2999 onwards</li>
-    </ul>
-  </div>
+        // Rating Stars
+        document.querySelectorAll('.star').forEach(star => {
+            star.addEventListener('click', () => {
+                currentRating = star.dataset.rating;
+                document.getElementById('ratingValue').value = currentRating;
+                document.querySelectorAll('.star').forEach(s => {
+                    s.classList.toggle('selected', s.dataset.rating <= currentRating);
+                });
+            });
+        });
 
-  <div id="waxing" class="tab-content">
-    <ul>
-      <li>Full Arms – ₹299</li>
-      <li>Full Legs – ₹399</li>
-      <li>Full Body – ₹1499</li>
-      <li>Rica Wax Upgrade – ₹200</li>
-    </ul>
-  </div>
+        // Add Review
+        document.getElementById('reviewForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('reviewName').value;
+            const text = document.getElementById('reviewText').value;
+            
+            reviews.unshift({
+                name, text, rating: currentRating, date: new Date().toLocaleDateString()
+            });
+            
+            localStorage.setItem('taniskReviews', JSON.stringify(reviews));
+            loadReviews();
+            document.getElementById('reviewForm').reset();
+            currentRating = 0;
+            document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+            alert('🌹 Thank you for your review!');
+        });
 
-  <div id="bridal" class="tab-content">
-    <ul>
-      <li>Party Makeup – ₹2999</li>
-      <li>Engagement Makeup – ₹4999</li>
-      <li>Bridal Makeup – ₹9999 onwards</li>
-      <li>Pre-Bridal Package – ₹14999 onwards</li>
-    </ul>
-  </div>
-</section>
+        // Load Reviews
+        function loadReviews() {
+            const grid = document.getElementById('reviewsGrid');
+            grid.innerHTML = '';
+            
+            reviews.slice(0, 6).forEach(review => {
+                const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+                grid.innerHTML += `
+                    <div class="review-card">
+                        <div class="stars">${stars}</div>
+                        <p class="review-text">"${review.text}"</p>
+                        <div class="review-author">${review.name} <span style="font-size:0.9rem; opacity:0.7;">• ${review.date}</span></div>
+                    </div>
+                `;
+            });
+        }
 
-<!-- Gallery -->
-<section id="gallery">
-  <div class="section-title">
-    <h2>Our Work Gallery</h2>
-  </div>
-  <div class="gallery">
-    <img src="images/gallery/bridal1.jpg" alt="Bridal Makeup">
-    <img src="images/gallery/facial1.jpg" alt="Facial">
-    <img src="images/gallery/hair1.jpg" alt="Hair Styling">
-    <img src="images/gallery/nails1.jpg" alt="Nails">
-    <img src="images/gallery/bridal2.jpg" alt="Bridal Makeup">
-    <img src="images/gallery/facial2.jpg" alt="Facial">
-  </div>
-</section>
+        // Service Filter
+        function filterServices(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            document.querySelectorAll('.service-card').forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
 
-<!-- Customer Reviews -->
-<section id="reviews">
-  <div class="section-title">
-    <h2>Customer Reviews</h2>
-  </div>
-  <div class="reviews-container">
-    <div class="review-form">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required>
-      <textarea id="comment" rows="4" placeholder="Write your review" required></textarea>
-      <button onclick="submitReview()">Submit Review</button>
-    </div>
-    <div class="reviews-list" id="reviewsList">
-      <!-- Reviews will appear here -->
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-  <div class="section-title">
-    <h2>Contact Us</h2>
-  </div>
-  <p>Phone / WhatsApp: <a href="https://wa.me/919627189407" target="_blank">+91 96271 89407</a></p>
-  <p>Email: <a href="mailto:reenajoshiofficial@gmail.com">reenajoshiofficial@gmail.com</a></p>
-  <p><a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a></p>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>© 2025 Tanisk Beauty Zone | Dehradun</p>
-</footer>
-
-<!-- JS -->
-<script>
-function openTab(evt, tabName) {
-  const tabContents = document.querySelectorAll('.tab-content');
-  tabContents.forEach(tc => tc.classList.remove('active'));
-  document.getElementById(tabName).classList.add('active');
-
-  const tabButtons = document.querySelectorAll('.tab-button');
-  tabButtons.forEach(tb => tb.classList.remove('active'));
-  evt.currentTarget.classList.add('active');
-}
-
-// Review system
-function submitReview() {
-  const name = document.getElementById('name').value.trim();
-  const rating = document.getElementById('rating').value;
-  const comment = document.getElementById('comment').value.trim();
-
-  if(name && rating && comment){
-    const reviewsList = document.getElementById('reviewsList');
-    const reviewItem = document.createElement('div');
-    reviewItem.classList.add('review-item');
-    reviewItem.innerHTML = `<strong>${name}</strong> <span class="stars">${'★'.repeat(rating)}${'☆'.repeat(5-rating)}</span><p>${comment}</p>`;
-    reviewsList.prepend(reviewItem);
-
-    // Clear form
-    document.getElementById('name').value = '';
-    document.getElementById('rating').value = '';
-    document.getElementById('comment').value = '';
-  } else {
-    alert('Please fill all fields!');
-  }
-}
-</script>
-
+        // Initial Load
+        loadReviews();
+    </script>
 </body>
 </html>
-
-<!-- Hero Section with Slider -->
-<header>
-  <div class="slider">
-    <div class="slide active" style="background-image: url('images/slider1.jpg');"></div>
-    <div class="slide" style="background-image: url('images/slider2.jpg');"></div>
-    <div class="slide" style="background-image: url('images/slider3.jpg');"></div>
-  </div>
-  <div class="header-content">
-    <div class="logo">Tanisk Beauty Zone</div>
-    <p>Beauty Parlour at Home in Dehradun</p>
-    <p>Bridal • Party • Facial • Waxing • Hair • Nails</p>
-    <a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Book on WhatsApp</a>
-  </div>
-</header>
-
-<style>
-/* Slider */
-header { position: relative; height: 100vh; color: #fff; overflow: hidden; }
-.slider { position: absolute; top:0; left:0; width:100%; height:100%; z-index:0; }
-.slide { position:absolute; top:0; left:0; width:100%; height:100%; background-size:cover; background-position:center; opacity:0; transition: opacity 1s ease-in-out; }
-.slide.active { opacity:1; }
-.header-content { position: relative; z-index:2; text-align:center; top:50%; transform:translateY(-50%); padding: 0 20px; }
-</style>
-
-<script>
-// Background slider
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-
-function showSlide(index){
-  slides.forEach((slide,i)=> slide.classList.remove('active'));
-  slides[index].classList.add('active');
-}
-
-setInterval(()=>{
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-},4000);
-</script>
