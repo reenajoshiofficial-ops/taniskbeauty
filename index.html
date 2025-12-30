@@ -47,7 +47,17 @@
 
   /* Gallery */
   .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-  
+
+  /* Reviews */
+  .reviews-container { max-width:800px; margin:auto; text-align:center; }
+  .review-form { background:#fff0f6; padding:20px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.1); margin-bottom:40px; }
+  .review-form input, .review-form textarea { width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
+  .review-form button { padding:12px 25px; background:#d63384; color:white; border:none; border-radius:50px; cursor:pointer; font-weight:bold; transition:0.3s; }
+  .review-form button:hover { background:#b52c70; }
+  .reviews-list { text-align:left; margin-top:20px; }
+  .review-item { background:#fffafc; padding:15px; margin-bottom:15px; border-radius:10px; border-left:5px solid #d63384; }
+  .review-item .stars { color:#f7c948; font-weight:bold; }
+
   /* Contact */
   #contact p { text-align:center; margin-bottom:15px; font-size:1.1rem; }
   #contact a { color:#d63384; font-weight:600; }
@@ -79,6 +89,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -175,6 +186,24 @@
   </div>
 </section>
 
+<!-- Customer Reviews -->
+<section id="reviews">
+  <div class="section-title">
+    <h2>Customer Reviews</h2>
+  </div>
+  <div class="reviews-container">
+    <div class="review-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required>
+      <textarea id="comment" rows="4" placeholder="Write your review" required></textarea>
+      <button onclick="submitReview()">Submit Review</button>
+    </div>
+    <div class="reviews-list" id="reviewsList">
+      <!-- Reviews will appear here -->
+    </div>
+  </div>
+</section>
+
 <!-- Contact -->
 <section id="contact">
   <div class="section-title">
@@ -190,7 +219,7 @@
   <p>© 2025 Tanisk Beauty Zone | Dehradun</p>
 </footer>
 
-<!-- JS for Tabs -->
+<!-- JS -->
 <script>
 function openTab(evt, tabName) {
   const tabContents = document.querySelectorAll('.tab-content');
@@ -200,6 +229,28 @@ function openTab(evt, tabName) {
   const tabButtons = document.querySelectorAll('.tab-button');
   tabButtons.forEach(tb => tb.classList.remove('active'));
   evt.currentTarget.classList.add('active');
+}
+
+// Review system
+function submitReview() {
+  const name = document.getElementById('name').value.trim();
+  const rating = document.getElementById('rating').value;
+  const comment = document.getElementById('comment').value.trim();
+
+  if(name && rating && comment){
+    const reviewsList = document.getElementById('reviewsList');
+    const reviewItem = document.createElement('div');
+    reviewItem.classList.add('review-item');
+    reviewItem.innerHTML = `<strong>${name}</strong> <span class="stars">${'★'.repeat(rating)}${'☆'.repeat(5-rating)}</span><p>${comment}</p>`;
+    reviewsList.prepend(reviewItem);
+
+    // Clear form
+    document.getElementById('name').value = '';
+    document.getElementById('rating').value = '';
+    document.getElementById('comment').value = '';
+  } else {
+    alert('Please fill all fields!');
+  }
 }
 </script>
 
