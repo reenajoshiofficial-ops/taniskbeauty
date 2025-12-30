@@ -1,177 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tanisk Beauty Zone - Professional Beauty Parlour at Home in Dehradun. Services include Bridal, Party Makeup, Facials, Hair, Nails, Waxing, and more.">
-    <title>Tanisk Beauty Zone | Beauty Parlour at Home in Dehradun</title>
-    <link rel="icon" href="images/favicon.png">
-    <style>
-        /* General Styles */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { line-height: 1.6; color: #333; }
-        a { text-decoration: none; color: inherit; }
-        img { max-width: 100%; display: block; }
-        h1, h2, h3 { margin-bottom: 10px; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tanisk Beauty Zone - Professional Beauty Parlour at Home in Dehradun. Bridal, Party, Facial, Hair, Waxing, Nails.">
+<title>Tanisk Beauty Zone | Beauty Parlour at Home in Dehradun</title>
 
-        /* Header */
-        header { background-color: #f8d7da; padding: 20px 0; text-align: center; }
-        header h1 { font-size: 2.5rem; color: #d63384; }
-        header p { font-size: 1.2rem; margin-top: 5px; color: #555; }
-        .btn-whatsapp { display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #25D366; color: white; border-radius: 5px; font-weight: bold; }
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-        /* Section Styles */
-        section { padding: 50px 20px; max-width: 1100px; margin: auto; }
-        .section-title { text-align: center; margin-bottom: 40px; }
-        .section-title h2 { font-size: 2rem; color: #d63384; }
+<style>
+  /* Reset & Global */
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif; }
+  body { line-height: 1.6; color: #333; background-color: #fffafc; }
+  a { text-decoration:none; color: inherit; }
+  img { max-width:100%; display:block; border-radius:10px; }
 
-        /* About */
-        #about p { font-size: 1.1rem; max-width: 800px; margin: auto; }
+  /* Header */
+  header { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); color: #fff; padding:60px 20px; text-align:center; }
+  header h1 { font-family:'Playfair Display', serif; font-size:3rem; margin-bottom:10px; }
+  header p { font-size:1.2rem; margin-bottom:20px; }
+  .btn-whatsapp { background-color:#25D366; color:white; padding:12px 25px; border-radius:50px; font-weight:bold; font-size:1rem; transition:0.3s; }
+  .btn-whatsapp:hover { background-color:#1ebe5d; }
 
-        /* Services */
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .service-card { background: #fff0f6; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .service-card h3 { margin-bottom: 10px; color: #d63384; }
-        .service-card ul { list-style: none; }
-        .service-card li { margin-bottom: 8px; }
+  /* Navigation */
+  nav { position: sticky; top:0; background:white; box-shadow:0 2px 10px rgba(0,0,0,0.1); z-index:1000; }
+  nav ul { display:flex; justify-content:center; list-style:none; padding:10px 0; margin:0; flex-wrap:wrap; }
+  nav ul li { margin:0 20px; }
+  nav ul li a { color:#333; font-weight:600; padding:5px 0; transition:0.3s; }
+  nav ul li a:hover { color:#d63384; }
 
-        /* Gallery */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-        .gallery img { border-radius: 10px; }
+  /* Sections */
+  section { padding:60px 20px; max-width:1200px; margin:auto; }
+  .section-title { text-align:center; margin-bottom:50px; }
+  .section-title h2 { font-family:'Playfair Display', serif; font-size:2.5rem; color:#d63384; }
 
-        /* Reviews */
-        .reviews { text-align: center; }
-        .reviews p { font-size: 1.1rem; margin-bottom: 5px; }
+  /* About */
+  #about p { max-width:800px; margin:auto; font-size:1.1rem; color:#555; }
 
-        /* Footer */
-        footer { background: #f8d7da; padding: 30px 20px; text-align: center; margin-top: 50px; }
-        footer p { margin-bottom: 10px; color: #555; }
-        footer a { color: #d63384; font-weight: bold; }
-    </style>
+  /* Services */
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+  .service-card { background:#fff0f6; padding:25px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.1); transition:0.3s; }
+  .service-card:hover { transform: translateY(-5px); box-shadow:0 6px 25px rgba(0,0,0,0.15); }
+  .service-card h3 { color:#d63384; margin-bottom:15px; font-size:1.4rem; }
+  .service-card ul { list-style:none; }
+  .service-card li { margin-bottom:8px; color:#555; }
+
+  /* Gallery */
+  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+  
+  /* Reviews */
+  .reviews { text-align:center; font-size:1.1rem; color:#555; }
+
+  /* Contact */
+  #contact p { text-align:center; margin-bottom:15px; font-size:1.1rem; }
+  #contact a { color:#d63384; font-weight:600; }
+
+  /* Footer */
+  footer { background:#f8f0f8; text-align:center; padding:30px 20px; color:#555; font-size:0.9rem; }
+
+  /* Responsive */
+  @media(max-width:768px){
+    header h1 { font-size:2.2rem; }
+    .section-title h2 { font-size:2rem; }
+  }
+</style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Tanisk Beauty Zone</h1>
-        <p>Beauty Parlour at Home in Dehradun</p>
-        <p>Bridal • Party • Facial • Waxing • Hair • Nails</p>
-        <a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Book on WhatsApp</a>
-    </header>
+<!-- Header -->
+<header>
+  <h1>Tanisk Beauty Zone</h1>
+  <p>Beauty Parlour at Home in Dehradun</p>
+  <p>Bridal • Party • Facial • Waxing • Hair • Nails</p>
+  <a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Book on WhatsApp</a>
+</header>
 
-    <!-- About Us -->
-    <section id="about">
-        <div class="section-title">
-            <h2>About Us</h2>
-        </div>
-        <p>Tanisk Beauty Zone is a professional beauty parlour at home in Dehradun, offering premium salon services at your doorstep. We specialize in bridal makeup, party makeup, facials, hair treatments, waxing, manicure, and pedicure using high-quality products with complete hygiene.</p>
-    </section>
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <!-- Services & Pricing -->
-    <section id="services">
-        <div class="section-title">
-            <h2>Our Services & Pricing</h2>
-        </div>
-        <div class="services">
+<!-- About Us -->
+<section id="about">
+  <div class="section-title">
+    <h2>About Us</h2>
+  </div>
+  <p>Tanisk Beauty Zone is a professional beauty parlour at home in Dehradun, offering premium salon services at your doorstep. We specialize in bridal makeup, party makeup, facials, hair treatments, waxing, manicure, and pedicure using high-quality products with complete hygiene.</p>
+</section>
 
-            <div class="service-card">
-                <h3>Cleanup & Facial</h3>
-                <ul>
-                    <li>Basic Cleanup – ₹499</li>
-                    <li>Glow Facial – ₹799</li>
-                    <li>Gold Facial – ₹1299</li>
-                    <li>Diamond Facial – ₹1799</li>
-                </ul>
-            </div>
+<!-- Services -->
+<section id="services">
+  <div class="section-title">
+    <h2>Our Services & Pricing</h2>
+  </div>
+  <div class="services">
+    <div class="service-card">
+      <h3>Cleanup & Facial</h3>
+      <ul>
+        <li>Basic Cleanup – ₹499</li>
+        <li>Glow Facial – ₹799</li>
+        <li>Gold Facial – ₹1299</li>
+        <li>Diamond Facial – ₹1799</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3>De-Tan Treatment</h3>
+      <ul>
+        <li>Face De-Tan – ₹599</li>
+        <li>Hands & Feet De-Tan – ₹799</li>
+        <li>Full Body De-Tan – ₹1999</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3>Manicure & Pedicure</h3>
+      <ul>
+        <li>Basic Manicure – ₹399</li>
+        <li>Spa Manicure – ₹699</li>
+        <li>Basic Pedicure – ₹499</li>
+        <li>Spa Pedicure – ₹899</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3>Hair Services</h3>
+      <ul>
+        <li>Hair Cut – ₹399 onwards</li>
+        <li>Hair Color – ₹999 onwards</li>
+        <li>Hair Spa – ₹799</li>
+        <li>Keratin Treatment – ₹2999 onwards</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3>Waxing</h3>
+      <ul>
+        <li>Full Arms – ₹299</li>
+        <li>Full Legs – ₹399</li>
+        <li>Full Body – ₹1499</li>
+        <li>Rica Wax Upgrade – ₹200</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3>Bridal & Pre-Bridal</h3>
+      <ul>
+        <li>Party Makeup – ₹2999</li>
+        <li>Engagement Makeup – ₹4999</li>
+        <li>Bridal Makeup – ₹9999 onwards</li>
+        <li>Pre-Bridal Package – ₹14999 onwards</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-            <div class="service-card">
-                <h3>De-Tan Treatment</h3>
-                <ul>
-                    <li>Face De-Tan – ₹599</li>
-                    <li>Hands & Feet De-Tan – ₹799</li>
-                    <li>Full Body De-Tan – ₹1999</li>
-                </ul>
-            </div>
+<!-- Gallery -->
+<section id="gallery">
+  <div class="section-title">
+    <h2>Our Work Gallery</h2>
+  </div>
+  <div class="gallery">
+    <img src="images/gallery/bridal1.jpg" alt="Bridal Makeup">
+    <img src="images/gallery/facial1.jpg" alt="Facial">
+    <img src="images/gallery/hair1.jpg" alt="Hair Styling">
+  </div>
+</section>
 
-            <div class="service-card">
-                <h3>Manicure & Pedicure</h3>
-                <ul>
-                    <li>Basic Manicure – ₹399</li>
-                    <li>Spa Manicure – ₹699</li>
-                    <li>Basic Pedicure – ₹499</li>
-                    <li>Spa Pedicure – ₹899</li>
-                </ul>
-            </div>
+<!-- Contact -->
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+  </div>
+  <p>Phone / WhatsApp: <a href="https://wa.me/919627189407" target="_blank">+91 96271 89407</a></p>
+  <p>Email: <a href="mailto:reenajoshiofficial@gmail.com">reenajoshiofficial@gmail.com</a></p>
+  <p><a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a></p>
+</section>
 
-            <div class="service-card">
-                <h3>Hair Services</h3>
-                <ul>
-                    <li>Hair Cut – ₹399 onwards</li>
-                    <li>Hair Color – ₹999 onwards</li>
-                    <li>Hair Spa – ₹799</li>
-                    <li>Keratin Treatment – ₹2999 onwards</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <h3>Waxing</h3>
-                <ul>
-                    <li>Full Arms – ₹299</li>
-                    <li>Full Legs – ₹399</li>
-                    <li>Full Body – ₹1499</li>
-                    <li>Rica Wax Upgrade – ₹200</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <h3>Bridal & Pre-Bridal</h3>
-                <ul>
-                    <li>Party Makeup – ₹2999</li>
-                    <li>Engagement Makeup – ₹4999</li>
-                    <li>Bridal Makeup – ₹9999 onwards</li>
-                    <li>Pre-Bridal Package – ₹14999 onwards</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Gallery -->
-    <section id="gallery">
-        <div class="section-title">
-            <h2>Our Work Gallery</h2>
-        </div>
-        <div class="gallery">
-            <img src="images/gallery/bridal1.jpg" alt="Bridal Makeup">
-            <img src="images/gallery/facial1.jpg" alt="Facial">
-            <img src="images/gallery/hair1.jpg" alt="Hair Styling">
-        </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews">
-        <div class="section-title">
-            <h2>Customer Reviews</h2>
-        </div>
-        <div class="reviews">
-            <p>⭐⭐⭐⭐⭐ Rated Beauty Services in Dehradun</p>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="section-title">
-            <h2>Contact Us</h2>
-        </div>
-        <p style="text-align:center;">Phone / WhatsApp: <a href="https://wa.me/919627189407" target="_blank">+91 96271 89407</a></p>
-        <p style="text-align:center;">Email: <a href="mailto:reenajoshiofficial@gmail.com">reenajoshiofficial@gmail.com</a></p>
-        <p style="text-align:center;"><a href="https://wa.me/919627189407" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Tanisk Beauty Zone | Dehradun</p>
-    </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Tanisk Beauty Zone | Dehradun</p>
+</footer>
 
 </body>
 </html>
