@@ -1,172 +1,270 @@
+/root
+ ├── index.html
+ ├── bridal-makeup-dehradun.html
+ ├── beauty-parlour-at-home-dehradun.html
+ ├── style.css
+ ├── sitemap.xml
+ └── /images
+     └── gallery (upload your work images here)
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Tanisk Beauty Zone | Beauty Parlour at Home in Dehradun</title>
 
-<meta name="description" content="Tanisk Beauty Zone offers professional beauty parlour at home in Dehradun. Bridal makeup, party makeup, facial, waxing, hair and nail services.">
+<meta name="description" content="Tanisk Beauty Zone offers professional beauty parlour at home in Dehradun. Bridal makeup, party makeup, facial, waxing, hair, manicure & pedicure.">
+<meta name="keywords" content="Beauty Parlour at Home Dehradun, Bridal Makeup Dehradun, Beautician Near Me">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#ffffff;
-    color:#222;
-}
+<link rel="stylesheet" href="style.css">
 
-header{
-    background:#6b2d5c;
-    color:#ffffff;
-    padding:40px 20px;
-    text-align:center;
-}
+<!-- Google Analytics (replace ID later) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXX');
+</script>
 
-header h1{
-    margin:0;
-    font-size:32px;
-}
-
-header p{
-    margin:8px 0;
-}
-
-.btn{
-    background:#c9a24d;
-    color:#000;
-    padding:12px 24px;
-    font-size:16px;
-    border-radius:25px;
-    text-decoration:none;
-    display:inline-block;
-    margin-top:15px;
-}
-
-section{
-    padding:40px 20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-h2{
-    text-align:center;
-    color:#6b2d5c;
-}
-
-/* ACCORDION */
-details{
-    border:1px solid #ddd;
-    border-radius:10px;
-    margin-bottom:15px;
-    padding:12px 15px;
-}
-
-summary{
-    font-weight:bold;
-    cursor:pointer;
-    list-style:none;
-}
-
-summary::-webkit-details-marker{
-    display:none;
-}
-
-summary:after{
-    content:"+";
-    float:right;
-    font-size:18px;
-}
-
-details[open] summary:after{
-    content:"−";
-}
-
-details p{
-    margin-top:12px;
-    line-height:1.8;
-}
-
-/* GALLERY */
-.gallery img{
-    width:100%;
-    max-width:300px;
-    margin:10px;
-    border-radius:10px;
-}
-
-/* CONTACT */
-.contact{
-    background:#6b2d5c;
-    color:#ffffff;
-    text-align:center;
-    padding:30px 20px;
-}
-
-footer{
-    background:#111;
-    color:#ccc;
-    text-align:center;
-    padding:15px;
-    font-size:14px;
-}
-
-.whatsapp{
-    position:fixed;
-    right:15px;
-    bottom:15px;
-    background:#25D366;
-    color:#fff;
-    padding:12px 18px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-</style>
 </head>
-
 <body>
 
+<!-- HEADER -->
 <header>
-    <h1>Tanisk Beauty Zone</h1>
-    <p>Beauty Parlour at Home in Dehradun</p>
-    <p>Bridal • Party • Facial • Waxing • Hair • Nails</p>
-    <a class="btn" href="https://wa.me/919627189407">Book on WhatsApp</a>
+<h1>Tanisk Beauty Zone</h1>
+<p class="tagline">Beauty Parlour at Home in Dehradun</p>
+<p class="services-line">Bridal • Party • Facial • Waxing • Hair • Nails</p>
+<a class="btn" href="https://wa.me/919627189407">Book on WhatsApp</a>
 </header>
 
+<!-- ABOUT -->
 <section>
 <h2>About Us</h2>
 <p>
-Tanisk Beauty Zone is a professional beauty parlour at home in Dehradun,
-providing bridal makeup, party makeup, facial, waxing, hair and nail services.
-We deliver salon-quality beauty services at your doorstep using premium products,
-strict hygiene and personalized care.
+Tanisk Beauty Zone is a professional beauty parlour at home in Dehradun, offering premium salon services at your doorstep. 
+We specialize in bridal makeup, party makeup, facials, hair treatments, waxing, manicure, and pedicure using high-quality products with complete hygiene.
 </p>
 </section>
 
+<!-- SERVICES -->
 <section>
 <h2>Our Services & Pricing</h2>
 
-<details>
-<summary>Clean Up & Facial</summary>
-<p>
-Basic Clean Up – ₹499<br>
-Glow Facial – ₹799<br>
-Gold Facial – ₹1299<br>
-Diamond Facial – ₹1799
-</p>
-</details>
+<h3>Cleanup & Facial</h3>
+<ul>
+<li>Basic Cleanup – ₹499</li>
+<li>Glow Facial – ₹799</li>
+<li>Gold Facial – ₹1299</li>
+<li>Diamond Facial – ₹1799</li>
+</ul>
 
-<details>
-<summary>De-Tan Treatment</summary>
-<p>
-Face De-Tan – ₹599<br>
-Hands & Feet De-Tan – ₹799<br>
-Full Body De-Tan – ₹1999
-</p>
-</details>
+<h3>De-Tan Treatment</h3>
+<ul>
+<li>Face De-Tan – ₹599</li>
+<li>Hands & Feet De-Tan – ₹799</li>
+<li>Full Body De-Tan – ₹1999</li>
+</ul>
 
-<details>
-<summary>Manicure & Pedicure</summary>
-<p>
-B
+<h3>Manicure & Pedicure</h3>
+<ul>
+<li>Basic Manicure – ₹399</li>
+<li>Spa Manicure – ₹699</li>
+<li>Basic Pedicure – ₹499</li>
+<li>Spa Pedicure – ₹899</li>
+</ul>
+
+<h3>Hair Services</h3>
+<ul>
+<li>Hair Cut – ₹399 onwards</li>
+<li>Hair Color – ₹999 onwards</li>
+<li>Hair Spa – ₹799</li>
+<li>Keratin Treatment – ₹2999 onwards</li>
+</ul>
+
+<h3>Waxing</h3>
+<ul>
+<li>Full Arms – ₹299</li>
+<li>Full Legs – ₹399</li>
+<li>Full Body – ₹1499</li>
+<li>Rica Wax Upgrade – ₹200</li>
+</ul>
+
+<h3>Bridal & Pre-Bridal</h3>
+<ul>
+<li>Party Makeup – ₹2999</li>
+<li>Engagement Makeup – ₹4999</li>
+<li>Bridal Makeup – ₹9999 onwards</li>
+<li>Pre-Bridal Package – ₹14999 onwards</li>
+</ul>
+
+</section>
+
+<!-- GALLERY -->
+<section>
+<h2>Our Work Gallery</h2>
+<div class="gallery">
+<img src="images/gallery/sample1.jpg" alt="Bridal Makeup">
+<img src="images/gallery/sample2.jpg" alt="Facial">
+<img src="images/gallery/sample3.jpg" alt="Hair Styling">
+</div>
+<p>Upload your work images inside <b>/images/gallery/</b></p>
+</section>
+
+<!-- REVIEWS -->
+<section>
+<h2>Customer Reviews</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m2!1s0x0:0x0" loading="lazy"></iframe>
+<p>⭐⭐⭐⭐⭐ Rated Beauty Services in Dehradun</p>
+</section>
+
+<!-- SEO LINKS -->
+<section>
+<h2>Explore Our Services</h2>
+<a href="bridal-makeup-dehradun.html">Bridal Makeup in Dehradun</a><br>
+<a href="beauty-parlour-at-home-dehradun.html">Beauty Parlour at Home in Dehradun</a>
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact Us</h2>
+<p><strong>Phone / WhatsApp:</strong> +91 96271 89407</p>
+<p><strong>Email:</strong> reenajoshiofficial@gmail.com</p>
+<a class="btn" href="https://wa.me/919627189407">Chat on WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2025 Tanisk Beauty Zone | Dehradun</p>
+</footer>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[{
+"@type":"Question",
+"name":"Do you provide beauty parlour services at home in Dehradun?",
+"acceptedAnswer":{"@type":"Answer","text":"Yes, Tanisk Beauty Zone provides professional beauty services at home across Dehradun."}
+},{
+"@type":"Question",
+"name":"What is the price of bridal makeup in Dehradun?",
+"acceptedAnswer":{"@type":"Answer","text":"Our bridal makeup starts from ₹9999 onwards."}
+},{
+"@type":"Question",
+"name":"How can I book an appointment?",
+"acceptedAnswer":{"@type":"Answer","text":"You can directly book via WhatsApp at +91 96271 89407."}
+}]
+}
+</script>
+
+</body>
+</html>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+background: #fff;
+color: #333;
+}
+
+header {
+background: #e8a1b0;
+color: #fff;
+padding: 40px 20px;
+text-align: center;
+}
+
+.tagline {
+font-size: 20px;
+font-weight: bold;
+}
+
+.services-line {
+font-size: 14px;
+}
+
+section {
+padding: 30px 20px;
+max-width: 1000px;
+margin: auto;
+}
+
+h2 {
+color: #2b2b2b;
+border-bottom: 2px solid #c9a24d;
+display: inline-block;
+margin-bottom: 15px;
+}
+
+h3 {
+margin-top: 20px;
+color: #444;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+ul li {
+padding: 6px 0;
+}
+
+.btn {
+display: inline-block;
+background: #c9a24d;
+color: #fff;
+padding: 12px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 15px;
+}
+
+.gallery img {
+width: 100%;
+border-radius: 10px;
+}
+
+iframe {
+width: 100%;
+height: 300px;
+border: 0;
+}
+
+footer {
+background: #2b2b2b;
+color: #fff;
+text-align: center;
+padding: 15px;
+}
+
+@media (max-width: 600px) {
+header h1 {
+font-size: 26px;
+}
+}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://yourusername.github.io/index.html</loc>
+</url>
+
+<url>
+<loc>https://yourusername.github.io/bridal-makeup-dehradun.html</loc>
+</url>
+
+<url>
+<loc>https://yourusername.github.io/beauty-parlour-at-home-dehradun.html</loc>
+</url>
+
+</urlset>
