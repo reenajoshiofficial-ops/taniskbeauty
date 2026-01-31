@@ -1,279 +1,362 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHCSPKJV3N"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YHCSPKJV3N');
-    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHCSPKJV3N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Google Search Console Verification -->
+  gtag('config', 'G-YHCSPKJV3N');
+</script>
+    
+    <!-- 🚨 GOOGLE VERIFICATION LINE ADDED BELOW 🚨 -->
     <meta name="google-site-verification" content="dCDt1v4dg8Y3BFQn2QkfJK2fJUa_bLW50bckenCdblE" />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://taniskbeauty.in/" />
-
-    <title>Tanisk Beauty Zone | Bridal Makeup & Home Salon in Dehradun</title>
-
-    <!-- SEO META -->
-    <meta name="description" content="Tanisk Beauty Zone – Dehradun’s trusted home salon. Bridal makeup, party makeup, VLCC facials, waxing & hair spa at home. Call 9627189407.">
-
-    <!-- CLEAN & SAFE KEYWORDS (Optimized) -->
-    <meta name="keywords" content="Tanisk Beauty Zone, bridal makeup Dehradun, home salon Dehradun, beauty parlour at home Dehradun, professional makeup artist Dehradun, wedding makeup Dehradun, party makeup Dehradun, VLCC facial Dehradun, hair spa Dehradun, salon at home Uttarakhand">
-
+    <title>Tanisk Beauty Zone 🌹 | Complete Beauty Parlour Dehradun | 9627189407</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    
+    <!-- SEO OPTIMIZATION -->
+    <meta name="description" content="🌹 Tanisk Beauty Zone - Dehradun's #1 Home Salon. Bridal makeup, 30+ services, VLCC facials, waxing, hair spa. Call 9627189407.">
+    <meta name="keywords" content="beauty parlour at home Dehradun, bridal makeup Dehradun, Tanisk Beauty Zone, salon at home near me, professional makeup Dehradun">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    
     <style>
         :root {
-            --rose-gold: #E8B4B8;
-            --deep-rose: #D4A5A9;
-            --cream: #FDF6F0;
-            --dark-cream: #F5EDE4;
-            --charcoal: #2D1B1C;
-            --accent-gold: #D4A059;
+            --rose-gold: #E8B4B8; --deep-rose: #D4A5A9;
+            --cream: #FDF6F0; --dark-cream: #F5EDE4;
+            --charcoal: #2D1B1C; --accent-gold: #D4A059;
         }
 
         * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--charcoal); overflow-x:hidden; }
+        body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--charcoal); scroll-behavior: smooth; overflow-x: hidden; }
 
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            backdrop-filter: blur(20px);
-            background: rgba(253, 246, 240, 0.95);
-            border-bottom: 1px solid var(--deep-rose);
-        }
+        /* HEADER */
+        header { position: fixed; top: 0; width: 100%; z-index: 1000; backdrop-filter: blur(20px); background: rgba(253, 246, 240, 0.95); border-bottom: 1px solid var(--deep-rose); padding: 1rem 0; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; background: linear-gradient(135deg, var(--rose-gold), var(--accent-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-link { color: var(--charcoal); text-decoration: none; font-weight: 500; font-size: 1rem; transition: 0.3s; }
+        .nav-link:hover { color: var(--accent-gold); }
 
-        .nav {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-        }
+        /* SLIDING BACKGROUND HERO */
+        .hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; overflow: hidden; }
+        .hero-slider { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s ease-in-out; }
+        .slide.active { opacity: 1; }
+        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(45, 27, 28, 0.6); z-index: 0; }
+        .hero-content { position: relative; z-index: 1; max-width: 800px; padding: 0 2rem; animation: fadeInUp 1.2s ease-out; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.4rem; margin-bottom: 3rem; opacity: 0.9; }
 
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--rose-gold), var(--accent-gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-decoration: none;
-        }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
 
-        .nav-links { display:flex; gap:2rem; }
-        .nav-link { text-decoration:none; color:var(--charcoal); font-weight:500; }
+        /* BUTTONS */
+        .btn { padding: 1.2rem 3rem; border-radius: 50px; font-weight: 600; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: 0.3s; border: none; font-size: 1rem; }
+        .btn-primary { background: linear-gradient(135deg, var(--rose-gold), var(--accent-gold)); color: var(--charcoal); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(232, 180, 184, 0.5); }
 
-        .hero {
-            height:100vh;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            color:#fff;
-            text-align:center;
-            position:relative;
-        }
+        /* SECTIONS */
+        .section { padding: 8rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 3.5rem; text-align: center; margin-bottom: 4rem; background: linear-gradient(135deg, var(--charcoal), #4A3A3B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* ABOUT US */
+        .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center; }
+        .about-text { font-size: 1.1rem; line-height: 1.8; color: #4A3A3B; }
+        .about-img { height: 450px; border-radius: 30px; background: url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80') center/cover; box-shadow: 20px 20px 0 var(--rose-gold); }
 
-        .hero-slider, .slide {
-            position:absolute;
-            width:100%;
-            height:100%;
-            top:0;
-            left:0;
-        }
+        /* SERVICES FILTER */
+        .filters { display: flex; justify-content: center; gap: 1rem; margin-bottom: 4rem; flex-wrap: wrap; }
+        .filter-btn { padding: 0.8rem 2rem; background: var(--dark-cream); border: 2px solid var(--deep-rose); border-radius: 50px; cursor: pointer; transition: 0.3s; font-weight: 500; font-size: 1rem; color: var(--charcoal); }
+        .filter-btn.active { background: var(--rose-gold); border-color: var(--accent-gold); }
 
-        .slide {
-            background-size:cover;
-            background-position:center;
-            opacity:0;
-            transition:opacity 1.5s;
-        }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+        .service-card { background: #fff; padding: 3rem 2rem; border-radius: 25px; text-align: center; border: 1px solid var(--deep-rose); transition: 0.4s; cursor: pointer; display: none; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .service-card.active { display: block; animation: slideUp 0.6s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .service-card:hover { transform: translateY(-10px); border-color: var(--accent-gold); box-shadow: 0 20px 50px rgba(212, 160, 89, 0.15); }
+        .service-icon { font-size: 3.5rem; margin-bottom: 1.5rem; display: block; }
+        .service-price { font-size: 2.5rem; font-weight: 700; color: var(--accent-gold); margin: 1rem 0; font-family: 'Playfair Display', serif; }
 
-        .slide.active { opacity:1; }
+        /* GALLERY */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .gallery-item { height: 350px; border-radius: 20px; overflow: hidden; position: relative; cursor: pointer; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .gallery-img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+        .gallery-item:hover .gallery-img { transform: scale(1.1); }
 
-        .hero-overlay {
-            position:absolute;
-            width:100%;
-            height:100%;
-            background:rgba(0,0,0,0.6);
-        }
+        /* CONTACT US */
+        .contact-section { background: var(--dark-cream); padding: 8rem 2rem; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto; }
+        .contact-card { background: #fff; padding: 3rem; border-radius: 25px; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.08); transition: 0.3s; }
+        .contact-card:hover { transform: translateY(-5px); }
+        .contact-icon { font-size: 3.5rem; margin-bottom: 1.5rem; display: block; }
+        .contact-text { font-size: 1.2rem; color: #4A3A3B; margin-bottom: 1rem; }
 
-        .hero-content {
-            position:relative;
-            z-index:2;
-        }
+        /* REVIEWS */
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+        .review-card { background: #fff; padding: 2.5rem; border-radius: 20px; border-left: 5px solid var(--rose-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .stars { color: var(--accent-gold); font-size: 1.4rem; margin-bottom: 1rem; }
+        
+        /* REVIEW FORM */
+        .review-form { background: #fff; padding: 3rem; border-radius: 25px; max-width: 700px; margin: 0 auto; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.8rem; font-weight: 500; }
+        .form-group input, .form-group textarea { width: 100%; padding: 1rem; border: 2px solid var(--deep-rose); border-radius: 12px; font-size: 1rem; font-family: 'Inter', sans-serif; }
+        .stars-input { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+        .star { font-size: 2rem; cursor: pointer; color: #ddd; transition: 0.3s; }
+        .star.selected { color: var(--accent-gold); }
 
-        .btn {
-            padding:1rem 2.5rem;
-            border-radius:50px;
-            text-decoration:none;
-            font-weight:600;
-            background:linear-gradient(135deg,var(--rose-gold),var(--accent-gold));
-            color:#2D1B1C;
-            display:inline-block;
-            margin-top:2rem;
-        }
+        /* WHATSAPP FLOAT */
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: linear-gradient(135deg, var(--rose-gold), var(--accent-gold)); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 15px 35px rgba(232, 180, 184, 0.4); z-index: 1000; transition: 0.3s; text-decoration: none; }
+        .wa-float:hover { transform: scale(1.1); }
 
-        .section {
-            padding:8rem 2rem;
-            max-width:1200px;
-            margin:auto;
-        }
-
-        .section-title {
-            text-align:center;
-            font-family:'Playfair Display',serif;
-            font-size:3rem;
-            margin-bottom:3rem;
-        }
-
-        .filters {
-            display:flex;
-            justify-content:center;
-            gap:1rem;
-            flex-wrap:wrap;
-        }
-
-        .filter-btn {
-            padding:.7rem 1.5rem;
-            border-radius:50px;
-            border:2px solid var(--deep-rose);
-            cursor:pointer;
-            background:var(--dark-cream);
-        }
-
-        .filter-btn.active {
-            background:var(--rose-gold);
-        }
-
-        .services-grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-            gap:2rem;
-            margin-top:3rem;
-        }
-
-        .service-card {
-            background:#fff;
-            padding:2rem;
-            border-radius:20px;
-            display:none;
-            text-align:center;
-        }
-
-        .service-card.active { display:block; }
-
-        .wa-float {
-            position:fixed;
-            bottom:25px;
-            right:25px;
-            width:65px;
-            height:65px;
-            background:linear-gradient(135deg,var(--rose-gold),var(--accent-gold));
-            border-radius:50%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:2rem;
-            text-decoration:none;
-        }
-
-        @media(max-width:768px){
-            .nav-links{display:none;}
-            .section-title{font-size:2.2rem;}
+        @media (max-width: 768px) { 
+            .hero h1 { font-size: 3rem; } 
+            .section-title { font-size: 2.5rem; }
+            .nav-links { display: none; } 
         }
     </style>
 </head>
-
 <body>
 
-<header>
-    <nav class="nav">
-        <a href="#" class="logo">Tanisk Beauty Zone</a>
-        <div class="nav-links">
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#contact" class="nav-link">Contact</a>
+    <header>
+        <nav class="nav">
+            <a href="#" class="logo">Tanisk Beauty Zone</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SLIDING BACKGROUND HERO -->
+    <section class="hero">
+       <div class="hero-slider">
+          <div class="slide active" style="background-image: url('https://i.imgur.com/QdxCiQD.jpeg');"></div>
+          <div class="slide" style="background-image: url('https://i.imgur.com/gp0iE49.jpeg');"></div>
+          <div class="slide" style="background-image: url('https://i.imgur.com/paBtSnQ.jpeg');"></div>
+       </div>
+
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Tanisk <span style="color: var(--rose-gold);">Beauty</span> Zone</h1>
+            <p>Dehradun's Complete Luxury Home Salon Experience</p>
+            <a href="https://wa.me/919627189407" class="btn btn-primary">Book Appointment</a>
         </div>
-    </nav>
-</header>
+    </section>
 
-<section class="hero">
-    <div class="hero-slider">
-        <div class="slide active" style="background-image:url('https://i.imgur.com/QdxCiQD.jpeg')"></div>
-        <div class="slide" style="background-image:url('https://i.imgur.com/gp0iE49.jpeg')"></div>
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1>Tanisk Beauty Zone</h1>
-        <p>Luxury Home Salon in Dehradun</p>
-        <a href="https://wa.me/919627189407" class="btn">Book Appointment</a>
-    </div>
-</section>
-
-<section id="services" class="section">
-    <div class="section-title">Our Services</div>
-
-    <div class="filters">
-        <button class="filter-btn active" onclick="filterServices('all', this)">All</button>
-        <button class="filter-btn" onclick="filterServices('bridal', this)">Bridal</button>
-        <button class="filter-btn" onclick="filterServices('facial', this)">Facial</button>
-    </div>
-
-    <div class="services-grid">
-        <div class="service-card active all bridal">
-            <h3>Bridal Makeup</h3>
-            <p>HD Airbrush Bridal Makeup</p>
+    <!-- ABOUT US -->
+    <section id="about" class="section">
+        <div class="section-title">About Our Passion</div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Welcome to <b>Tanisk Beauty Zone</b>, Dehradun’s premier home salon service dedicated to bringing professional beauty care to your doorstep. With over 10 years of expertise, we specialize in high-end bridal artistry, skin rejuvenation, and complete grooming.</p>
+                <p style="margin-top: 1.5rem;">Our mission is simple: to provide a luxurious, hygienic, and relaxing salon experience in the comfort of your own home. We use only premium international brands like VLCC, Lotus, and MAC to ensuring every client looks and feels their absolute best.</p>
+                <ul style="margin-top: 2rem; list-style: none;">
+                    <li style="margin-bottom: 0.5rem;">🌹 <b>Certified Experts:</b> Trained professional artists</li>
+                    <li style="margin-bottom: 0.5rem;">🌹 <b>Premium Products:</b> 100% authentic brands</li>
+                    <li style="margin-bottom: 0.5rem;">🌹 <b>Safety First:</b> Highest hygiene standards</li>
+                </ul>
+            </div>
+            <div class="about-img"></div>
         </div>
-        <div class="service-card active all facial">
-            <h3>VLCC Facial</h3>
-            <p>Glow & Skin Care</p>
+    </section>
+
+    <!-- FULL SERVICES -->
+    <section id="services" class="section" style="background: var(--dark-cream);">
+        <div class="section-title">Service Collection</div>
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterServices('all')">All Services</button>
+            <button class="filter-btn" onclick="filterServices('bridal')">Bridal (3)</button>
+            <button class="filter-btn" onclick="filterServices('facial')">Facials (6)</button>
+            <button class="filter-btn" onclick="filterServices('waxing')">Waxing (8)</button>
+            <button class="filter-btn" onclick="filterServices('hair')">Hair (4)</button>
+            <button class="filter-btn" onclick="filterServices('nails')">Nails (3)</button>
         </div>
-    </div>
-</section>
 
-<section id="contact" class="section">
-    <div class="section-title">Contact Us</div>
-    <p style="text-align:center;">📞 96271 89407<br>📍 Dehradun, Uttarakhand</p>
-</section>
+        <div class="services-grid">
+            <!-- BRIDAL -->
+            <div class="service-card active all bridal"><span class="service-icon">👰</span><h3>Bridal Makeup</h3><div class="service-price">₹14,999</div><p>HD Airbrush + Draping</p></div>
+            <div class="service-card active all bridal"><span class="service-icon">💍</span><h3>Engagement Makeup</h3><div class="service-price">₹6,100</div><p>Party Radiance + Hairstyle</p></div>
+            <div class="service-card active all bridal"><span class="service-icon">🎉</span><h3>Party Makeup</h3><div class="service-price">₹3,100</div><p>Guest Glamour Look</p></div>
 
-<a href="https://wa.me/919627189407" class="wa-float">💬</a>
+            <!-- FACIALS -->
+            <div class="service-card active all facial"><span class="service-icon">✨</span><h3>VLCC Fruit Facial</h3><div class="service-price">₹701</div><p>Instant Freshness</p></div>
+            <div class="service-card active all facial"><span class="service-icon">🌟</span><h3>VLCC Anti-Tan</h3><div class="service-price">₹701</div><p>Sun Tan Removal</p></div>
+            <div class="service-card active all facial"><span class="service-icon">💎</span><h3>Lotus Pearl Facial</h3><div class="service-price">₹1,101</div><p>Premium Whitening Glow</p></div>
+            <div class="service-card active all facial"><span class="service-icon">🌸</span><h3>Gold Facial</h3><div class="service-price">₹1,301</div><p>24K Radiance</p></div>
+            <div class="service-card active all facial"><span class="service-icon">🔥</span><h3>Skin Tightening</h3><div class="service-price">₹901</div><p>Anti-Aging Treatment</p></div>
+            <div class="service-card active all facial"><span class="service-icon">🧼</span><h3>Clean Up</h3><div class="service-price">₹401</div><p>Deep Pore Cleansing</p></div>
 
-<script>
-    // Hero slider
-    const slides = document.querySelectorAll('.slide');
-    let index = 0;
-    setInterval(() => {
-        slides[index].classList.remove('active');
-        index = (index + 1) % slides.length;
-        slides[index].classList.add('active');
-    }, 5000);
+            <!-- WAXING -->
+            <div class="service-card active all waxing"><span class="service-icon">🕯️</span><h3>Full Body Wax</h3><div class="service-price">₹1,399</div><p>Honey Wax + Free Threading</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">🦵</span><h3>Full Legs Wax</h3><div class="service-price">₹499</div><p>Smooth Finish</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">👙</span><h3>Bikini Wax</h3><div class="service-price">₹649</div><p>Using Chocolate Wax</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">💪</span><h3>Full Arms Wax</h3><div class="service-price">₹349</div><p>Silky Smooth Arms</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">💃</span><h3>Half Body Wax</h3><div class="service-price">₹899</div><p>Arms + Legs + Stomach</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">✨</span><h3>Face Threading</h3><div class="service-price">₹149</div><p>Full Face Hair Removal</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">👙</span><h3>Bikini Wax(2)</h3><div class="service-price">₹1,399</div><p>Using Rica Wax</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">🕯️</span><h3>Full Body Wax(2)</h3><div class="service-price">₹2,199</div><p>Using Rica Wax + Free Threading</p></div>
+            <div class="service-card active all waxing"><span class="service-icon">🧏</span><h3>Face Wax</h3><div class="service-price">₹349</div><p>Using Chocolate/Honey Wax</p></div>
 
-    // FIXED filter function
-    function filterServices(category, btn) {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+            <!-- HAIR -->
+            <div class="service-card active all hair"><span class="service-icon">💆‍♀️</span><h3>Hair Spa</h3><div class="service-price">₹999</div><p>L'Oreal Deep Conditioning</p></div>
+            <div class="service-card active all hair"><span class="service-icon">🌿</span><h3>Oil Massage</h3><div class="service-price">₹299</div><p>Relaxing Head Massage</p></div>
+            <div class="service-card active all hair"><span class="service-icon">🧴</span><h3>Smoothening</h3><div class="service-price">₹2999</div><p>Permanent Straightening According To Hair Length</p></div>
+            <div class="service-card active all hair"><span class="service-icon">💇‍♀️</span><h3>Hair Cut</h3><div class="service-price">₹399</div><p>Professional Styling Any Hair Cutting</p></div>
 
-        document.querySelectorAll('.service-card').forEach(card => {
-            if (category === 'all' || card.classList.contains(category)) {
-                card.classList.add('active');
-            } else {
-                card.classList.remove('active');
-            }
+             <!-- NAILS -->
+            <div class="service-card active all nails"><span class="service-icon">💅</span><h3>Mani-Pedi Combo</h3><div class="service-price">₹949</div><p>Complete Hand & Foot Care</p></div>
+            <div class="service-card active all nails"><span class="service-icon">✋</span><h3>Manicure</h3><div class="service-price">₹399</div><p></p></div>
+            <div class="service-card active all nails"><span class="service-icon">🦶</span><h3>Pedicure</h3><div class="service-price">₹499</div><p></p></div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+        <div class="section-title">Our Work Gallery</div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" class="gallery-img"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" class="gallery-img"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1457974182524-977ca70783f7?auto=format&fit=crop&w=600&q=80" class="gallery-img"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=80" class="gallery-img"></div>
+        </div>
+    </section>
+
+    <!-- REVIEWS + ADDER -->
+    <section id="reviews" class="section" style="background: var(--dark-cream);">
+        <div class="section-title">Customer Reviews</div>
+        <div class="reviews-grid" id="reviewsGrid"></div>
+        
+        <div class="review-form">
+            <h3 style="text-align:center; margin-bottom:2rem; font-family:'Playfair Display', serif; font-size:1.8rem;">Write a Review 🌹</h3>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="reviewName" required>
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="stars-input">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Your Experience</label>
+                    <textarea id="reviewText" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact" class="contact-section">
+        <div class="section-title">Get In Touch</div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <span class="contact-icon">📱</span>
+                <h3>Call / WhatsApp</h3>
+                <p class="contact-text">96271 89407</p>
+                <a href="tel:9627189407" class="btn btn-primary" style="margin-top:1rem; padding:0.8rem 2rem;">Call Now</a>
+            </div>
+            <div class="contact-card">
+                <span class="contact-icon">📧</span>
+                <h3>Email Us</h3>
+                <p class="contact-text">reenajoshiofficial@gmail.com</p>
+                <a href="mailto:reenajoshiofficial@gmail.com" class="btn btn-primary" style="margin-top:1rem; padding:0.8rem 2rem;">Send Email</a>
+            </div>
+            <div class="contact-card">
+                <span class="contact-icon">📍</span>
+                <h3>Service Area</h3>
+                <p class="contact-text">Dehradun City & Nearby (20km)</p>
+                <p style="margin-top:1rem; color:#888;">Home Service Available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/919627189407" class="wa-float" target="_blank">💬</a>
+
+    <script>
+        // BACKGROUND SLIDER
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 5000);
+
+        // SERVICE FILTER
+        function filterServices(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.service-card').forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) card.classList.add('active');
+                else card.classList.remove('active');
+            });
+        }
+
+        // REVIEWS
+        let reviews = JSON.parse(localStorage.getItem('taniskReviews')) || [
+            { name: "Priya S.", text: "Best bridal makeup in Dehradun! Loved the look.", rating: 5, date: "12/12/2024" },
+            { name: "Neha R.", text: "Very professional home service. Highly recommend!", rating: 5, date: "10/01/2025" }
+        ];
+        
+        let currentRating = 0;
+        document.querySelectorAll('.star').forEach(star => {
+            star.addEventListener('click', () => {
+                currentRating = star.dataset.rating;
+                document.querySelectorAll('.star').forEach(s => s.classList.toggle('selected', s.dataset.rating <= currentRating));
+            });
         });
-    }
-</script>
 
+        document.getElementById('reviewForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('reviewName').value;
+            const text = document.getElementById('reviewText').value;
+            reviews.unshift({ name, text, rating: currentRating, date: new Date().toLocaleDateString() });
+            localStorage.setItem('taniskReviews', JSON.stringify(reviews));
+            loadReviews();
+            document.getElementById('reviewForm').reset();
+            alert('Review Added! 🌹');
+        });
+
+        function loadReviews() {
+            const grid = document.getElementById('reviewsGrid');
+            grid.innerHTML = '';
+            reviews.forEach(r => {
+                grid.innerHTML += `
+                    <div class="review-card">
+                        <div class="stars">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div>
+                        <p style="font-style:italic; margin-bottom:1rem;">"${r.text}"</p>
+                        <div style="font-weight:bold;">${r.name} <span style="font-size:0.8rem; opacity:0.6;">• ${r.date}</span></div>
+                    </div>`;
+            });
+        }
+        loadReviews();
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
