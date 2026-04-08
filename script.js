@@ -22,3 +22,64 @@ header{position:sticky;top:0;z-index:1000;background:rgba(253,246,240,.95);backd
 footer{background:#2D1B1C;color:#f5e7e7;text-align:center;padding:2rem;font-size:.95rem;margin-top:2rem}
 @media (max-width:900px){.nav-links{display:none}.hero h1,.page-hero h1{font-size:2.7rem}.hero-points,.quick-info-inner,.booking-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:768px){.hero h1,.page-hero h1,.section-title{font-size:2.2rem}.hero-points,.quick-info-inner,.booking-grid{grid-template-columns:1fr}.btn{width:100%;max-width:330px}.hero-buttons,.popup-actions,.sticky-actions{justify-content:center}.sticky-inner{text-align:center;justify-content:center}}
+
+
+/* Mobile navigation and spacing fixes */
+.mobile-toggle{
+  display:none;
+  background:transparent;
+  border:none;
+  font-size:2rem;
+  line-height:1;
+  color:var(--charcoal);
+  cursor:pointer;
+  padding:.2rem .4rem;
+}
+
+main{display:block}
+
+@media (max-width: 900px){
+  .mobile-toggle{display:block}
+  .nav{position:relative}
+  .nav-links{
+    display:none !important;
+    position:absolute;
+    top:calc(100% + .6rem);
+    left:1rem;
+    right:1rem;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    padding:1rem;
+    flex-direction:column;
+    gap:.75rem;
+    z-index:3001;
+  }
+  .nav-links.open{display:flex !important}
+  .nav-link{
+    display:block;
+    padding:.8rem 1rem;
+    border-radius:12px;
+    background:#fff7f7;
+  }
+}
+
+/* Prevent sticky booking bar from hiding page content on mobile */
+body{padding-bottom:112px}
+@media (max-width: 768px){
+  body{padding-bottom:200px}
+  .section,.page-hero{padding-left:1rem;padding-right:1rem}
+  .page-hero{padding-top:2.2rem}
+  .hero{min-height:78vh}
+  .hero-content{padding:0 1rem}
+  .hero h1{font-size:2.4rem}
+  .hero p{font-size:1rem}
+  .hero-point{font-size:.88rem}
+  .gallery-item img{height:260px}
+  .sticky-booking{padding-bottom:env(safe-area-inset-bottom)}
+  .sticky-inner{gap:.75rem}
+  .sticky-actions{width:100%;justify-content:center}
+  .sticky-actions .btn{max-width:none}
+  .wa-float{bottom:150px}
+}
