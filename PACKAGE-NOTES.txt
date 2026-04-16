@@ -1,0 +1,17 @@
+UPLOAD THESE FILES TO THE ROOT OF YOUR GITHUB REPOSITORY.
+KEEP YOUR EXISTING /images FOLDER.
+
+THIS PACKAGE FIXES:
+- Single top menu only
+- No duplicate hamburger logic
+- Sticky Book Now button
+- Sticky bottom call/WhatsApp bar
+- WhatsApp auto-booking popup
+- Better homepage conversion layout
+- Dehradun keyword SEO rewrite
+- Gallery error handling for missing images
+
+IMPORTANT:
+1. KEEP your existing images folder exactly as it is.
+2. Upload the assets folder and all HTML/TXT/XML files from this package.
+3. Keep or upload CNAME so your custom domain stays connected.
