@@ -1,6 +1,0 @@
-Do not delete your existing images folder from GitHub.
-This package expects these existing image files:
-logo.jpeg
-slider-1.jpeg to slider-5.jpeg
-beforeafter-1.jpeg to beforeafter-3.jpeg
-gallery-1.jpeg to gallery-8.jpeg
