@@ -3,24 +3,262 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Tanisk Beauty Zone">
-<meta name="theme-color" content="#d8a25e">
+  <meta name="author" content="Tanisk Beauty Zone">
+  <meta name="theme-color" content="#d8a25e">
+
   <title>Beauty Parlour at Home in Dehradun | Bridal Makeup, Facial, Nail Extension | Tanisk Beauty Zone</title>
   <meta name="description" content="Tanisk Beauty Zone offers beauty parlour at home in Dehradun for bridal makeup at home, party makeup, facial at home, cleanup, D-Tan, waxing, hair spa, manicure, pedicure and nail extension home service in Dehradun.">
   <meta name="keywords" content="beauty parlour at home Dehradun, bridal makeup at home Dehradun, party makeup at home Dehradun, engagement makeup Dehradun home service, HD makeup at home Dehradun, airbrush makeup at home Dehradun, facial at home Dehradun, cleanup at home Dehradun, D-Tan service at home Dehradun, hair spa at home Dehradun, waxing at home Dehradun, nail extension at home Dehradun, manicure at home Dehradun, pedicure at home Dehradun, home salon services Dehradun">
   <meta name="robots" content="index, follow, max-image-preview:large">
+
   <link rel="canonical" href="https://taniskbeauty.in/">
+  <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Beauty Parlour at Home in Dehradun | Tanisk Beauty Zone">
   <meta property="og:description" content="Book bridal makeup, party makeup, facial, cleanup, waxing, nail extensions, manicure, pedicure and hair spa with premium home salon service in Dehradun.">
   <meta property="og:url" content="https://taniskbeauty.in/">
   <meta property="og:image" content="https://taniskbeauty.in/images/slider-1.jpeg">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#d7a14d">
+  <meta name="twitter:title" content="Beauty Parlour at Home in Dehradun | Tanisk Beauty Zone">
+  <meta name="twitter:description" content="Book bridal makeup, facial, waxing, nail extension, manicure, pedicure and hair spa at home in Dehradun.">
+  <meta name="twitter:image" content="https://taniskbeauty.in/images/slider-1.jpeg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:28px;
+      flex-wrap:wrap;
+    }
+    .nav a{
+      text-decoration:none;
+    }
+    .hero .pill-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:22px 0 0;
+    }
+    .hero .pill{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:11px 18px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.45);
+      color:#fff;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(2px);
+      font-weight:700;
+      font-size:15px;
+    }
+    .homepage-grid-4,
+    .homepage-grid-3{
+      display:grid;
+      gap:24px;
+    }
+    .homepage-grid-4{
+      grid-template-columns:repeat(4,1fr);
+    }
+    .homepage-grid-3{
+      grid-template-columns:repeat(3,1fr);
+    }
+    .homepage-card{
+      background:#fbf5ef;
+      border:1px solid #ead7c0;
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.04);
+      height:100%;
+    }
+    .homepage-card h3{
+      margin:0 0 12px;
+      font-size:20px;
+      line-height:1.3;
+    }
+    .homepage-card p{
+      margin:0;
+      color:#5b4638;
+      line-height:1.8;
+      font-size:17px;
+    }
+    .homepage-section{
+      padding:76px 0;
+    }
+    .homepage-section-light{
+      background:#f7efe7;
+    }
+    .homepage-eyebrow{
+      display:inline-block;
+      margin-bottom:14px;
+      font-size:14px;
+      font-weight:800;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:#c68a2a;
+    }
+    .homepage-heading{
+      max-width:1100px;
+      margin:0 auto 18px;
+      text-align:center;
+    }
+    .homepage-heading h2{
+      margin:0 0 16px;
+      font-size:clamp(34px,5vw,72px);
+      line-height:1.05;
+    }
+    .homepage-heading p{
+      margin:0 auto;
+      max-width:980px;
+      font-size:20px;
+      line-height:1.8;
+      color:#5b4638;
+    }
+    .service-links-row{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
+      margin-top:28px;
+    }
+    .service-links-row a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:800;
+      border:1px solid #d9b07c;
+      color:#6c4222;
+      background:#fff8f1;
+    }
+    .homepage-highlight{
+      background:linear-gradient(135deg,#3b2018 0%, #6a412e 100%);
+      color:#fff;
+      border-radius:34px;
+      padding:44px;
+      display:grid;
+      grid-template-columns:1.25fr .9fr;
+      gap:28px;
+    }
+    .homepage-highlight h2,
+    .homepage-highlight h3,
+    .homepage-highlight p{
+      color:#fff;
+    }
+    .homepage-mini-box{
+      background:rgba(255,255,255,0.10);
+      border:1px solid rgba(255,255,255,0.16);
+      border-radius:26px;
+      padding:28px;
+      align-self:stretch;
+    }
+    .homepage-actions{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:22px;
+    }
+    .service-area-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:20px;
+    }
+    .service-area-badges span{
+      display:inline-flex;
+      padding:10px 16px;
+      border-radius:999px;
+      background:#fff4e6;
+      border:1px solid #e4c49d;
+      font-weight:700;
+      color:#6c4222;
+    }
+    .homepage-split{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:34px;
+      align-items:center;
+    }
+    .homepage-split-image img{
+      width:100%;
+      border-radius:28px;
+      display:block;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      box-shadow:0 18px 40px rgba(0,0,0,0.10);
+    }
+    .homepage-gallery-card img{
+      width:100%;
+      display:block;
+      aspect-ratio:4/4.3;
+      object-fit:cover;
+      border-radius:20px 20px 0 0;
+    }
+    .homepage-gallery-card{
+      overflow:hidden;
+      padding:0;
+    }
+    .homepage-gallery-card .inner{
+      padding:24px;
+    }
+    .footer-keyword-line{
+      text-align:center;
+      font-size:14px;
+      line-height:1.9;
+      margin-top:22px;
+      color:#e8d8c7;
+      border-top:1px solid rgba(255,255,255,0.12);
+      padding-top:18px;
+    }
+    @media (max-width: 1100px){
+      .homepage-grid-4{
+        grid-template-columns:repeat(2,1fr);
+      }
+      .homepage-grid-3{
+        grid-template-columns:repeat(2,1fr);
+      }
+      .homepage-highlight,
+      .homepage-split{
+        grid-template-columns:1fr;
+      }
+    }
+    @media (max-width: 767px){
+      .homepage-section{
+        padding:56px 0;
+      }
+      .homepage-grid-4,
+      .homepage-grid-3{
+        grid-template-columns:1fr;
+      }
+      .homepage-card{
+        padding:22px;
+      }
+      .homepage-highlight{
+        padding:28px 20px;
+        border-radius:24px;
+      }
+      .homepage-heading p{
+        font-size:17px;
+      }
+      .hero .pill{
+        font-size:14px;
+        padding:10px 14px;
+      }
+      .nav{
+        display:none;
+      }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -35,30 +273,52 @@
     "priceRange":"₹₹",
     "areaServed":{"@type":"City","name":"Dehradun"},
     "address":{"@type":"PostalAddress","addressLocality":"Dehradun","addressRegion":"Uttarakhand","addressCountry":"IN"},
-    "sameAs":["https://g.page/r/CXUpmQvVoq_kEBM/review","https://www.google.com/search?q=Tanisk+Beauty+Zone+Dehradun"],
+    "sameAs":[
+      "https://g.page/r/CXUpmQvVoq_kEBM/review",
+      "https://www.google.com/search?q=Tanisk+Beauty+Zone+Dehradun"
+    ],
     "serviceType":[
-      "Bridal Makeup at Home","Party Makeup at Home","Engagement Makeup at Home",
-      "Facial at Home","Cleanup at Home","Waxing at Home","Nail Extension at Home",
-      "Manicure at Home","Pedicure at Home","Hair Spa at Home","Hair Color at Home"
+      "Bridal Makeup at Home",
+      "Party Makeup at Home",
+      "Engagement Makeup at Home",
+      "Facial at Home",
+      "Cleanup at Home",
+      "Waxing at Home",
+      "Nail Extension at Home",
+      "Manicure at Home",
+      "Pedicure at Home",
+      "Hair Spa at Home",
+      "Hair Color at Home"
     ]
   }
   </script>
-  
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"Do you provide beauty parlour home service in all Dehradun areas?","acceptedAnswer":{"@type":"Answer","text":"Yes, Tanisk Beauty Zone provides home salon services across Dehradun and nearby areas depending on slot availability."}},
-    {"@type":"Question","name":"How do I book a service?","acceptedAnswer":{"@type":"Answer","text":"You can book by WhatsApp, by phone call, or by using the booking form on the contact page."}},
-    {"@type":"Question","name":"Which services are available at home?","acceptedAnswer":{"@type":"Answer","text":"Popular home services include bridal makeup, party makeup, engagement makeup, facials, cleanup, waxing, manicure, pedicure, nail extension, hair spa and hair color."}}
-  ]
-}
-</script>
 
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Do you provide beauty parlour home service in all Dehradun areas?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes, Tanisk Beauty Zone provides home salon services across Dehradun and nearby areas depending on slot availability."}
+      },
+      {
+        "@type":"Question",
+        "name":"How do I book a service?",
+        "acceptedAnswer":{"@type":"Answer","text":"You can book by WhatsApp, by phone call, or by using the booking form on the contact page."}
+      },
+      {
+        "@type":"Question",
+        "name":"Which services are available at home?",
+        "acceptedAnswer":{"@type":"Answer","text":"Popular home services include bridal makeup, party makeup, engagement makeup, facials, cleanup, waxing, manicure, pedicure, nail extension, hair spa and hair color."}
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="home">
-  
+
 <header class="header">
   <div class="container">
     <div class="header-inner">
@@ -66,126 +326,215 @@
         <img src="images/logo.jpeg" alt="Tanisk Beauty Zone logo">
         <div class="brand-text">Tanisk Beauty Zone</div>
       </a>
-      <nav class="nav" aria-label="Primary"><a class="active" href="index.html">Home</a><a class="" href="services.html">Services</a><a class="" href="about.html">About</a><a class="" href="gallery.html">Gallery</a><a class="" href="contact.html">Contact</a></nav>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
-    <div class="mobile-nav" aria-label="Mobile menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+
+    <div class="mobile-nav" aria-label="Mobile menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </div>
 </header>
 
-  <main>
-<section class="hero">
-  <div class="hero-slider">
-    <div class="hero-slide active" style="background-image:url('images/slider-1.jpeg')"></div>
-    <div class="hero-slide" style="background-image:url('images/slider-4.jpeg')"></div>
-    <div class="hero-slide" style="background-image:url('images/slider-5.jpeg')"></div>
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <div class="badge">Beauty Parlour Home Service in Dehradun</div>
-    <h1>Beauty Parlour at Home in Dehradun</h1>
-    <p class="lead">Book bridal makeup, party makeup, engagement makeup, facial, cleanup, waxing, nail extensions, manicure, pedicure and hair spa at home in Dehradun with easy booking and doorstep service.</p>
-    <div class="pill-row">
-      <span class="pill">Bridal Makeup</span>
-      <span class="pill">Facial & Cleanup</span>
-      <span class="pill">Waxing</span>
-      <span class="pill">Nail Extension</span>
-      <span class="pill">Hair Spa</span>
+<main>
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image:url('images/slider-1.jpeg')"></div>
+      <div class="hero-slide" style="background-image:url('images/slider-4.jpeg')"></div>
+      <div class="hero-slide" style="background-image:url('images/slider-5.jpeg')"></div>
     </div>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">Book on WhatsApp</a>
-      <a class="btn btn-secondary" href="#" data-book="Home Salon Service">Book Now</a>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="badge">Beauty Parlour Home Service in Dehradun</div>
+      <h1>Beauty Parlour at Home in Dehradun</h1>
+      <p class="lead">
+        Book bridal makeup, party makeup, engagement makeup, facial, cleanup, waxing,
+        nail extensions, manicure, pedicure and hair spa at home in Dehradun with easy
+        booking and doorstep service.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">Bridal Makeup</span>
+        <span class="pill">Facial &amp; Cleanup</span>
+        <span class="pill">Waxing</span>
+        <span class="pill">Nail Extension</span>
+        <span class="pill">Hair Spa</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">Book on WhatsApp</a>
+        <a class="btn btn-secondary" href="#" data-book="Home Salon Service">Book Now</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-tight">
-  <div class="container grid grid-4">
-    <div class="card feature-card"><div class="card-body"><h3>Certified Beautician</h3><p>Trained from IBI International School of Cosmetology & Aesthetics, Dehradun.</p></div></div>
-    <div class="card feature-card"><div class="card-body"><h3>5+ Years Experience</h3><p>Trusted bridal, skin, hair and nail service from home.</p></div></div>
-    <div class="card feature-card"><div class="card-body"><h3>Premium Products</h3><p>Clean tools and salon-quality products chosen for each service.</p></div></div>
-    <div class="card feature-card"><div class="card-body"><h3>Fast WhatsApp Booking</h3><p>Simple conversion flow designed to get bookings quickly.</p></div></div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="eyebrow">Our Home Salon Services</div>
-    <h2>Home Salon Services for Bridal, Skin, Hair and Nails</h2>
-    <p class="lead">Choose bridal makeup, facial, cleanup, waxing, manicure, pedicure, nail extension and hair spa service at home in Dehradun with premium products and simple WhatsApp booking.</p>
-    <div class="grid grid-3" style="margin-top:28px">
-      <div class="card service-card"><div class="card-body"><h3>Makeup & Bridal</h3><p>Bridal makeup, party makeup, engagement makeup, HD makeup and pre-bridal support at home in Dehradun for weddings, events and special occasions.</p></div></div>
-      <div class="card service-card"><div class="card-body"><h3>Skin, Hair & Waxing</h3><p>Facial, cleanup, detan, hair spa, hair cut, hair color and waxing at home in Dehradun with a professional, hygienic setup.</p></div></div>
-      <div class="card service-card"><div class="card-body"><h3>Hands & Feet</h3><p>Nail extension, manicure, pedicure and nail art at home in Dehradun with a premium finish and clean tools.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container highlight">
-    <div class="highlight-grid">
-      <div>
-        <div class="eyebrow" style="color:#ffd8a1">Easy Booking</div>
-        <h2>Quick WhatsApp Booking and Google Reviews</h2>
-        <p>Book your preferred beauty service quickly through WhatsApp or the contact form. We keep the booking process simple, fast and convenient for home service customers in Dehradun.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">WhatsApp Booking</a>
-          <a class="btn btn-light" data-google-reviews href="https://g.page/r/CXUpmQvVoq_kEBM/review">Google Reviews</a>
+  <section class="homepage-section homepage-section-light">
+    <div class="container">
+      <div class="homepage-grid-4">
+        <div class="homepage-card">
+          <h3>Certified Beautician</h3>
+          <p>Trained from IBI International School of Cosmetology &amp; Aesthetics, Dehradun.</p>
+        </div>
+        <div class="homepage-card">
+          <h3>5+ Years Experience</h3>
+          <p>Trusted bridal, skin, hair and nail service from home.</p>
+        </div>
+        <div class="homepage-card">
+          <h3>Premium Products</h3>
+          <p>Clean tools and salon-quality products chosen for each service.</p>
+        </div>
+        <div class="homepage-card">
+          <h3>Fast WhatsApp Booking</h3>
+          <p>Simple conversion flow designed to get bookings quickly.</p>
         </div>
       </div>
-      <div class="highlight-mini">
-        <h3>Why clients book with us</h3>
-        <p>Fast response, doorstep availability, bridal expertise, clean tools and easy WhatsApp support make booking simple for clients across Dehradun.</p>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container split">
-    <div>
-      <div class="eyebrow">Serving all Dehradun</div>
-      <h2>Home Service Across Dehradun</h2>
-      <p class="lead">Tanisk Beauty Zone works as a home-service beauty business. We travel to clients across Dehradun for bridal, party, nail and skin services based on booking availability.</p>
-      <div class="service-area-badges">
-        <span>All Dehradun</span><span>Rajpur Road</span><span>Mussoorie Road</span><span>Clock Tower Side</span><span>Sahastradhara Area</span><span>Nearby localities</span>
+  <section class="homepage-section">
+    <div class="container">
+      <div class="homepage-heading">
+        <div class="homepage-eyebrow">Our Home Salon Services</div>
+        <h2>Home Salon Services for Bridal, Skin, Hair and Nails</h2>
+        <p>
+          Choose bridal makeup, facial, cleanup, waxing, manicure, pedicure, nail extension and hair spa service at home in Dehradun with premium products and simple WhatsApp booking.
+        </p>
       </div>
-      <div class="cta-row" style="margin-top:22px">
-        <a class="btn btn-outline" data-google-profile href="https://www.google.com/search?q=Tanisk+Beauty+Zone+Dehradun">Open in Google Maps</a>
-        <a class="btn btn-primary" href="contact.html">Contact & Booking</a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="images/slider-3.jpeg" alt="Bridal makeup at home in Dehradun by Tanisk Beauty Zone" style="aspect-ratio:4/4.8;object-fit:cover">
-    </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <div class="eyebrow">Featured Portfolio</div>
-    <h2>Bridal, Transformation and Nail Work</h2>
-    <div class="gallery-grid" style="margin-top:28px">
-      <article class="card gallery-card">
-        <img src="images/beforeafter-1.jpeg" alt="Before after makeup transformation in Dehradun">
-        <div class="card-body"><h3>Before / After Transformation</h3><p>Visible makeup transformation for bridal and event clients who want a confident final look.</p></div>
-      </article>
-      <article class="card gallery-card">
-        <img src="images/gallery-4.jpeg" alt="Bengali bridal makeup home service in Dehradun">
-        <div class="card-body"><h3>Bengali Bridal Makeup</h3><p>Traditional bridal styling with detailed eyes, jewellery balance and elegant finishing.</p></div>
-      </article>
-      <article class="card gallery-card">
-        <img src="images/gallery-5.jpeg" alt="French nail extension at home in Dehradun">
-        <div class="card-body"><h3>French Nail Extension</h3><p>Clean premium nail extension work for bridal and party clients.</p></div>
-      </article>
+      <div class="homepage-grid-3">
+        <div class="homepage-card">
+          <h3>Makeup &amp; Bridal</h3>
+          <p>Bridal makeup, party makeup, engagement makeup, HD makeup and pre-bridal support at home in Dehradun for weddings, events and special occasions.</p>
+        </div>
+        <div class="homepage-card">
+          <h3>Skin, Hair &amp; Waxing</h3>
+          <p>Facial, cleanup, detan, hair spa, hair cut, hair color and waxing at home in Dehradun with a professional, hygienic setup.</p>
+        </div>
+        <div class="homepage-card">
+          <h3>Hands &amp; Feet</h3>
+          <p>Nail extension, manicure, pedicure and nail art at home in Dehradun with a premium finish and clean tools.</p>
+        </div>
+      </div>
+
+      <div class="service-links-row">
+        <a href="services.html">👉 View All Services</a>
+        <a href="gallery.html">👉 See Our Work Gallery</a>
+      </div>
     </div>
-    <div style="text-align:center;margin-top:26px">
-      <a class="btn btn-primary" href="gallery.html">View Full Gallery</a>
+  </section>
+
+  <section class="homepage-section">
+    <div class="container">
+      <div class="homepage-highlight">
+        <div>
+          <div class="homepage-eyebrow" style="color:#ffd59b;">Easy Booking</div>
+          <h2>Quick WhatsApp Booking and Google Reviews</h2>
+          <p>
+            Book your preferred beauty service quickly through WhatsApp or the contact form.
+            We keep the booking process simple, fast and convenient for home service customers in Dehradun.
+          </p>
+
+          <div class="homepage-actions">
+            <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">WhatsApp Booking</a>
+            <a class="btn btn-light" href="https://g.page/r/CXUpmQvVoq_kEBM/review">Google Reviews</a>
+          </div>
+        </div>
+
+        <div class="homepage-mini-box">
+          <h3>Why clients book with us</h3>
+          <p>
+            Fast response, doorstep availability, bridal expertise, clean tools and easy WhatsApp support make booking simple for clients across Dehradun.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="homepage-section homepage-section-light">
+    <div class="container">
+      <div class="homepage-split">
+        <div>
+          <div class="homepage-eyebrow">Serving all Dehradun</div>
+          <h2>Home Service Across Dehradun</h2>
+          <p class="lead">
+            Tanisk Beauty Zone works as a home-service beauty business. We travel to clients across Dehradun for bridal, party, nail and skin services based on booking availability.
+          </p>
+
+          <div class="service-area-badges">
+            <span>All Dehradun</span>
+            <span>Rajpur Road</span>
+            <span>Mussoorie Road</span>
+            <span>Clock Tower Side</span>
+            <span>Sahastradhara Area</span>
+            <span>Nearby Localities</span>
+          </div>
+
+          <div class="homepage-actions" style="margin-top:22px;">
+            <a class="btn btn-outline" href="https://www.google.com/search?q=Tanisk+Beauty+Zone+Dehradun">Open in Google Maps</a>
+            <a class="btn btn-primary" href="contact.html">Contact &amp; Booking</a>
+          </div>
+        </div>
+
+        <div class="homepage-split-image">
+          <img src="images/slider-3.jpeg" alt="Bridal makeup at home in Dehradun by Tanisk Beauty Zone">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="homepage-section">
+    <div class="container">
+      <div class="homepage-heading">
+        <div class="homepage-eyebrow">Featured Portfolio</div>
+        <h2>Bridal, Transformation and Nail Work</h2>
+      </div>
+
+      <div class="homepage-grid-3">
+        <article class="homepage-card homepage-gallery-card">
+          <img src="images/beforeafter-1.jpeg" alt="Before after makeup transformation in Dehradun">
+          <div class="inner">
+            <h3>Before / After Transformation</h3>
+            <p>Visible makeup transformation for bridal and event clients who want a confident final look.</p>
+          </div>
+        </article>
+
+        <article class="homepage-card homepage-gallery-card">
+          <img src="images/gallery-4.jpeg" alt="Bengali bridal makeup home service in Dehradun">
+          <div class="inner">
+            <h3>Bengali Bridal Makeup</h3>
+            <p>Traditional bridal styling with detailed eyes, jewellery balance and elegant finishing.</p>
+          </div>
+        </article>
+
+        <article class="homepage-card homepage-gallery-card">
+          <img src="images/gallery-5.jpeg" alt="French nail extension at home in Dehradun">
+          <div class="inner">
+            <h3>French Nail Extension</h3>
+            <p>Clean premium nail extension work for bridal and party clients.</p>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:28px;">
+        <a class="btn btn-primary" href="gallery.html">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
 </main>
-  
+
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -193,20 +542,35 @@
         <h3>Tanisk Beauty Zone</h3>
         <p class="small">Premium beauty parlour at home in Dehradun for bridal, party, facial, waxing, hair and nail services.</p>
       </div>
+
       <div>
         <h3>Quick Links</h3>
-        <p><a href="services.html">Services</a> · <a href="gallery.html">Gallery</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></p>
+        <p>
+          <a href="services.html">Services</a> ·
+          <a href="gallery.html">Gallery</a> ·
+          <a href="about.html">About</a> ·
+          <a href="contact.html">Contact</a>
+        </p>
       </div>
+
       <div>
         <h3>Contact</h3>
-        <p>Call / WhatsApp: <a href="tel:+919627189407">9627189407</a><br>Email: <a href="mailto:reenajoshiofficial@gmail.com">reenajoshiofficial@gmail.com</a><br>Service Area: Dehradun and nearby areas</p>
+        <p>
+          Call / WhatsApp: <a href="tel:+919627189407">9627189407</a><br>
+          Email: <a href="mailto:reenajoshiofficial@gmail.com">reenajoshiofficial@gmail.com</a><br>
+          Service Area: Dehradun and nearby areas
+        </p>
       </div>
     </div>
+
+    <div class="footer-keyword-line">
+      Beauty Parlour at Home in Dehradun | Bridal Makeup at Home | Facial at Home | Nail Extension at Home | Hair Spa at Home | Waxing at Home Dehradun
+    </div>
+
     <div class="footer-bottom">© 2026 Tanisk Beauty Zone. Home salon service in Dehradun.</div>
   </div>
 </footer>
 
-  
 <div class="modal" id="bookingModal" aria-hidden="true">
   <div class="modal-card">
     <div class="modal-head">
@@ -217,6 +581,7 @@
       </div>
       <button class="close-btn" id="closeModal" aria-label="Close">✕</button>
     </div>
+
     <div class="modal-body">
       <form id="bookingForm">
         <div class="form-grid">
@@ -237,15 +602,19 @@
             <input id="dateInput" type="date">
           </div>
         </div>
+
         <div style="margin-top:16px">
           <label for="areaInput">Area / Address</label>
           <input id="areaInput" type="text" placeholder="Your area in Dehradun">
         </div>
+
         <div style="margin-top:16px">
           <label for="noteInput">Extra Details</label>
           <textarea id="noteInput" placeholder="Any time preference, package, or special requirement"></textarea>
         </div>
+
         <div class="note" style="margin:16px 0 18px">Best for quick response: after submitting, your WhatsApp will open with all details prefilled.</div>
+
         <div class="cta-row">
           <button class="btn btn-primary" type="submit">Continue on WhatsApp</button>
           <button class="btn btn-outline" type="button" id="cancelModal">Cancel</button>
@@ -255,9 +624,9 @@
   </div>
 </div>
 
-  <a class="float-book desktop-only" href="#" data-book="Home Salon Service">Book Now</a>
-  <a class="float-whatsapp" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." aria-label="WhatsApp booking">💬</a>
-  
+<a class="float-book desktop-only" href="#" data-book="Home Salon Service">Book Now</a>
+<a class="float-whatsapp" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." aria-label="WhatsApp booking">💬</a>
+
 <div class="sticky-mobile">
   <div class="container">
     <div class="sticky-inner">
@@ -273,6 +642,6 @@
   </div>
 </div>
 
-  <script src="assets/script.js"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>
