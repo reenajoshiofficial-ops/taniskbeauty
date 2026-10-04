@@ -505,6 +505,61 @@
       color: #1a080d;
     }
 
+    /* =======================================================
+       AUTHENTIC SERVICE PRICING GRID
+       ======================================================= */
+    .pricing-table-section {
+      padding: 85px 0;
+      background: #ffffff;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .price-card-item {
+      background: #fffdfb;
+      border: 1.5px solid #ecd3a7;
+      border-radius: 18px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .price-card-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--festive-gold);
+      box-shadow: 0 10px 24px rgba(197, 155, 39, 0.14);
+      background: #fffbf5;
+    }
+    .price-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .price-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #3b1e16;
+      text-transform: capitalize;
+    }
+    .price-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #d4af37, #b8860b);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 3px 10px rgba(184, 134, 11, 0.25);
+      white-space: nowrap;
+    }
+
     /* Standard Sections & Grids */
     .homepage-section {
       padding: 85px 0;
@@ -884,6 +939,7 @@
       margin-bottom: 5px;
     }
     .modal-card input,
+    .modal-card select,
     .modal-card textarea {
       width: 100%;
       padding: 11px 13px;
@@ -896,6 +952,7 @@
       background: #fffdfb;
     }
     .modal-card input:focus,
+    .modal-card select:focus,
     .modal-card textarea:focus {
       border-color: var(--festive-gold);
       box-shadow: 0 0 0 3px rgba(197, 155, 39, 0.15);
@@ -931,6 +988,9 @@
 
     /* Responsive Queries */
     @media (max-width: 1100px) {
+      .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
       .festive-cards-grid, .homepage-grid-4 {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -945,6 +1005,9 @@
       .hero {
         min-height: 75vh;
         padding: 50px 0 70px;
+      }
+      .pricing-grid {
+        grid-template-columns: 1fr;
       }
       .festive-cards-grid, .homepage-grid-4, .homepage-grid-3 {
         grid-template-columns: 1fr;
@@ -998,22 +1061,24 @@
     ],
     "serviceType":[
       "Beauty Parlour in Dehradun",
-      "Best Beauty Parlour Dehradun",
-      "Ladies Beauty Parlour Dehradun",
-      "Beauty Parlour at Home Dehradun",
+      "Air Brush Makeup Dehradun",
       "Bridal Makeup at Home Dehradun",
-      "Karwa Chauth Festive Makeup Dehradun",
-      "Diwali Special Glow Facial Dehradun",
+      "Groom Makeup Dehradun",
       "Party Makeup at Home",
-      "Engagement Makeup Dehradun",
       "Facial at Home Dehradun",
       "Cleanup at Home Dehradun",
       "Waxing at Home Dehradun",
+      "Bikini Waxing Dehradun",
       "Nail Extension at Home Dehradun",
       "Manicure at Home Dehradun",
       "Pedicure at Home Dehradun",
-      "Hair Spa at Home Dehradun",
-      "Pre Bridal Packages Dehradun"
+      "Hair Styling Dehradun",
+      "Saree Draping Dehradun",
+      "Mehandi Design Dehradun",
+      "Head Massage Dehradun",
+      "Body Massage Dehradun",
+      "Body Polishing Dehradun",
+      "Threading Forehead Upperlips"
     ]
   }
   </script>
@@ -1050,7 +1115,7 @@
   <span class="diya-icon">🪔</span>
   <span>
     <strong>Festive Season Special (Karwa Chauth &amp; Diwali):</strong> Flat 20% OFF on Festive Glow Combos &amp; Pre-Bridal Packages across Dehradun!
-    <a href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20enquire%20about%20Festive%20Packages.">Claim Offer ✨</a>
+    <a href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20enquire%20about%20Festive%20Packages." target="_blank" rel="noopener">Claim Offer ✨</a>
   </span>
   <span class="diya-icon">🪔</span>
 </aside>
@@ -1063,12 +1128,13 @@
         <div class="brand-text">Tanisk Beauty Zone</div>
       </a>
 
+      <!-- Navigation links open in another page / tab -->
       <nav class="nav" aria-label="Primary">
         <a class="active" href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <a href="services.html" target="_blank" rel="noopener">Services</a>
+        <a href="about.html" target="_blank" rel="noopener">About</a>
+        <a href="gallery.html" target="_blank" rel="noopener">Gallery</a>
+        <a href="contact.html" target="_blank" rel="noopener">Contact</a>
       </nav>
 
       <button class="menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -1085,13 +1151,13 @@
     </div>
     <div class="mobile-nav-links">
       <a href="index.html">Home</a>
-      <a href="services.html">Services &amp; Pricing</a>
-      <a href="about.html">About Beautician</a>
-      <a href="gallery.html">Work Gallery</a>
-      <a href="contact.html">Contact &amp; Booking</a>
+      <a href="services.html" target="_blank" rel="noopener">Services &amp; Pricing</a>
+      <a href="about.html" target="_blank" rel="noopener">About Beautician</a>
+      <a href="gallery.html" target="_blank" rel="noopener">Work Gallery</a>
+      <a href="contact.html" target="_blank" rel="noopener">Contact &amp; Booking</a>
     </div>
     <div style="margin-top:auto; display:flex; flex-direction:column; gap:10px;">
-      <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">WhatsApp Booking</a>
+      <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." target="_blank" rel="noopener">WhatsApp Booking</a>
       <a class="btn btn-outline" style="color:var(--text-main); border-color:#d4af37;" href="tel:+919627189407">Call: 9627189407</a>
     </div>
   </div>
@@ -1118,7 +1184,7 @@
       <p class="lead">
         Welcome to Tanisk Beauty Zone, the premier <strong>beauty parlour in Dehradun</strong> delivering certified salon luxury directly to your home. Professional bridal makeup, 
         Karwa Chauth &amp; Diwali festive glow, Hydra-style facials, waxing, nail extensions, and hair spas in Dehradun. 
-        Explore our <a href="services.html">complete services price list</a>.
+        Explore our <a href="services.html" target="_blank" rel="noopener">complete services price list</a>.
       </p>
 
       <div class="pill-row">
@@ -1131,13 +1197,13 @@
       </div>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">
+        <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." target="_blank" rel="noopener">
           💬 Book on WhatsApp
         </a>
         <a class="btn btn-secondary" href="#bookingModal" data-book="Home Salon Service">
           📅 Instant Booking
         </a>
-        <a class="btn btn-outline" href="services.html">
+        <a class="btn btn-outline" href="services.html" target="_blank" rel="noopener">
           Explore Services →
         </a>
       </div>
@@ -1160,7 +1226,7 @@
           <div class="icon-head">🪔</div>
           <h3>Karwa Chauth Shringaar</h3>
           <p>Complete festive makeover with instant radiant Gold/O3+ facial, HD eye makeup, festive hair styling, and saree draping.</p>
-          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Karwa%20Chauth%20Shringaar%20package.">Book This Package →</a>
+          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Karwa%20Chauth%20Shringaar%20package." target="_blank" rel="noopener">Book This Package →</a>
         </article>
 
         <!-- Festive Card 2 -->
@@ -1169,7 +1235,7 @@
           <div class="icon-head">✨</div>
           <h3>Diwali Dhamaka Glow</h3>
           <p>Full face &amp; neck D-Tan, premium glow facial, Honey/Rica arms &amp; legs waxing, plus relaxing head massage at your home.</p>
-          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Diwali%20Dhamaka%20Glow%20package.">Book This Package →</a>
+          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Diwali%20Dhamaka%20Glow%20package." target="_blank" rel="noopener">Book This Package →</a>
         </article>
 
         <!-- Festive Card 3 -->
@@ -1178,7 +1244,7 @@
           <div class="icon-head">👰</div>
           <h3>Royal Pre-Bridal Combo</h3>
           <p>Head-to-toe pampering with Diamond skin polish, full body waxing, luxury mani-pedi, deep conditioning hair spa, and glow therapy.</p>
-          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Royal%20Pre-Bridal%20Combo.">Book This Package →</a>
+          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Royal%20Pre-Bridal%20Combo." target="_blank" rel="noopener">Book This Package →</a>
         </article>
 
         <!-- Festive Card 4 -->
@@ -1187,8 +1253,190 @@
           <div class="icon-head">💅</div>
           <h3>Festive Nail Extensions</h3>
           <p>Salon-grade acrylic/gel nail extensions with glitter tips, French finishes, or festive ombré nail art at home in Dehradun.</p>
-          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Festive%20Nail%20Extensions.">Book This Package →</a>
+          <a class="btn-festive-book" href="https://wa.me/919627189407?text=Hello%2C%20I%20want%20to%20book%20the%20Festive%20Nail%20Extensions." target="_blank" rel="noopener">Book This Package →</a>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================
+       UPDATED COMPLETE SERVICES & PRICE LIST SECTION
+       ======================================================= -->
+  <section class="pricing-table-section">
+    <div class="container">
+      <div class="homepage-heading">
+        <div class="homepage-eyebrow">Transparent Rate Card</div>
+        <h2>Beauty Parlour Services &amp; Price List</h2>
+        <p>Premium salon services at your doorstep in Dehradun. Click any service to book instantly with guaranteed hygiene and genuine products.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- 1. Air Brush Makeup -->
+        <div class="price-card-item" data-book="Air Brush Makeup - ₹24,999+">
+          <div class="price-info">
+            <span class="price-name">Air Brush Makeup</span>
+            <span style="font-size:12px; color:#856450;">Ultra-HD Flawless Finish</span>
+          </div>
+          <span class="price-badge">₹24,999+</span>
+        </div>
+
+        <!-- 2. Bridal Makeup -->
+        <div class="price-card-item" data-book="Bridal Makeup - ₹6,999+">
+          <div class="price-info">
+            <span class="price-name">Bridal Makeup</span>
+            <span style="font-size:12px; color:#856450;">Includes Draping &amp; Hairdo</span>
+          </div>
+          <span class="price-badge">₹6,999+</span>
+        </div>
+
+        <!-- 3. Groom Makeup -->
+        <div class="price-card-item" data-book="Groom Makeup - ₹4,999+">
+          <div class="price-info">
+            <span class="price-name">Groom Makeup</span>
+            <span style="font-size:12px; color:#856450;">Natural Groom Styling</span>
+          </div>
+          <span class="price-badge">₹4,999+</span>
+        </div>
+
+        <!-- 4. Party Makeup -->
+        <div class="price-card-item" data-book="Party Makeup - ₹1,499+">
+          <div class="price-info">
+            <span class="price-name">Party Makeup</span>
+            <span style="font-size:12px; color:#856450;">Cocktail &amp; Sangeet Look</span>
+          </div>
+          <span class="price-badge">₹1,499+</span>
+        </div>
+
+        <!-- 5. Facial -->
+        <div class="price-card-item" data-book="Facial - ₹499+">
+          <div class="price-info">
+            <span class="price-name">Facial</span>
+            <span style="font-size:12px; color:#856450;">Fruit / Glow / O3+ Options</span>
+          </div>
+          <span class="price-badge">₹499+</span>
+        </div>
+
+        <!-- 6. Cleanup -->
+        <div class="price-card-item" data-book="Cleanup - ₹399+">
+          <div class="price-info">
+            <span class="price-name">Cleanup</span>
+            <span style="font-size:12px; color:#856450;">Deep Cleansing &amp; Steam</span>
+          </div>
+          <span class="price-badge">₹399+</span>
+        </div>
+
+        <!-- 7. Waxing -->
+        <div class="price-card-item" data-book="Waxing - ₹399+">
+          <div class="price-info">
+            <span class="price-name">Waxing</span>
+            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
+          </div>
+          <span class="price-badge">₹399+</span>
+        </div>
+
+        <!-- 8. Bikini Waxing -->
+        <div class="price-card-item" data-book="Bikini Waxing - ₹899+">
+          <div class="price-info">
+            <span class="price-name">Bikini Waxing</span>
+            <span style="font-size:12px; color:#856450;">Hygienic Rica Peel-Off</span>
+          </div>
+          <span class="price-badge">₹899+</span>
+        </div>
+
+        <!-- 9. Manicure -->
+        <div class="price-card-item" data-book="Manicure - ₹499+">
+          <div class="price-info">
+            <span class="price-name">Manicure</span>
+            <span style="font-size:12px; color:#856450;">Cuticle Care &amp; Hand Scrub</span>
+          </div>
+          <span class="price-badge">₹499+</span>
+        </div>
+
+        <!-- 10. Pedicure -->
+        <div class="price-card-item" data-book="Pedicure - ₹599+">
+          <div class="price-info">
+            <span class="price-name">Pedicure</span>
+            <span style="font-size:12px; color:#856450;">Spa Heel Therapy &amp; Massage</span>
+          </div>
+          <span class="price-badge">₹599+</span>
+        </div>
+
+        <!-- 11. Nail Extension -->
+        <div class="price-card-item" data-book="Nail Extension - ₹799+">
+          <div class="price-info">
+            <span class="price-name">Nail Extension</span>
+            <span style="font-size:12px; color:#856450;">Gel &amp; Acrylic Tip Extensions</span>
+          </div>
+          <span class="price-badge">₹799+</span>
+        </div>
+
+        <!-- 12. Hairs -->
+        <div class="price-card-item" data-book="Hairs (Styling / Spa) - ₹549+">
+          <div class="price-info">
+            <span class="price-name">Hairs (Styling / Care)</span>
+            <span style="font-size:12px; color:#856450;">Blowdry, Hair Spa, Styling</span>
+          </div>
+          <span class="price-badge">₹549+</span>
+        </div>
+
+        <!-- 13. Saree Draping -->
+        <div class="price-card-item" data-book="Saree Draping - ₹499+">
+          <div class="price-info">
+            <span class="price-name">Saree Draping</span>
+            <span style="font-size:12px; color:#856450;">Perfect Pleats &amp; Pinning</span>
+          </div>
+          <span class="price-badge">₹499+</span>
+        </div>
+
+        <!-- 14. Mehandi Design -->
+        <div class="price-card-item" data-book="Mehandi Design - ₹999+">
+          <div class="price-info">
+            <span class="price-name">Mehandi Design</span>
+            <span style="font-size:12px; color:#856450;">Festive &amp; Bridal Henna Art</span>
+          </div>
+          <span class="price-badge">₹999+</span>
+        </div>
+
+        <!-- 15. Head Massage -->
+        <div class="price-card-item" data-book="Head Massage - ₹999+">
+          <div class="price-info">
+            <span class="price-name">Head Massage</span>
+            <span style="font-size:12px; color:#856450;">Relaxing Warm Oil Therapy</span>
+          </div>
+          <span class="price-badge">₹999+</span>
+        </div>
+
+        <!-- 16. Body Massage -->
+        <div class="price-card-item" data-book="Body Massage - ₹1,999+">
+          <div class="price-info">
+            <span class="price-name">Body Massage</span>
+            <span style="font-size:12px; color:#856450;">Deep Tissue &amp; Aroma Relief</span>
+          </div>
+          <span class="price-badge">₹1,999+</span>
+        </div>
+
+        <!-- 17. Body Polishing -->
+        <div class="price-card-item" data-book="Body Polishing - ₹24,999+">
+          <div class="price-info">
+            <span class="price-name">Body Polishing</span>
+            <span style="font-size:12px; color:#856450;">Complete Bridal Glow Polish</span>
+          </div>
+          <span class="price-badge">₹24,999+</span>
+        </div>
+
+        <!-- 18. Threading Upper Lips / Forehead -->
+        <div class="price-card-item" data-book="Threading Upper Lips / Forehead - ₹150+">
+          <div class="price-info">
+            <span class="price-name">Threading (Lips / Forehead)</span>
+            <span style="font-size:12px; color:#856450;">Clean Precision Shaping</span>
+          </div>
+          <span class="price-badge">₹150+</span>
+        </div>
+      </div>
+
+      <div style="margin-top:35px; text-align:center;">
+        <a class="btn btn-secondary" href="services.html" target="_blank" rel="noopener" style="margin-right:12px;">👉 View Detailed Services Page</a>
+        <a class="btn btn-primary" href="gallery.html" target="_blank" rel="noopener">👉 View Work Gallery</a>
       </div>
     </div>
   </section>
@@ -1221,40 +1469,6 @@
     </div>
   </section>
 
-  <!-- Core Services Grid -->
-  <section class="homepage-section">
-    <div class="container">
-      <div class="homepage-heading">
-        <div class="homepage-eyebrow">Our Core Expertise</div>
-        <h2>Beauty Parlour Services in Dehradun</h2>
-        <p>Premium salon services delivered to your doorstep in Dehradun with the highest hygiene standards.</p>
-      </div>
-
-      <div class="homepage-grid-3">
-        <div class="homepage-card">
-          <div class="feature-icon">💄</div>
-          <h3>Bridal &amp; Party Makeup in Dehradun</h3>
-          <p>Bridal makeup, party makeup, engagement looks, cocktail styling, Haldi-Mehendi makeup, and pre-bridal services using camera-ready international products.</p>
-        </div>
-        <div class="homepage-card">
-          <div class="feature-icon">🌿</div>
-          <h3>Facials, D-Tan &amp; Waxing Dehradun</h3>
-          <p>O3+ Whitening, Gold &amp; Diamond Facials, fruit cleanups, herbal D-Tan, and painless Rica waxing tailored to your skin type.</p>
-        </div>
-        <div class="homepage-card">
-          <div class="feature-icon">💅</div>
-          <h3>Nail Studio &amp; Extensions Dehradun</h3>
-          <p>Gel and acrylic nail extensions, French manicures, spa pedicures, and festive nail art done right at your dining table.</p>
-        </div>
-      </div>
-
-      <div style="margin-top:35px; text-align:center;">
-        <a class="btn btn-secondary" href="services.html" style="margin-right:12px;">👉 View Complete Service &amp; Price List</a>
-        <a class="btn btn-primary" href="gallery.html">👉 Browse Portfolio &amp; Client Work</a>
-      </div>
-    </div>
-  </section>
-
   <!-- Highlight Banner -->
   <section class="homepage-section">
     <div class="container">
@@ -1268,7 +1482,7 @@
           </p>
 
           <div class="cta-row" style="margin-top:24px;">
-            <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">
+            <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." target="_blank" rel="noopener">
               WhatsApp Booking Now
             </a>
             <a class="btn btn-secondary" href="https://g.page/r/CXUpmQvVoq_kEBM/review" target="_blank" rel="noopener">
@@ -1322,7 +1536,7 @@
           </div>
 
           <div class="cta-row" style="margin-top:28px;">
-            <a class="btn btn-primary" href="contact.html">Check Slot for Your Area</a>
+            <a class="btn btn-primary" href="contact.html" target="_blank" rel="noopener">Check Slot for Your Area</a>
             <a class="btn btn-outline" style="color:#633f20; border-color:#d4af37;" href="https://www.google.com/search?q=Tanisk+Beauty+Zone+Dehradun" target="_blank" rel="noopener">Find on Google Maps</a>
           </div>
         </div>
@@ -1369,7 +1583,7 @@
       </div>
 
       <div style="text-align:center; margin-top:35px;">
-        <a class="btn btn-primary" href="gallery.html">Explore Full Client Gallery →</a>
+        <a class="btn btn-primary" href="gallery.html" target="_blank" rel="noopener">Explore Full Client Gallery →</a>
       </div>
     </div>
   </section>
@@ -1389,6 +1603,24 @@
         <span>Best Beauty Parlour Dehradun</span>
         <span>Ladies Beauty Parlour Dehradun</span>
         <span>Beauty Parlour Near Me Dehradun</span>
+        <span>Air Brush Makeup Dehradun</span>
+        <span>Bridal Makeup Dehradun 6999</span>
+        <span>Groom Makeup Dehradun</span>
+        <span>Party Makeup Dehradun 1499</span>
+        <span>Facial at Home Dehradun 499</span>
+        <span>Cleanup at Home Dehradun 399</span>
+        <span>Waxing Dehradun 399</span>
+        <span>Bikini Waxing Dehradun 899</span>
+        <span>Manicure Dehradun 499</span>
+        <span>Pedicure Dehradun 599</span>
+        <span>Nail Extension Dehradun 799</span>
+        <span>Hair Spa &amp; Styling Dehradun 549</span>
+        <span>Saree Draping Dehradun 499</span>
+        <span>Mehandi Design Dehradun 999</span>
+        <span>Head Massage Dehradun 999</span>
+        <span>Body Massage Dehradun 1999</span>
+        <span>Body Polishing Dehradun 24999</span>
+        <span>Threading Upper Lips Dehradun 150</span>
         <span>Top Beauty Parlour in Dehradun</span>
         <span>Famous Beauty Parlour in Dehradun</span>
         <span>Beauty Salon Dehradun</span>
@@ -1397,42 +1629,15 @@
         <span>Affordable Beauty Parlour in Dehradun</span>
         <span>Beauty Parlour Dehradun Contact Number</span>
         <span>Beauty Parlour at Home Dehradun</span>
-        <span>Bridal Makeup at Home Dehradun</span>
-        <span>Party Makeup at Home Dehradun</span>
         <span>Karwa Chauth Makeup Dehradun</span>
         <span>Diwali Special Makeover Dehradun</span>
         <span>Festive Glow Facial Dehradun</span>
         <span>Engagement Makeup Dehradun</span>
         <span>HD Makeup Artist Dehradun</span>
-        <span>Airbrush Makeup Dehradun</span>
         <span>O3+ Facial at Home Dehradun</span>
-        <span>Lotus Facial Home Service</span>
-        <span>Gold Facial at Home Dehradun</span>
-        <span>Diamond Facial Dehradun</span>
-        <span>Skin Brightening Facial Dehradun</span>
-        <span>Fruit Cleanup at Home Dehradun</span>
-        <span>D-Tan Home Service Dehradun</span>
-        <span>Charcoal Cleanup Dehradun</span>
-        <span>L'Oreal Hair Spa at Home</span>
-        <span>Keratin Hair Spa Dehradun</span>
-        <span>Bridal Hairstyle Home Service</span>
         <span>Rica Waxing at Home Dehradun</span>
-        <span>Honey Waxing Home Service</span>
-        <span>Chocolate Waxing Dehradun</span>
-        <span>Bikini Waxing at Home Dehradun</span>
-        <span>Full Body Waxing Dehradun</span>
-        <span>Underarm Waxing Home Service</span>
         <span>Gel Nail Extensions Dehradun</span>
         <span>Acrylic Nail Extensions Dehradun</span>
-        <span>French Nail Tips Dehradun</span>
-        <span>Festive Nail Art Dehradun</span>
-        <span>Manicure at Home Dehradun</span>
-        <span>Pedicure at Home Dehradun</span>
-        <span>Saree Draping at Home Dehradun</span>
-        <span>Lehenga Draping Home Service</span>
-        <span>Pre-Bridal Packages Dehradun</span>
-        <span>Doorstep Parlour Wali Dehradun</span>
-        <span>Female Beautician at Home Dehradun</span>
         <span>Beauty Parlour Rajpur Road Dehradun</span>
         <span>Beauty Parlour Jakhan Dehradun</span>
         <span>Beauty Parlour Vasant Vihar Dehradun</span>
@@ -1470,10 +1675,10 @@
         <h3>Quick Navigation</h3>
         <p>
           <a href="index.html">Home</a><br>
-          <a href="services.html">Services &amp; Prices</a><br>
-          <a href="gallery.html">Portfolio Gallery</a><br>
-          <a href="about.html">About Beautician</a><br>
-          <a href="contact.html">Book Appointment</a>
+          <a href="services.html" target="_blank" rel="noopener">Services &amp; Prices</a><br>
+          <a href="gallery.html" target="_blank" rel="noopener">Portfolio Gallery</a><br>
+          <a href="about.html" target="_blank" rel="noopener">About Beautician</a><br>
+          <a href="contact.html" target="_blank" rel="noopener">Book Appointment</a>
         </p>
       </div>
 
@@ -1521,11 +1726,32 @@
             <label for="phoneInput">Phone Number</label>
             <input id="phoneInput" type="tel" placeholder="e.g. 9876543210" required>
           </div>
-          <div>
+          <div style="grid-column: 1 / -1;">
             <label for="serviceInput">Required Service / Package</label>
-            <input id="serviceInput" type="text" placeholder="Bridal Makeup, Karwa Chauth Glow, Waxing...">
+            <select id="serviceInput" required>
+              <option value="">-- Select Your Service --</option>
+              <option value="Air Brush Makeup - ₹24,999+">Air Brush Makeup (₹24,999+)</option>
+              <option value="Bridal Makeup - ₹6,999+">Bridal Makeup (₹6,999+)</option>
+              <option value="Groom Makeup - ₹4,999+">Groom Makeup (₹4,999+)</option>
+              <option value="Party Makeup - ₹1,499+">Party Makeup (₹1,499+)</option>
+              <option value="Facial - ₹499+">Facial (₹499+)</option>
+              <option value="Cleanup - ₹399+">Cleanup (₹399+)</option>
+              <option value="Waxing - ₹399+">Waxing (₹399+)</option>
+              <option value="Bikini Waxing - ₹899+">Bikini Waxing (₹899+)</option>
+              <option value="Manicure - ₹499+">Manicure (₹499+)</option>
+              <option value="Pedicure - ₹599+">Pedicure (₹599+)</option>
+              <option value="Nail Extension - ₹799+">Nail Extension (₹799+)</option>
+              <option value="Hairs (Styling / Spa) - ₹549+">Hairs (Styling / Spa) (₹549+)</option>
+              <option value="Saree Draping - ₹499+">Saree Draping (₹499+)</option>
+              <option value="Mehandi Design - ₹999+">Mehandi Design (₹999+)</option>
+              <option value="Head Massage - ₹999+">Head Massage (₹999+)</option>
+              <option value="Body Massage - ₹1,999+">Body Massage (₹1,999+)</option>
+              <option value="Body Polishing - ₹24,999+">Body Polishing (₹24,999+)</option>
+              <option value="Threading Upper Lips / Forehead - ₹150+">Threading Upper Lips / Forehead (₹150+)</option>
+              <option value="Karwa Chauth / Festive Package">Karwa Chauth / Festive Package</option>
+            </select>
           </div>
-          <div>
+          <div style="grid-column: 1 / -1;">
             <label for="dateInput">Preferred Date</label>
             <input id="dateInput" type="date">
           </div>
@@ -1538,7 +1764,7 @@
 
         <div style="margin-top:16px">
           <label for="noteInput">Additional Notes / Time Preferences</label>
-          <textarea id="noteInput" placeholder="Morning time preference, specific brand request, skin sensitivity..."></textarea>
+          <textarea id="noteInput" placeholder="Morning time preference, specific request, skin type..."></textarea>
         </div>
 
         <div class="note" style="margin:16px 0 18px; color:#785848; font-size:13.5px;">
@@ -1556,7 +1782,7 @@
 
 <!-- Floating Action Elements -->
 <a class="float-book desktop-only" href="#bookingModal" data-book="Home Salon Service">📅 Book Appointment</a>
-<a class="float-whatsapp" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." aria-label="WhatsApp booking">💬</a>
+<a class="float-whatsapp" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." target="_blank" rel="noopener" aria-label="WhatsApp booking">💬</a>
 
 <!-- Sticky Bottom Bar for Mobile Devices -->
 <div class="sticky-mobile">
@@ -1568,7 +1794,7 @@
       </div>
       <div class="sticky-actions" style="display:flex; gap:8px;">
         <a class="btn btn-outline" style="padding:8px 14px; font-size:13px; color:#fff; border-color:rgba(255,255,255,0.4);" href="tel:+919627189407">Call</a>
-        <a class="btn btn-primary" style="padding:8px 16px; font-size:13px;" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun.">WhatsApp</a>
+        <a class="btn btn-primary" style="padding:8px 16px; font-size:13px;" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
   </div>
@@ -1655,9 +1881,24 @@
       bookingModal.style.setProperty('pointer-events', 'auto', 'important');
       document.body.style.overflow = 'hidden';
 
-      const serviceInput = document.getElementById('serviceInput');
-      if (serviceInput && serviceName) {
-        serviceInput.value = serviceName;
+      const serviceSelect = document.getElementById('serviceInput');
+      if (serviceSelect && serviceName) {
+        let matched = false;
+        for (let i = 0; i < serviceSelect.options.length; i++) {
+          if (serviceSelect.options[i].value.toLowerCase().includes(serviceName.toLowerCase()) ||
+              serviceName.toLowerCase().includes(serviceSelect.options[i].value.toLowerCase())) {
+            serviceSelect.selectedIndex = i;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched && serviceName !== 'Home Salon Service') {
+          const opt = document.createElement('option');
+          opt.value = serviceName;
+          opt.text = serviceName;
+          opt.selected = true;
+          serviceSelect.add(opt);
+        }
       }
     }
 
@@ -1672,8 +1913,8 @@
       document.body.style.overflow = '';
     }
 
-    // Attach listener to ALL booking triggers
-    const bookingTriggers = document.querySelectorAll('[data-book], a[href="#bookingModal"], .open-booking-modal');
+    // Attach listener to ALL booking triggers & price list items
+    const bookingTriggers = document.querySelectorAll('[data-book], a[href="#bookingModal"], .price-card-item');
     bookingTriggers.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
