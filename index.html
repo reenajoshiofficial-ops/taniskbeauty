@@ -505,61 +505,6 @@
       color: #1a080d;
     }
 
-    /* =======================================================
-       AUTHENTIC SERVICE PRICING GRID
-       ======================================================= */
-    .pricing-table-section {
-      padding: 85px 0;
-      background: #ffffff;
-    }
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 36px;
-    }
-    .price-card-item {
-      background: #fffdfb;
-      border: 1.5px solid #ecd3a7;
-      border-radius: 18px;
-      padding: 18px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      transition: all 0.25s ease;
-      cursor: pointer;
-    }
-    .price-card-item:hover {
-      transform: translateY(-3px);
-      border-color: var(--festive-gold);
-      box-shadow: 0 10px 24px rgba(197, 155, 39, 0.14);
-      background: #fffbf5;
-    }
-    .price-info {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .price-name {
-      font-size: 16px;
-      font-weight: 700;
-      color: #3b1e16;
-      text-transform: capitalize;
-    }
-    .price-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #d4af37, #b8860b);
-      color: #ffffff;
-      font-size: 15px;
-      font-weight: 800;
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      box-shadow: 0 3px 10px rgba(184, 134, 11, 0.25);
-      white-space: nowrap;
-    }
-
     /* Standard Sections & Grids */
     .homepage-section {
       padding: 85px 0;
@@ -614,18 +559,6 @@
       transform: translateY(-5px);
       box-shadow: 0 18px 38px rgba(85, 45, 20, 0.07);
     }
-    .homepage-card .feature-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: #fff5ea;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      margin-bottom: 18px;
-      border: 1px solid #f3d4b2;
-    }
     .homepage-card h3 {
       font-size: 21px;
       margin: 0 0 12px;
@@ -636,46 +569,6 @@
       color: #5c473c;
       line-height: 1.7;
       font-size: 15.5px;
-    }
-
-    /* Highlight Banner */
-    .homepage-highlight {
-      background: var(--royal-gradient);
-      color: #ffffff;
-      border-radius: 30px;
-      padding: 50px;
-      display: grid;
-      grid-template-columns: 1.25fr 0.85fr;
-      gap: 36px;
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      box-shadow: 0 20px 45px rgba(45, 10, 19, 0.3);
-    }
-    .homepage-highlight h2 {
-      font-size: clamp(28px, 3.5vw, 42px);
-      color: #fffaf0;
-      margin-bottom: 16px;
-    }
-    .homepage-highlight p {
-      color: #fae9da;
-      line-height: 1.75;
-      font-size: 17px;
-    }
-    .homepage-mini-box {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border-radius: 22px;
-      padding: 32px;
-    }
-    .homepage-mini-box h3 {
-      color: #ffe49e;
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-    .homepage-mini-box p {
-      font-size: 15.5px;
-      color: #f7e6d7;
     }
 
     /* Split Section (Dehradun localities) */
@@ -731,47 +624,17 @@
       padding: 24px;
     }
 
-    /* SEO Keyword Pill Directory */
+    /* SEO Keyword Pill Directory (Visually Hidden, Active for Search & Indexing) */
     .seo-keyword-section {
-      background: #ffffff;
-      border-top: 1px solid #ebd9c3;
-      padding: 60px 0 40px;
-    }
-    .seo-container-head {
-      text-align: center;
-      margin-bottom: 28px;
-    }
-    .seo-container-head h3 {
-      font-size: 24px;
-      color: #3b2216;
-      margin-bottom: 8px;
-    }
-    .seo-container-head p {
-      color: #72594a;
-      font-size: 15px;
-    }
-    .seo-keyword-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      max-width: 1150px;
-      margin: 0 auto;
-    }
-    .seo-keyword-grid span {
-      display: inline-block;
-      font-size: 12px;
-      background: #fbf5ee;
-      border: 1px solid #eedecb;
-      color: #674c3d;
-      padding: 6px 13px;
-      border-radius: 20px;
-      transition: all 0.2s ease;
-    }
-    .seo-keyword-grid span:hover {
-      background: #fff1e0;
-      border-color: #d4af37;
-      color: #2b1208;
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
     }
 
     /* Footer */
@@ -988,16 +851,13 @@
 
     /* Responsive Queries */
     @media (max-width: 1100px) {
-      .pricing-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
       .festive-cards-grid, .homepage-grid-4 {
         grid-template-columns: repeat(2, 1fr);
       }
       .homepage-grid-3 {
         grid-template-columns: repeat(2, 1fr);
       }
-      .homepage-highlight, .homepage-split, .footer-grid {
+      .homepage-split, .footer-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -1005,9 +865,6 @@
       .hero {
         min-height: 75vh;
         padding: 50px 0 70px;
-      }
-      .pricing-grid {
-        grid-template-columns: 1fr;
       }
       .festive-cards-grid, .homepage-grid-4, .homepage-grid-3 {
         grid-template-columns: 1fr;
@@ -1259,251 +1116,6 @@
     </div>
   </section>
 
-  <!-- =======================================================
-       UPDATED COMPLETE SERVICES & PRICE LIST SECTION
-       ======================================================= -->
-  <section class="pricing-table-section">
-    <div class="container">
-      <div class="homepage-heading">
-        <div class="homepage-eyebrow">Transparent Rate Card</div>
-        <h2>Beauty Parlour Services &amp; Price List</h2>
-        <p>Premium salon services at your doorstep in Dehradun. Click any service to book instantly with guaranteed hygiene and genuine products.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <!-- 1. Air Brush Makeup -->
-        <div class="price-card-item" data-book="Air Brush Makeup - ₹24,999+">
-          <div class="price-info">
-            <span class="price-name">Air Brush Makeup</span>
-            <span style="font-size:12px; color:#856450;">Ultra-HD Flawless Finish</span>
-          </div>
-          <span class="price-badge">₹24,999+</span>
-        </div>
-
-        <!-- 2. Bridal Makeup -->
-        <div class="price-card-item" data-book="Bridal Makeup - ₹6,999+">
-          <div class="price-info">
-            <span class="price-name">Bridal Makeup</span>
-            <span style="font-size:12px; color:#856450;">Includes Draping &amp; Hairdo</span>
-          </div>
-          <span class="price-badge">₹6,999+</span>
-        </div>
-
-        <!-- 3. Groom Makeup -->
-        <div class="price-card-item" data-book="Groom Makeup - ₹4,999+">
-          <div class="price-info">
-            <span class="price-name">Groom Makeup</span>
-            <span style="font-size:12px; color:#856450;">Natural Groom Styling</span>
-          </div>
-          <span class="price-badge">₹4,999+</span>
-        </div>
-
-        <!-- 4. Party Makeup -->
-        <div class="price-card-item" data-book="Party Makeup - ₹1,499+">
-          <div class="price-info">
-            <span class="price-name">Party Makeup</span>
-            <span style="font-size:12px; color:#856450;">Cocktail &amp; Sangeet Look</span>
-          </div>
-          <span class="price-badge">₹1,499+</span>
-        </div>
-
-        <!-- 5. Facial -->
-        <div class="price-card-item" data-book="Facial - ₹499+">
-          <div class="price-info">
-            <span class="price-name">Facial</span>
-            <span style="font-size:12px; color:#856450;">Fruit / Glow / O3+ Options</span>
-          </div>
-          <span class="price-badge">₹499+</span>
-        </div>
-
-        <!-- 6. Cleanup -->
-        <div class="price-card-item" data-book="Cleanup - ₹399+">
-          <div class="price-info">
-            <span class="price-name">Cleanup</span>
-            <span style="font-size:12px; color:#856450;">Deep Cleansing &amp; Steam</span>
-          </div>
-          <span class="price-badge">₹399+</span>
-        </div>
-
-        <!-- 7. Waxing -->
-        <div class="price-card-item" data-book="Waxing - ₹399+">
-          <div class="price-info">
-            <span class="price-name">Waxing</span>
-            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
-          </div>
-          <span class="price-badge">₹399+</span>
-        </div>
-
-        <!-- 8. Bikini Waxing -->
-        <div class="price-card-item" data-book="Bikini Waxing - ₹899+">
-          <div class="price-info">
-            <span class="price-name">Bikini Waxing</span>
-            <span style="font-size:12px; color:#856450;">Hygienic Rica Peel-Off</span>
-          </div>
-          <span class="price-badge">₹899+</span>
-        </div>
-
-        <!-- 9. Manicure -->
-        <div class="price-card-item" data-book="Manicure - ₹499+">
-          <div class="price-info">
-            <span class="price-name">Manicure</span>
-            <span style="font-size:12px; color:#856450;">Cuticle Care &amp; Hand Scrub</span>
-          </div>
-          <span class="price-badge">₹499+</span>
-        </div>
-
-        <!-- 10. Pedicure -->
-        <div class="price-card-item" data-book="Pedicure - ₹599+">
-          <div class="price-info">
-            <span class="price-name">Pedicure</span>
-            <span style="font-size:12px; color:#856450;">Spa Heel Therapy &amp; Massage</span>
-          </div>
-          <span class="price-badge">₹599+</span>
-        </div>
-
-        <!-- 11. Nail Extension -->
-        <div class="price-card-item" data-book="Nail Extension - ₹799+">
-          <div class="price-info">
-            <span class="price-name">Nail Extension</span>
-            <span style="font-size:12px; color:#856450;">Gel &amp; Acrylic Tip Extensions</span>
-          </div>
-          <span class="price-badge">₹799+</span>
-        </div>
-
-        <!-- 12. Hairs -->
-        <div class="price-card-item" data-book="Hairs (Styling / Spa) - ₹549+">
-          <div class="price-info">
-            <span class="price-name">Hairs (Styling / Care)</span>
-            <span style="font-size:12px; color:#856450;">Blowdry, Hair Spa, Styling</span>
-          </div>
-          <span class="price-badge">₹549+</span>
-        </div>
-
-        <!-- 13. Saree Draping -->
-        <div class="price-card-item" data-book="Saree Draping - ₹499+">
-          <div class="price-info">
-            <span class="price-name">Saree Draping</span>
-            <span style="font-size:12px; color:#856450;">Perfect Pleats &amp; Pinning</span>
-          </div>
-          <span class="price-badge">₹499+</span>
-        </div>
-
-        <!-- 14. Mehandi Design -->
-        <div class="price-card-item" data-book="Mehandi Design - ₹999+">
-          <div class="price-info">
-            <span class="price-name">Mehandi Design</span>
-            <span style="font-size:12px; color:#856450;">Festive &amp; Bridal Henna Art</span>
-          </div>
-          <span class="price-badge">₹999+</span>
-        </div>
-
-        <!-- 15. Head Massage -->
-        <div class="price-card-item" data-book="Head Massage - ₹999+">
-          <div class="price-info">
-            <span class="price-name">Head Massage</span>
-            <span style="font-size:12px; color:#856450;">Relaxing Warm Oil Therapy</span>
-          </div>
-          <span class="price-badge">₹999+</span>
-        </div>
-
-        <!-- 16. Body Massage -->
-        <div class="price-card-item" data-book="Body Massage - ₹1,999+">
-          <div class="price-info">
-            <span class="price-name">Body Massage</span>
-            <span style="font-size:12px; color:#856450;">Deep Tissue &amp; Aroma Relief</span>
-          </div>
-          <span class="price-badge">₹1,999+</span>
-        </div>
-
-        <!-- 17. Body Polishing -->
-        <div class="price-card-item" data-book="Body Polishing - ₹24,999+">
-          <div class="price-info">
-            <span class="price-name">Body Polishing</span>
-            <span style="font-size:12px; color:#856450;">Complete Bridal Glow Polish</span>
-          </div>
-          <span class="price-badge">₹24,999+</span>
-        </div>
-
-        <!-- 18. Threading Upper Lips / Forehead -->
-        <div class="price-card-item" data-book="Threading Upper Lips / Forehead - ₹150+">
-          <div class="price-info">
-            <span class="price-name">Threading (Lips / Forehead)</span>
-            <span style="font-size:12px; color:#856450;">Clean Precision Shaping</span>
-          </div>
-          <span class="price-badge">₹150+</span>
-        </div>
-      </div>
-
-      <div style="margin-top:35px; text-align:center;">
-        <a class="btn btn-secondary" href="services.html" target="_blank" rel="noopener" style="margin-right:12px;">👉 View Detailed Services Page</a>
-        <a class="btn btn-primary" href="gallery.html" target="_blank" rel="noopener">👉 View Work Gallery</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust Features -->
-  <section class="homepage-section homepage-section-light">
-    <div class="container">
-      <div class="homepage-grid-4">
-        <div class="homepage-card">
-          <div class="feature-icon">🎓</div>
-          <h3>Certified Beautician</h3>
-          <p>Trained and certified from IBI International School of Cosmetology &amp; Aesthetics, Dehradun.</p>
-        </div>
-        <div class="homepage-card">
-          <div class="feature-icon">⭐</div>
-          <h3>5+ Years Experience</h3>
-          <p>The trusted choice when searching for the best beauty parlour in Dehradun for skin, hair, and nail treatments.</p>
-        </div>
-        <div class="homepage-card">
-          <div class="feature-icon">🧴</div>
-          <h3>100% Genuine Products</h3>
-          <p>Hygienic single-use kits and premium brands (O3+, L'Oreal, MAC, Rica, Lotus) for flawless results.</p>
-        </div>
-        <div class="homepage-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Instant WhatsApp Booking</h3>
-          <p>Zero wait time. Connect directly, share your locality, and confirm your preferred time slot effortlessly.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Highlight Banner -->
-  <section class="homepage-section">
-    <div class="container">
-      <div class="homepage-highlight">
-        <div>
-          <div class="homepage-eyebrow" style="color:#ffd59b;">Top Rated Ladies Parlour</div>
-          <h2>Best Beauty Parlour Experience in Dehradun</h2>
-          <p>
-            Skip the salon queues and traffic. Book your preferred beauty service quickly through WhatsApp or our contact form. 
-            Enjoy personalized beauty parlour care in your own comfort zone.
-          </p>
-
-          <div class="cta-row" style="margin-top:24px;">
-            <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." target="_blank" rel="noopener">
-              WhatsApp Booking Now
-            </a>
-            <a class="btn btn-secondary" href="https://g.page/r/CXUpmQvVoq_kEBM/review" target="_blank" rel="noopener">
-              ⭐ Read Google Reviews
-            </a>
-          </div>
-        </div>
-
-        <div class="homepage-mini-box">
-          <h3>Why Dehradun Loves Us</h3>
-          <p>
-            ✨ 100% Sanitized Tools &amp; Fresh Disposables<br>
-            ✨ Polite, Punctual &amp; Certified Female Beauticians<br>
-            ✨ Transparent Pricing with No Hidden Charges<br>
-            ✨ Flexible Early Morning Slots for Weddings
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Dehradun Localities Coverage -->
   <section class="homepage-section homepage-section-light">
     <div class="container">
@@ -1588,7 +1200,7 @@
     </div>
   </section>
 
-  <!-- SEO KEYWORDS DIRECTORY FOR GOOGLE INDEXING -->
+  <!-- SEO KEYWORDS DIRECTORY FOR GOOGLE INDEXING (Visually Hidden, Active in DOM) -->
   <section class="seo-keyword-section" aria-label="Popular searches in Dehradun">
     <div class="container">
       <div class="seo-container-head">
@@ -1913,8 +1525,8 @@
       document.body.style.overflow = '';
     }
 
-    // Attach listener to ALL booking triggers & price list items
-    const bookingTriggers = document.querySelectorAll('[data-book], a[href="#bookingModal"], .price-card-item');
+    // Attach listener to ALL booking triggers
+    const bookingTriggers = document.querySelectorAll('[data-book], a[href="#bookingModal"]');
     bookingTriggers.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
