@@ -505,6 +505,61 @@
       color: #1a080d;
     }
 
+    /* =======================================================
+       AUTHENTIC SERVICE PRICING GRID
+       ======================================================= */
+    .pricing-table-section {
+      padding: 85px 0;
+      background: #ffffff;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .price-card-item {
+      background: #fffdfb;
+      border: 1.5px solid #ecd3a7;
+      border-radius: 18px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .price-card-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--festive-gold);
+      box-shadow: 0 10px 24px rgba(197, 155, 39, 0.14);
+      background: #fffbf5;
+    }
+    .price-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .price-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #3b1e16;
+      text-transform: capitalize;
+    }
+    .price-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #d4af37, #b8860b);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 3px 10px rgba(184, 134, 11, 0.25);
+      white-space: nowrap;
+    }
+
     /* Standard Sections & Grids */
     .homepage-section {
       padding: 85px 0;
@@ -559,6 +614,18 @@
       transform: translateY(-5px);
       box-shadow: 0 18px 38px rgba(85, 45, 20, 0.07);
     }
+    .homepage-card .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: #fff5ea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 18px;
+      border: 1px solid #f3d4b2;
+    }
     .homepage-card h3 {
       font-size: 21px;
       margin: 0 0 12px;
@@ -569,6 +636,46 @@
       color: #5c473c;
       line-height: 1.7;
       font-size: 15.5px;
+    }
+
+    /* Highlight Banner */
+    .homepage-highlight {
+      background: var(--royal-gradient);
+      color: #ffffff;
+      border-radius: 30px;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1.25fr 0.85fr;
+      gap: 36px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      box-shadow: 0 20px 45px rgba(45, 10, 19, 0.3);
+    }
+    .homepage-highlight h2 {
+      font-size: clamp(28px, 3.5vw, 42px);
+      color: #fffaf0;
+      margin-bottom: 16px;
+    }
+    .homepage-highlight p {
+      color: #fae9da;
+      line-height: 1.75;
+      font-size: 17px;
+    }
+    .homepage-mini-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 22px;
+      padding: 32px;
+    }
+    .homepage-mini-box h3 {
+      color: #ffe49e;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .homepage-mini-box p {
+      font-size: 15.5px;
+      color: #f7e6d7;
     }
 
     /* Split Section (Dehradun localities) */
@@ -624,17 +731,47 @@
       padding: 24px;
     }
 
-    /* SEO Keyword Pill Directory (Visually Hidden, Active for Search & Indexing) */
+    /* SEO Keyword Pill Directory */
     .seo-keyword-section {
-      position: absolute !important;
-      width: 1px !important;
-      height: 1px !important;
-      padding: 0 !important;
-      margin: -1px !important;
-      overflow: hidden !important;
-      clip: rect(0, 0, 0, 0) !important;
-      white-space: nowrap !important;
-      border: 0 !important;
+      background: #ffffff;
+      border-top: 1px solid #ebd9c3;
+      padding: 60px 0 40px;
+    }
+    .seo-container-head {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .seo-container-head h3 {
+      font-size: 24px;
+      color: #3b2216;
+      margin-bottom: 8px;
+    }
+    .seo-container-head p {
+      color: #72594a;
+      font-size: 15px;
+    }
+    .seo-keyword-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+    .seo-keyword-grid span {
+      display: inline-block;
+      font-size: 12px;
+      background: #fbf5ee;
+      border: 1px solid #eedecb;
+      color: #674c3d;
+      padding: 6px 13px;
+      border-radius: 20px;
+      transition: all 0.2s ease;
+    }
+    .seo-keyword-grid span:hover {
+      background: #fff1e0;
+      border-color: #d4af37;
+      color: #2b1208;
     }
 
     /* Footer */
@@ -851,13 +988,16 @@
 
     /* Responsive Queries */
     @media (max-width: 1100px) {
+      .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
       .festive-cards-grid, .homepage-grid-4 {
         grid-template-columns: repeat(2, 1fr);
       }
       .homepage-grid-3 {
         grid-template-columns: repeat(2, 1fr);
       }
-      .homepage-split, .footer-grid {
+      .homepage-highlight, .homepage-split, .footer-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -865,6 +1005,9 @@
       .hero {
         min-height: 75vh;
         padding: 50px 0 70px;
+      }
+      .pricing-grid {
+        grid-template-columns: 1fr;
       }
       .festive-cards-grid, .homepage-grid-4, .homepage-grid-3 {
         grid-template-columns: 1fr;
@@ -1116,6 +1259,305 @@
     </div>
   </section>
 
+  <!-- =======================================================
+       UPDATED COMPLETE SERVICES & PRICE LIST SECTION
+       ======================================================= -->
+  <section class="pricing-table-section">
+    <div class="container">
+      <div class="homepage-heading">
+        <div class="homepage-eyebrow">Transparent Rate Card</div>
+        <h2>Beauty Parlour Services &amp; Price List</h2>
+        <p>Premium salon services at your doorstep in Dehradun. Click any service to book instantly with guaranteed hygiene and genuine products.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- 1. Air Brush Makeup -->
+        <div class="price-card-item" data-book="Air Brush Makeup - ₹24,999+">
+          <div class="price-info">
+            <span class="price-name">Air Brush Makeup</span>
+            <span style="font-size:12px; color:#856450;">Ultra-HD Flawless Finish</span>
+          </div>
+          <span class="price-badge">₹24,999+</span>
+        </div>
+
+        <!-- 2. Bridal Makeup -->
+        <div class="price-card-item" data-book="Bridal Makeup - ₹7,999+">
+          <div class="price-info">
+            <span class="price-name">Bridal Makeup</span>
+            <span style="font-size:12px; color:#856450;">Includes Draping &amp; Hairdo</span>
+          </div>
+          <span class="price-badge">₹7,999+</span>
+        </div>
+
+        <!-- 3. Groom Makeup -->
+        <div class="price-card-item" data-book="Groom Makeup - ₹6,499+">
+          <div class="price-info">
+            <span class="price-name">Groom Makeup</span>
+            <span style="font-size:12px; color:#856450;">Natural Groom Styling</span>
+          </div>
+          <span class="price-badge">₹6,499+</span>
+        </div>
+
+        <!-- 4. Party Makeup -->
+        <div class="price-card-item" data-book="Party Makeup - ₹2,999 - ₹3,999">
+          <div class="price-info">
+            <span class="price-name">Party Makeup</span>
+            <span style="font-size:12px; color:#856450;">Cocktail &amp; Sangeet Look</span>
+          </div>
+          <span class="price-badge">₹2,999+</span>
+        </div>
+
+        <!-- 5. Facial -->
+        <div class="price-card-item" data-book="Facial - ₹749+">
+          <div class="price-info">
+            <span class="price-name">Facial</span>
+            <span style="font-size:12px; color:#856450;">Fruit / Glow / O3+ Options</span>
+          </div>
+          <span class="price-badge">₹749+</span>
+        </div>
+
+        <!-- 6. Cleanup -->
+        <div class="price-card-item" data-book="Cleanup - ₹549+">
+          <div class="price-info">
+            <span class="price-name">Cleanup</span>
+            <span style="font-size:12px; color:#856450;">Deep Cleansing &amp; Steam</span>
+          </div>
+          <span class="price-badge">₹549+</span>
+        </div>
+
+        <!-- 7. Waxing - Full Arms -->
+        <div class="price-card-item" data-book="Full Arms Waxing - ₹549+">
+          <div class="price-info">
+            <span class="price-name">Full Arms Waxing</span>
+            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
+          </div>
+          <span class="price-badge">₹549+</span>
+        </div>
+
+        <!-- 7b. Waxing - Half Leg -->
+        <div class="price-card-item" data-book="Half Leg Waxing - ₹749+">
+          <div class="price-info">
+            <span class="price-name">Half Leg Waxing</span>
+            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
+          </div>
+          <span class="price-badge">₹749+</span>
+        </div>
+
+        <!-- 7c. Waxing - Full Leg -->
+        <div class="price-card-item" data-book="Full Leg Waxing - ₹1,049+">
+          <div class="price-info">
+            <span class="price-name">Full Leg Waxing</span>
+            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
+          </div>
+          <span class="price-badge">₹1,049+</span>
+        </div>
+
+        <!-- 7d. Waxing - Full Body -->
+        <div class="price-card-item" data-book="Full Body Waxing - ₹2,199+">
+          <div class="price-info">
+            <span class="price-name">Full Body Waxing</span>
+            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
+          </div>
+          <span class="price-badge">₹2,199+</span>
+        </div>
+
+        <!-- 7e. Waxing - Underarm -->
+        <div class="price-card-item" data-book="Underarm Waxing - ₹149+">
+          <div class="price-info">
+            <span class="price-name">Underarm Waxing</span>
+            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
+          </div>
+          <span class="price-badge">₹149+</span>
+        </div>
+
+        <!-- 7f. Waxing - Full Face -->
+        <div class="price-card-item" data-book="Full Face Waxing - ₹349+">
+          <div class="price-info">
+            <span class="price-name">Full Face Waxing</span>
+            <span style="font-size:12px; color:#856450;">Honey / Chocolate Wax</span>
+          </div>
+          <span class="price-badge">₹349+</span>
+        </div>
+
+        <!-- 8. Bikini Waxing -->
+        <div class="price-card-item" data-book="Bikini Waxing - ₹1,299+">
+          <div class="price-info">
+            <span class="price-name">Bikini Waxing</span>
+            <span style="font-size:12px; color:#856450;">Hygienic Rica Peel-Off</span>
+          </div>
+          <span class="price-badge">₹1,299+</span>
+        </div>
+
+        <!-- 9. Manicure -->
+        <div class="price-card-item" data-book="Manicure - ₹749+">
+          <div class="price-info">
+            <span class="price-name">Manicure</span>
+            <span style="font-size:12px; color:#856450;">Cuticle Care &amp; Hand Scrub</span>
+          </div>
+          <span class="price-badge">₹749+</span>
+        </div>
+
+        <!-- 10. Pedicure -->
+        <div class="price-card-item" data-book="Pedicure - ₹949+">
+          <div class="price-info">
+            <span class="price-name">Pedicure</span>
+            <span style="font-size:12px; color:#856450;">Spa Heel Therapy &amp; Massage</span>
+          </div>
+          <span class="price-badge">₹949+</span>
+        </div>
+
+        <!-- 11. Nail Extension -->
+        <div class="price-card-item" data-book="Nail Extension - ₹899+">
+          <div class="price-info">
+            <span class="price-name">Nail Extension</span>
+            <span style="font-size:12px; color:#856450;">Gel &amp; Acrylic Tip Extensions</span>
+          </div>
+          <span class="price-badge">₹899+</span>
+        </div>
+
+        <!-- 12a. Hair Spa -->
+        <div class="price-card-item" data-book="Hair Spa - ₹1,099+">
+          <div class="price-info">
+            <span class="price-name">Hair (Spa)</span>
+            <span style="font-size:12px; color:#856450;">Deep Conditioning Spa</span>
+          </div>
+          <span class="price-badge">₹1,099+</span>
+        </div>
+
+        <!-- 12b. Hair Styling -->
+        <div class="price-card-item" data-book="Hair Styling - ₹699+">
+          <div class="price-info">
+            <span class="price-name">Hair (Styling)</span>
+            <span style="font-size:12px; color:#856450;">Blowdry &amp; Styling</span>
+          </div>
+          <span class="price-badge">₹699+</span>
+        </div>
+
+        <!-- 13. Saree Draping -->
+        <div class="price-card-item" data-book="Saree Draping - ₹549+">
+          <div class="price-info">
+            <span class="price-name">Saree Draping</span>
+            <span style="font-size:12px; color:#856450;">Perfect Pleats &amp; Pinning</span>
+          </div>
+          <span class="price-badge">₹549+</span>
+        </div>
+
+        <!-- 14. Mehandi Design -->
+        <div class="price-card-item" data-book="Basic Mehandi Design (Both Hands) - ₹1,499+">
+          <div class="price-info">
+            <span class="price-name">Basic Mehandi Design (Both Hands)</span>
+            <span style="font-size:12px; color:#856450;">Festive &amp; Bridal Henna Art</span>
+          </div>
+          <span class="price-badge">₹1,499+</span>
+        </div>
+
+        <!-- 15. Head Massage -->
+        <div class="price-card-item" data-book="Head Massage - ₹999+">
+          <div class="price-info">
+            <span class="price-name">Head Massage</span>
+            <span style="font-size:12px; color:#856450;">Relaxing Warm Oil Therapy</span>
+          </div>
+          <span class="price-badge">₹999+</span>
+        </div>
+
+        <!-- 16. Body Massage -->
+        <div class="price-card-item" data-book="Body Massage - ₹2,499+">
+          <div class="price-info">
+            <span class="price-name">Body Massage</span>
+            <span style="font-size:12px; color:#856450;">Deep Tissue &amp; Aroma Relief</span>
+          </div>
+          <span class="price-badge">₹2,499+</span>
+        </div>
+
+        <!-- 17. Body Polishing -->
+        <div class="price-card-item" data-book="Body Polishing - ₹3,499+">
+          <div class="price-info">
+            <span class="price-name">Body Polishing</span>
+            <span style="font-size:12px; color:#856450;">Complete Bridal Glow Polish</span>
+          </div>
+          <span class="price-badge">₹3,499+</span>
+        </div>
+
+        <!-- 18. Threading Upper Lips / Forehead -->
+        <div class="price-card-item" data-book="Threading Upper Lips / Forehead - ₹150+">
+          <div class="price-info">
+            <span class="price-name">Threading (Lips / Forehead)</span>
+            <span style="font-size:12px; color:#856450;">Clean Precision Shaping</span>
+          </div>
+          <span class="price-badge">₹150+</span>
+        </div>
+      </div>
+
+      <div style="margin-top:35px; text-align:center;">
+        <a class="btn btn-secondary" href="services.html" target="_blank" rel="noopener" style="margin-right:12px;">👉 View Detailed Services Page</a>
+        <a class="btn btn-primary" href="gallery.html" target="_blank" rel="noopener">👉 View Work Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Features -->
+  <section class="homepage-section homepage-section-light">
+    <div class="container">
+      <div class="homepage-grid-4">
+        <div class="homepage-card">
+          <div class="feature-icon">🎓</div>
+          <h3>Certified Beautician</h3>
+          <p>Trained and certified from IBI International School of Cosmetology &amp; Aesthetics, Dehradun.</p>
+        </div>
+        <div class="homepage-card">
+          <div class="feature-icon">⭐</div>
+          <h3>5+ Years Experience</h3>
+          <p>The trusted choice when searching for the best beauty parlour in Dehradun for skin, hair, and nail treatments.</p>
+        </div>
+        <div class="homepage-card">
+          <div class="feature-icon">🧴</div>
+          <h3>100% Genuine Products</h3>
+          <p>Hygienic single-use kits and premium brands (O3+, L'Oreal, MAC, Rica, Lotus) for flawless results.</p>
+        </div>
+        <div class="homepage-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Instant WhatsApp Booking</h3>
+          <p>Zero wait time. Connect directly, share your locality, and confirm your preferred time slot effortlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Banner -->
+  <section class="homepage-section">
+    <div class="container">
+      <div class="homepage-highlight">
+        <div>
+          <div class="homepage-eyebrow" style="color:#ffd59b;">Top Rated Ladies Parlour</div>
+          <h2>Best Beauty Parlour Experience in Dehradun</h2>
+          <p>
+            Skip the salon queues and traffic. Book your preferred beauty service quickly through WhatsApp or our contact form. 
+            Enjoy personalized beauty parlour care in your own comfort zone.
+          </p>
+
+          <div class="cta-row" style="margin-top:24px;">
+            <a class="btn btn-primary" href="https://wa.me/919627189407?text=Hello%20Tanisk%20Beauty%20Zone%2C%20I%20want%20to%20book%20a%20home%20salon%20service%20in%20Dehradun." target="_blank" rel="noopener">
+              WhatsApp Booking Now
+            </a>
+            <a class="btn btn-secondary" href="https://g.page/r/CXUpmQvVoq_kEBM/review" target="_blank" rel="noopener">
+              ⭐ Read Google Reviews
+            </a>
+          </div>
+        </div>
+
+        <div class="homepage-mini-box">
+          <h3>Why Dehradun Loves Us</h3>
+          <p>
+            ✨ 100% Sanitized Tools &amp; Fresh Disposables<br>
+            ✨ Polite, Punctual &amp; Certified Female Beauticians<br>
+            ✨ Transparent Pricing with No Hidden Charges<br>
+            ✨ Flexible Early Morning Slots for Weddings
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Dehradun Localities Coverage -->
   <section class="homepage-section homepage-section-light">
     <div class="container">
@@ -1200,7 +1642,7 @@
     </div>
   </section>
 
-  <!-- SEO KEYWORDS DIRECTORY FOR GOOGLE INDEXING (Visually Hidden, Active in DOM) -->
+  <!-- SEO KEYWORDS DIRECTORY FOR GOOGLE INDEXING -->
   <section class="seo-keyword-section" aria-label="Popular searches in Dehradun">
     <div class="container">
       <div class="seo-container-head">
@@ -1216,22 +1658,22 @@
         <span>Ladies Beauty Parlour Dehradun</span>
         <span>Beauty Parlour Near Me Dehradun</span>
         <span>Air Brush Makeup Dehradun</span>
-        <span>Bridal Makeup Dehradun 6999</span>
+        <span>Bridal Makeup Dehradun 7999</span>
         <span>Groom Makeup Dehradun</span>
-        <span>Party Makeup Dehradun 1499</span>
-        <span>Facial at Home Dehradun 499</span>
-        <span>Cleanup at Home Dehradun 399</span>
-        <span>Waxing Dehradun 399</span>
-        <span>Bikini Waxing Dehradun 899</span>
-        <span>Manicure Dehradun 499</span>
-        <span>Pedicure Dehradun 599</span>
-        <span>Nail Extension Dehradun 799</span>
-        <span>Hair Spa &amp; Styling Dehradun 549</span>
-        <span>Saree Draping Dehradun 499</span>
-        <span>Mehandi Design Dehradun 999</span>
+        <span>Party Makeup Dehradun 2999</span>
+        <span>Facial at Home Dehradun 749</span>
+        <span>Cleanup at Home Dehradun 549</span>
+        <span>Waxing Dehradun 549</span>
+        <span>Bikini Waxing Dehradun 1299</span>
+        <span>Manicure Dehradun 749</span>
+        <span>Pedicure Dehradun 949</span>
+        <span>Nail Extension Dehradun 899</span>
+        <span>Hair Spa &amp; Styling Dehradun 699</span>
+        <span>Saree Draping Dehradun 549</span>
+        <span>Mehandi Design Dehradun 1499</span>
         <span>Head Massage Dehradun 999</span>
-        <span>Body Massage Dehradun 1999</span>
-        <span>Body Polishing Dehradun 24999</span>
+        <span>Body Massage Dehradun 2499</span>
+        <span>Body Polishing Dehradun 3499</span>
         <span>Threading Upper Lips Dehradun 150</span>
         <span>Top Beauty Parlour in Dehradun</span>
         <span>Famous Beauty Parlour in Dehradun</span>
@@ -1343,22 +1785,28 @@
             <select id="serviceInput" required>
               <option value="">-- Select Your Service --</option>
               <option value="Air Brush Makeup - ₹24,999+">Air Brush Makeup (₹24,999+)</option>
-              <option value="Bridal Makeup - ₹6,999+">Bridal Makeup (₹6,999+)</option>
-              <option value="Groom Makeup - ₹4,999+">Groom Makeup (₹4,999+)</option>
-              <option value="Party Makeup - ₹1,499+">Party Makeup (₹1,499+)</option>
-              <option value="Facial - ₹499+">Facial (₹499+)</option>
-              <option value="Cleanup - ₹399+">Cleanup (₹399+)</option>
-              <option value="Waxing - ₹399+">Waxing (₹399+)</option>
-              <option value="Bikini Waxing - ₹899+">Bikini Waxing (₹899+)</option>
-              <option value="Manicure - ₹499+">Manicure (₹499+)</option>
-              <option value="Pedicure - ₹599+">Pedicure (₹599+)</option>
-              <option value="Nail Extension - ₹799+">Nail Extension (₹799+)</option>
-              <option value="Hairs (Styling / Spa) - ₹549+">Hairs (Styling / Spa) (₹549+)</option>
-              <option value="Saree Draping - ₹499+">Saree Draping (₹499+)</option>
-              <option value="Mehandi Design - ₹999+">Mehandi Design (₹999+)</option>
+              <option value="Bridal Makeup - ₹7,999+">Bridal Makeup (₹7,999+)</option>
+              <option value="Groom Makeup - ₹6,499+">Groom Makeup (₹6,499+)</option>
+              <option value="Party Makeup - ₹2,999 - ₹3,999">Party Makeup (₹2,999 - ₹3,999)</option>
+              <option value="Facial - ₹749+">Facial (₹749+)</option>
+              <option value="Cleanup - ₹549+">Cleanup (₹549+)</option>
+              <option value="Full Arms Waxing - ₹549+">Full Arms Waxing (₹549+)</option>
+              <option value="Half Leg Waxing - ₹749+">Half Leg Waxing (₹749+)</option>
+              <option value="Full Leg Waxing - ₹1,049+">Full Leg Waxing (₹1,049+)</option>
+              <option value="Full Body Waxing - ₹2,199+">Full Body Waxing (₹2,199+)</option>
+              <option value="Underarm Waxing - ₹149+">Underarm Waxing (₹149+)</option>
+              <option value="Full Face Waxing - ₹349+">Full Face Waxing (₹349+)</option>
+              <option value="Bikini Waxing - ₹1,299+">Bikini Waxing (₹1,299+)</option>
+              <option value="Manicure - ₹749+">Manicure (₹749+)</option>
+              <option value="Pedicure - ₹949+">Pedicure (₹949+)</option>
+              <option value="Nail Extension - ₹899+">Nail Extension (₹899+)</option>
+              <option value="Hair Spa - ₹1,099+">Hair (Spa) (₹1,099+)</option>
+              <option value="Hair Styling - ₹699+">Hair (Styling) (₹699+)</option>
+              <option value="Saree Draping - ₹549+">Saree Draping (₹549+)</option>
+              <option value="Basic Mehandi Design (Both Hands) - ₹1,499+">Basic Mehandi Design, Both Hands (₹1,499+)</option>
               <option value="Head Massage - ₹999+">Head Massage (₹999+)</option>
-              <option value="Body Massage - ₹1,999+">Body Massage (₹1,999+)</option>
-              <option value="Body Polishing - ₹24,999+">Body Polishing (₹24,999+)</option>
+              <option value="Body Massage - ₹2,499+">Body Massage (₹2,499+)</option>
+              <option value="Body Polishing - ₹3,499+">Body Polishing (₹3,499+)</option>
               <option value="Threading Upper Lips / Forehead - ₹150+">Threading Upper Lips / Forehead (₹150+)</option>
               <option value="Karwa Chauth / Festive Package">Karwa Chauth / Festive Package</option>
             </select>
@@ -1525,8 +1973,8 @@
       document.body.style.overflow = '';
     }
 
-    // Attach listener to ALL booking triggers
-    const bookingTriggers = document.querySelectorAll('[data-book], a[href="#bookingModal"]');
+    // Attach listener to ALL booking triggers & price list items
+    const bookingTriggers = document.querySelectorAll('[data-book], a[href="#bookingModal"], .price-card-item');
     bookingTriggers.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -1573,7 +2021,7 @@
         const area = document.getElementById('areaInput')?.value.trim() || 'Dehradun';
         const note = document.getElementById('noteInput')?.value.trim() || 'None';
 
-        const waMsg = `Hello Tanisk Beauty Zone,%0A%0AI want to book a beauty parlour appointment in Dehradun:%0A- *Name:* ${encodeURIComponent(name)}%0A- *Phone:* ${encodeURIComponent(phone)}%0A- *Service:* ${encodeURIComponent(service)}%0A- *Preferred Date:* ${encodeURIComponent(date)}%0A- *Area / Address:* ${encodeURIComponent(area)}%0A- *Notes:* ${encodeURIComponent(note)}`;
+        const waMsg = `Hello Tanisk Beauty Zone,%0A%0AI want to book a beauty parlour appointment in Dehradun:%0A- *Name:* ${encodeURIComponent(name)}%0A- *Phone:* ${encodeURIComponent(phone)}%0A- *Service:* ${encodeURIComponent(service)}%0A- *Preferred Date:*${encodeURIComponent(date)}%0A- *Area / Address:* ${encodeURIComponent(area)}%0A- *Notes:* ${encodeURIComponent(note)}`;
 
         window.open(`https://wa.me/919627189407?text=${waMsg}`, '_blank');
         closeBookingModal();
@@ -1582,4 +2030,4 @@
   });
 </script>
 </body>
-</html>
+          </html>
